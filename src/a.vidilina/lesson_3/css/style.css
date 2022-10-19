@@ -1,0 +1,34 @@
+.text-decoration-underline-bold {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.capitalize-italic {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.p-algin-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+  margin: 5px;
+}
+
+.ol-without-marg {
+  margin: 0em;
+}
