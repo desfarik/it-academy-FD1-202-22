@@ -1,0 +1,9 @@
+
+h1 {text-align: center;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.Roboto {font-family: Roboto;}
+.Ubuntu {font-family: Ubuntu;}
+.centr {margin-top: 50px; margin-right: 300px; margin-bottom: 50px; margin-left: 300px;}
+.right {text-align: right;}
+.ctrimg {text-align: center;}
