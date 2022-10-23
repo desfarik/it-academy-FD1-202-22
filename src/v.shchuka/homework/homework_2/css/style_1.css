@@ -1,0 +1,26 @@
+div {
+  width: 637px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  font-style: italic;
+}
+.text-align-center,
+h1 {
+  text-align: center;
+}
+p {
+  font-family: Ubuntu, Arial, sans-serif;
+  font-size: 17px;
+}
+.font-family-Roboto {
+  font-family: Roboto, Arial, sans-serif;
+}
+.text-CSS {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.text-align-right {
+  text-align: right;
+}

@@ -1,0 +1,27 @@
+.solid-border {
+  border-width: 6px;
+  border-style: solid;
+}
+.groove-border {
+  border-width: 6px;
+  border-style: groove;
+  border-color: yellow;
+}
+.ridge-border {
+  border: 6px ridge brown;
+}
+.double-border {
+  border: 6px double tomato;
+}
+.dashed-border {
+  border: 6px dashed green;
+}
+.dotted-border {
+  border: 6px dotted blue;
+}
+.inser-border {
+  border: 6px inset grey;
+}
+.outset-border {
+  border: outset red 6px;
+}
