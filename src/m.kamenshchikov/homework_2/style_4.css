@@ -1,0 +1,51 @@
+.container {
+  border: solid;
+  border-width: 1px;
+  max-width: 400px;
+  text-align: center;
+  color: gray;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  color: black;
+}
+hr {
+  max-width: 350px;
+}
+p {
+  color: gray;
+  font-size: 20px;
+}
+.circle {
+  border: solid;
+  text-align: center;
+  margin-left: 130px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  color: red;
+  background-color: red;
+}
+.price {
+  color: white;
+  padding-top: 30px;
+  font-size: 30px;
+}
+button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: red;
+  color: white;
+  border-color: red;
+  border: solid;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+body {
+    background-color: lightgrey;
+}
