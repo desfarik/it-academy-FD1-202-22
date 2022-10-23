@@ -1,0 +1,17 @@
+.borderElement1 {
+    background-color: white;
+    border: 3px solid purple;
+    border-radius: 15px 100px 15px 100px;
+  }
+.settings {
+    color: blue;
+    font-size: 30px;
+}
+.cancel {
+    color: red;
+    font-size: 30px;
+}
+.check {
+    color: green;
+    font-size: 30px;
+}
