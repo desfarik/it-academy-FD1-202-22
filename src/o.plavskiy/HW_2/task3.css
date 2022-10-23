@@ -1,0 +1,29 @@
+.border{
+  border-style: solid;
+  border-color: #ab47bc; 
+  border-width: 15px; 
+  border-radius: 30px 0 30px 0;
+  width: 310px;
+  height: 100px;
+  padding: 0%;
+}
+  .settings {
+  font-family: "Material Symbols Outlined";
+  font-size: 100px;
+    color: #49c5f8;
+    vertical-align: middle;
+}
+.cancle {
+  font-family: "Material Symbols Outlined";
+  font-size: 100px;
+  color: #f46092;
+  vertical-align: middle;
+}
+.done {
+  font-family: "Material Symbols Outlined";
+  font-size: 100px;
+  color: #79c57d;
+  vertical-align: middle;
+}
+
+

@@ -1,0 +1,9 @@
+.text-decoration__underkine {
+   text-decoration: underline;
+}
+.text-decor__line-trought {
+    text-decoration: line-through;
+}
+.italic {
+   font-weight: italic;
+}
