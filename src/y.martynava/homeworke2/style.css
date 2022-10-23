@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+.linethrough {
+    text-decoration-line: line-through;
+}
+.redcircle {
+    border-radius: 50%; 
+    background-color:red;
+    width: 150px; 
+    height: 150px;
+    margin: auto;
+}
+.txt{
+    line-height: 150px;
+    color: white;
+    font-size: xx-large;
+}
+.whitebackground {
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    width: 40%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.h1t4 {
+    padding-top: 75px; 
+    font-weight: bold;
+}
+.h3t3 {
+    padding-top: 10px; 
+    padding-bottom: 25px;
+    color: rgb(161, 161, 161);
+}
+.border {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: solid rgb(161, 161, 161) 1px;
+}
+.rectangle {
+    border-radius: 10px; 
+    background-color:red;
+    width: 30%;
+    height: 50px;
+    display: inline-block;
+    margin: 25px auto 55px;
+}
+.purple-rectangle {
+    display: flex;
+    width: 200px; 
+    height: 100px;
+    border: solid blueviolet 10px;
+    border-radius: 25px 0 25px 0;
+}
+.settings {
+    margin: auto;
+    color: lightskyblue;
+    font-size: 60px;
+    font-variation-settings:
+    'FILL' 1
+}
+.done {
+    margin: auto;
+    color: green;
+    font-size: 60px;
+}
+.cansel {
+    margin: auto;
+    color:red;
+    font-size: 60px;
+}
