@@ -1,9 +1,12 @@
 .settings {
     color: #4fc3f7;
-    font-weight: bold;
     font-size: 70px;
     vertical-align: middle;
-    /* font-variation-settings: 'FILL' 1;*/
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48;
 }
 
 .cancel {
