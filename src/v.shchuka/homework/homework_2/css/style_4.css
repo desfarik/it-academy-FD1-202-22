@@ -32,6 +32,7 @@ h1 {
 }
 .container-text {
   color: #7d7d7d;
+  letter-spacing: 0.05em;
 }
 .container-border {
   color: #8d979d;
