@@ -3,17 +3,19 @@
     line-height:50px;
     color:#4fc3f7;
     font-variation-settings: "FILL"1;
-    
-}
+    vertical-align: middle;
+    }
 .cancel{
     font-size:50px;
     line-height:50px;
     color:#f06292;
+    vertical-align: middle;
 }
 .check{
     font-size:50px;
     line-height:50px;
     color: #7dc681;
+    vertical-align: middle;
 }
 .border{
     border: 5px solid;
