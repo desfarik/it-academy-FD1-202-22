@@ -1,0 +1,51 @@
+.small-page {
+    width: fit-content;
+    border: solid #dfe1e2 1px;
+    border-radius: 10px;
+    padding: 10px 40px 60px;
+    text-align: center;
+    color: #b5b6b9;
+    font-size: 18px;
+    margin: 20px;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.full-page {
+    margin: auto;
+    border: solid #dfe1e2 2px;
+    width: fit-content;
+    background: #ecf0f1;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #e1002c;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    line-height: 150px;
+    margin: auto;
+    font-size: 30px;
+}
+
+.headline {
+    color: black;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+.button {
+    color: white;
+    border-color: grey;
+    background: #e1002c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
