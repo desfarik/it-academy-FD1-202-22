@@ -1,40 +1,19 @@
-.font_roboto{
-font-family: "Roboto","sans-serif";
-}
-.font_ubuntu{
-    font-family:"Ubuntu","sans-serif";}
-h1{
-text-align: center;
-}
-h2,p{
-width: 50%;
-padding-left:25%;
-
-}
-h2{
-font-style:italic;
-font-family: 'Times New Roman', Times, serif;
+.block{
+margin-left: 30%;
 }
 .italic{
     font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.roboto{font-family: 'Roboto', sans-serif;}
+.ubuntu{font-family: 'Ubuntu', sans-serif}
+.image_2{
+    text-align: center;
+    margin-right: 20%;
+   }
+.image_3{
+    text-align:left;
 }
 .strike{
-text-decoration: line-through;
+    text-decoration: line-through;
 }
-.displayad{
-    padding-top:5% ;
-    display: block;
-    padding-right: 40%;
-    width: 50%; 
-}
-.displayad_right{
-display: block;
-padding-left:40%;
-width: 50%;
-}
-.displayad_center{
-    display: block;
-    text-align:center;
-    width:80%;
-
-}  
