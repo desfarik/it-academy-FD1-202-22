@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+.container {
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.picture_1 {
+  max-width: 50%;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.picture_2 {
+  max-width: 70%;
+  margin-left: 40%;
+}
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+.picture_3 {
+  max-width: 400px;
+padding-left: 50px;
+}
+.line_through {
+  text-decoration: line-through;
+}
