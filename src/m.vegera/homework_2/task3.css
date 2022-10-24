@@ -1,0 +1,33 @@
+.settings {
+    color: #4fc3f7;
+    font-size: 70px;
+    vertical-align: middle;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48;
+}
+
+.cancel {
+    color: #f06292;
+    font-weight: bold;
+    font-size: 100px;
+    vertical-align: middle;
+}
+
+.done {
+    color: #7dc681;
+    font-weight: bold;
+    font-size: 70px;
+    vertical-align: middle;
+
+}
+
+.border {
+    border: solid #ab47bc 10px;
+    border-radius: 30px 0 30px;
+    padding: 0px;
+    float: left;
+
+}

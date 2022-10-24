@@ -1,0 +1,31 @@
+.solid {
+    border: solid black 4px;
+}
+
+.groove {
+    border: groove yellow 4px;
+}
+
+.ridge {
+    border: ridge brown 4px;
+}
+
+.double {
+    border: double tomato 4px;
+}
+
+.dashed {
+    border: dashed green 4px;
+}
+
+.dotted {
+    border: dotted blue 4px;
+}
+
+.inset {
+    border: inset grey 4px;
+}
+
+.outset {
+    border: outset red 4px;
+}

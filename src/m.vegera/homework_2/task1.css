@@ -1,0 +1,48 @@
+.common {
+    width: 600px;
+    margin: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.cross {
+    text-decoration: line-through;
+}
+
+.center {
+    text-align: center;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ubuntu {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.img1 {
+    text-align: left;
+}
+
+.clearleft {
+    clear: left;
+}
+
+.img2 {
+    text-align: right;
+}
+
+.clearright {
+    clear: right;
+}
+
+.img3 {
+    text-align: center;
+}
