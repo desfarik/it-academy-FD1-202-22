@@ -33,6 +33,7 @@ margin-top: 30px;
 margin-bottom: 70px;
 border-radius: 9px;
 padding: 8px;
+cursor: pointer;
 }
 .inside_circle {
     display: block;
