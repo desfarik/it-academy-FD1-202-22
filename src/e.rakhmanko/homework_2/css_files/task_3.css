@@ -1,0 +1,24 @@
+.setting{
+    font-size:50px;
+    line-height:50px;
+    color:#4fc3f7;
+    font-variation-settings: "FILL"1;
+    
+}
+.cancel{
+    font-size:50px;
+    line-height:50px;
+    color:#f06292;
+}
+.check{
+    font-size:50px;
+    line-height:50px;
+    color: #7dc681;
+}
+.border{
+    border: 5px solid;
+    color:#ab47bc;
+    width: 160px;
+    border-radius:20px 0px;
+    text-align:center;
+}
