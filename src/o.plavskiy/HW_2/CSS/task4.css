@@ -1,0 +1,51 @@
+.circle{
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: red;
+    border-color: red;
+    
+    color: white;
+text-align: center;
+}
+.main_div{
+    box-shadow: 2px 2px 2px 0px gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 250px;
+    height: 10%;
+    margin: auto;
+    background-color: white;
+}
+.text_gray{
+color: gray;  
+
+}
+.botton {
+background-color: red;
+color: white;
+width: 120px;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 70px;
+border-radius: 9px;
+padding: 8px;
+}
+.inside_circle {
+    display: block;
+}
+.little_font {
+ font-size: 14px; 
+}
+.underline {
+    border-bottom: solid;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 200px;
+    border-color: gray;
+}
