@@ -1,0 +1,12 @@
+body{
+    margin-left:10%;
+    margin-right:10%;
+}
+.solid{border:5px solid black;}
+.groove{border:5px groove yellow;}
+.ridge{border:5px ridge brown;}
+.double{border:5px double tomato;}
+.dashed{border:3px dashed green;}
+.dotted{border:3px dotted blue;}
+.inset{border: 5px inset grey }
+.outset{border:5px outset red;}

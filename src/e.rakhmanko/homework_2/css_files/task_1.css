@@ -1,0 +1,19 @@
+.block{
+margin-left: 30%;
+}
+.italic{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.roboto{font-family: 'Roboto', sans-serif;}
+.ubuntu{font-family: 'Ubuntu', sans-serif}
+.image_2{
+    text-align: center;
+    margin-right: 20%;
+   }
+.image_3{
+    text-align:left;
+}
+.strike{
+    text-decoration: line-through;
+}
