@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+}
+.container {
+    background-color: gainsboro;
+    padding: 50px;
+    text-align: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.product {
+    padding-top: 25px;
+    background-color: white;
+    width: 350px;
+    margin: 50px 50px;
+    display: inline-block
+}
+img{
+    max-height: 200px;
+}
+.product-name{
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 25px;
+    padding-bottom: 30px;
+    display: block;
+    
+}
+.button-add-to-cart {
+    width: 350px;
+    line-height: 70px;
+    background-color: #50e3c1 ;
+}
+.product-description{
+    display: block;
+    padding: 0px 50px;
+    color: gray;
+}
+.product-cost{
+    display: block;
+    font-size: 40px;
+    color: #50e3c1;
+    margin: 25px;
+}
+.gray{
+    color: gray;
+}
+.yellow{
+    color: #fbae40;
+}
+.product-raiting{
+    display: block;
+    margin-bottom: 25px;
+}
+.button-add-to-cart {
+    color: white;
+    font-style: bold;
+}
+
+.button-add-to-cart.second {
+    background-color: #fc5530;
+}
+.product-cost.second{
+    color: #fc5530;
+}
+.button-add-to-cart.third {
+    background-color: #ffb42e;
+}
+.product-cost.third{
+    color: #ffb42e;
+}
+

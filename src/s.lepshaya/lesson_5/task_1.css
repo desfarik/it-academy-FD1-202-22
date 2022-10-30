@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.great{
+   padding-bottom: 5px;
+}
+.container {
+    width: 100%;
+    height: 100vw;
+    background-color: grey;
+    padding-top: 200px;
+    text-align: right;
+}
+.dialog-window {
+    width: 800px;
+
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+.done {
+    height: 300px;
+    background-color: greenyellow;
+    line-height: 500px;
+}
+
+.icon-close {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: red;
+    border-radius: 25px;
+    text-align: center;
+}
+.icon-close {
+   color: white;
+   font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    
+}
+.checkout{
+    font-size: 170px;
+    color: white;
+}
+.cancel {
+    width: 900px;
+    font-size: 40px;
+}
+
+
+
+
