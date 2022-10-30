@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 2</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style-2.css" type="text/css" />
+  </head>
+  <body>
+    <p>Верстка через span:</p>
+    <span class="cubes-wrapper">
+      <span class="cube-total cube-blue">A</span>
+      <span class="cube-total cube-red">B</span
+      ><span class="cube-total cube-green">C</span>
+      <span class="cube-total cube-blue">D</span
+      ><span class="cube-total cube-green">E</span
+      ><span class="cube-total cube-red">F</span>
+    </span>
+    <p>Верстка через таблицы:</p>
+    <div class="table-wrapper">
+      <table>
+        <col span="6" />
+        <tr>
+          <td></td>
+          <td></td>
+          <td colspan="2" class="cube-blue"><div class="cell">A</div></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2" class="cube-red"><div class="cell">B</div></td>
+          <td colspan="2" class="cube-green"><div class="cell">C</div></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="cube-blue"><div class="cell">D</div></td>
+          <td colspan="2" class="cube-green"><div class="cell">E</div></td>
+          <td colspan="2" class="cube-red"><div class="cell">F</div></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

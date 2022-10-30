@@ -1,0 +1,91 @@
+/* Total container */
+.container-icons {
+  border: 10px solid #a749b8;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 248px;
+  height: 100px;
+  text-align: center;
+}
+
+/* Sprites */
+.sprite-icon-settings {
+  background-image: url("../images/image1.png");
+  width: 60px;
+  height: 84px;
+  background-repeat: no-repeat;
+  background-position: -15px -18px;
+  display: inline-block;
+  margin-right: 14px;
+  margin-top: 8px;
+}
+.sprite-icon-cancel {
+  background-image: url("../images/image1.png");
+  width: 85px;
+  height: 84px;
+  background-repeat: no-repeat;
+  background-position: -91px -18px;
+  display: inline-block;
+  margin-top: 8px;
+}
+.sprite-icon-done {
+  background-image: url("../images/image1.png");
+  width: 55px;
+  height: 84px;
+  background-repeat: no-repeat;
+  background-position: -195px -18px;
+  display: inline-block;
+  margin-left: 14px;
+  margin-top: 8px;
+}
+
+/* Google icons */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 48;
+}
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 630, "GRAD" 0, "opsz" 48;
+}
+.material-icon-settings {
+  color: #4fc2f3;
+  font-size: 68px;
+  width: 70px;
+  vertical-align: 14px;
+}
+.material-icon-cancel {
+  color: #ef6392;
+  font-size: 96px;
+  width: 95px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.material-icon-done {
+  color: #76ca82;
+  font-size: 78px;
+  width: 73px;
+  vertical-align: 9px;
+}
+
+/* Icons with fontawesome.com */
+.fa-icon-gear {
+  font-size: 58px;
+  width: 70px;
+  color: #4fc2f3;
+  vertical-align: top;
+  margin-top: 21px;
+}
+.fa-icon-circle-xmark {
+  font-size: 86px;
+  width: 95px;
+  color: #ef6392;
+  vertical-align: top;
+  margin-top: 7px;
+  margin-left: 2px;
+}
+.fa-icon-check {
+  font-size: 68px;
+  color: #76ca82;
+  width: 73px;
+  vertical-align: top;
+  margin-top: 16px;
+}
