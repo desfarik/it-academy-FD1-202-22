@@ -1,0 +1,29 @@
+.container {
+    width: 700px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+.subtitle {
+    font-style: italic;
+    font-weight: 700;
+}
+.code-image {
+    text-align: right;
+}
+.image {
+    text-align: center;
+}
+.underlineText {
+    text-decoration: line-through;
+}
+.design, .content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.code {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}

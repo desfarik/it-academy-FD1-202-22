@@ -1,0 +1,44 @@
+.SolidBlack {
+    border-style: solid;
+    border-color: black;
+}
+
+.GrooveYellow {
+    border-style: groove;
+    border-color: yellow;
+}
+
+.RidgeBrown {
+    border-style: solid;
+    border-color: black;
+}
+
+.DoubleTomato {
+    border-style: double;
+    border-color: tomato;
+}
+
+.RidgeBrown {
+    border-style: ridge;
+    border-color: brown;
+}
+
+.DashedGreen {
+    border-style: dashed;
+    border-color: green;
+}
+
+.DottedBlue {
+    border-style: dotted;
+    border-color: blue;
+}
+
+.InsetGrey {
+    border-style: inset;
+    border-color: grey;
+}
+
+.OutsetRed {
+    border-style: outset;
+    border-color: red;
+}

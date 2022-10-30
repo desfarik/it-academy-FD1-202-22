@@ -1,0 +1,33 @@
+.MaterialIcons {
+    width: 140px;
+    border-style: solid;
+    border-color: #ab47bc;
+    border-radius: 20px 0px 20px 0px;
+    border-width: 7px;
+    padding: 5px 0px;
+}
+
+.material-symbols-outlined.settings {
+    color: #4fc3f7;
+    font-size: 40px;
+    vertical-align: middle;
+    font-variation-settings:
+    'FILL' 1 ;
+}
+
+.material-symbols-outlined.cancel {
+    color: #f06292;
+    font-size: 50px;
+    vertical-align: middle;
+    font-variation-settings:
+    'wght' 700;
+}
+
+.material-symbols-outlined.done {
+    color: #7dc681;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+
+

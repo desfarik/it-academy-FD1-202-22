@@ -1,0 +1,68 @@
+h1 {
+  text-align: center;
+}
+h2 {
+  font-style: italic;
+}
+.font_roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font_ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+.decor_line_through {
+  text-decoration: line-through;
+}
+.img_left {
+  width: 40%;
+  margin-right: 50%;
+}
+.img_right {
+  width: 50%;
+  margin-left: 50%;
+}
+.img_center {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.background-lightgray {
+  background-color: lightgray;
+}
+.white-background-center {
+  background-color: white;
+  border: solid white 1px;
+  border-radius: 15px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.red-circle {
+  background-color: #d2001a;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: white;
+  margin: auto;
+  line-height: 100px;
+}
+.color-transparent-padding {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+.red-rectangle {
+  border-radius: 5px;
+  background-color: #d2001a;
+  padding: 10px;
+  margin-bottom: 25px;
+  color: white;
+  display: inline-block;
+}
+.border-bottom {
+  border-bottom: solid #b6b6b65b 2px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
