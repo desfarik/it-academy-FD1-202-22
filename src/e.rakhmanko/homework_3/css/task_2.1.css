@@ -1,0 +1,44 @@
+.letters {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+}
+.cube{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  }
+
+.blue{
+  color: #1e90ff;
+  border: 3px solid #1e90ff;
+}
+
+.green {
+  color: #32cd32;
+  border: 3px solid #32cd32;
+  
+}
+.red {
+  color: #ff0000;
+  border: 3px solid #ff0000;
+}
+
+.first_line {
+  margin-left: 40%;
+  margin-bottom: 10px;
+}
+.second_line {
+  margin-left: 35%;
+  margin-bottom: 10px;
+}
+.third_line {
+  margin-left: 20%;
+  margin-bottom: 10px;
+}
+.table{
+  border:2px solid black;
+}

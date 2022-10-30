@@ -1,0 +1,21 @@
+.table,
+td {
+  border-radius: 5px;
+  empty-cells: hide;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.blue-letters {
+  border: 5px solid #1e90ff;
+  color: #1e90ff;
+}
+.red-letters {
+  border: 5px solid #ff0000;
+  color: #ff0000;
+}
+.green-letters {
+  border: 5px solid #32cd32;
+  color: #32cd32;
+}

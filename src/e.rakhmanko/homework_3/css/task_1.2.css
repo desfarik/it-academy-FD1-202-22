@@ -1,0 +1,23 @@
+.icons-block {
+  font-size: 40px;
+  border: 5px solid #ab47bc;
+  border-radius: 20% 0;
+  width: 150px;
+  line-height: 50%;
+  text-align: center;
+  padding: 5px 2px;
+}
+.fa-gear {
+  color: #4fc3f7;
+}
+.fa-xmark {
+  color: #f06292;
+  border: 3px solid #f06292;
+  font-size: 35px;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.fa-check {
+  color: #7dc681;
+}
