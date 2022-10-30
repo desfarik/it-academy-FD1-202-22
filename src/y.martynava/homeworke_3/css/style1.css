@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+.purple_rectangle {
+    display: flex;
+    width: 200px; 
+    height: 80px;
+    border: solid #ab47bc 10px;
+    border-radius: 25px 0 25px 0;
+}
+.settings {
+    margin: auto;
+    color: #4fc3f7;
+    font-size: 68px;
+    font-variation-settings:
+    'FILL' 1
+}
+.done {
+    margin: auto;
+    color: #7dc681;
+    font-size: 68px;
+}
+.cansel {
+    margin: auto;
+    color:#f06292;
+    font-size: 68px;
+}
+.settings_font_awesome {
+    margin: auto;
+    color: #4fc3f7;
+    font-size: 60px;
+    font-variation-settings:
+    'FILL' 1
+}
+.done_font_awesome {
+    margin: auto;
+    color: #7dc681;
+    font-size: 60px;
+}
+.cansel_font_awesome {
+    margin: auto;
+    color:#f06292;
+    font-size: 60px;
+}
