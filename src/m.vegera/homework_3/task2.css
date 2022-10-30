@@ -1,0 +1,64 @@
+table {
+    width: 300px;
+    border-collapse: separate;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+tr {
+    border: solid black 5px;
+}
+
+td {
+    border: solid black 5px;
+    height: calc(300px / 3);
+}
+
+.without-borders {
+    border: hidden;
+}
+
+.blue-cube {
+    border-color: #1e90ff;
+    color: #1e90ff;
+}
+
+.green-cube {
+    border-color: #32cd32;
+    color: #32cd32;
+}
+
+.red-cube {
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+.cubes-container {
+    width: 300px;
+    text-align: center;
+}
+
+.cubes {
+    line-height: 106px;
+    /* letter-spacing: 50px;*/
+    border: black solid 5px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 25px 30px;
+}
+
+.letters-A-D {
+    color: #1e90ff;
+    border-color: #1e90ff;
+}
+
+.letters-C-E {
+    color: #32cd32;
+    border-color: #32cd32;
+}
+
+.letters-B-F {
+    color: red;
+    border-color: red;
+}
