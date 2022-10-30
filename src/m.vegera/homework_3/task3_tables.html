@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task3_tables.css">
+
+</head>
+
+<body>
+    <table>
+        <caption>3.1</caption>
+        <colgroup>
+            <col style="width: 25%">
+            <col style="width: 75%;">
+        </colgroup>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>3.2</caption>
+        <colgroup>
+            <col style="width: 25%">
+            <col style="width: 25%;">
+            <col style="width: 25%;">
+            <col style="width: 25%">
+        </colgroup>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="1"></td>
+            <td colspan="2"></td>
+            <td colspan="1"></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>3.3</caption>
+        <colgroup>
+            <col style="width: calc(100% / 3);">
+            <col style="width: calc(100% / 3);">
+            <col style="width: calc(100% / 3);">
+        </colgroup>
+        <tr>
+            <td colspan="2" rowspan="2"></td>
+            <td rowspan="1" colspan="1"></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td colspan="1"></td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>3.4</caption>
+        <colgroup>
+            <col style="width: 50%">
+            <col style="width: 50%;">
+        </colgroup>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+
+    <table>
+        <caption>3.5</caption>
+        <colgroup>
+            <col style="width: calc(100% / 4);">
+            <col style="width: calc(100% / 4);">
+            <col style="width: calc(100% / 4);">
+            <col style="width: calc(100% / 4);">
+        </colgroup>
+        <tr class="blue-cell">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2" class="brown-cell"></td>
+        </tr>
+        <tr class="blue-cell">
+            <td></td>
+            <td rowspan="2" class="brown-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="brown-cell"></td>
+            <td colspan="2" class="brown-cell"></td>
+        </tr>
+        <tr class="blue-cell">
+            <td class="blue-cell"></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>3.6</caption>
+        <colgroup>
+            <col style="width: calc(100%/ 7);">
+            <col style="width: calc(100%/ 7);">
+            <col style="width: calc(100%/ 7);">
+            <col style="width: calc(100%/ 7);">
+            <col style="width: calc(100%/ 7);">
+            <col style="width: calc(100%/ 7);">
+            <col style="width: calc(100%/ 7);">
+        </colgroup>
+        <tr>
+            <td colspan="3"></td>
+            <td rowspan="5"></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+    <br>
+    <table class="text-table">
+        <caption>3.7</caption>
+        <colgroup>
+            <col style="width: calc(100% / 5);">
+            <col style="width: calc(100% / 5);">
+            <col style="width: calc(100% / 5);">
+            <col style="width: calc(100% / 5);">
+            <col style="width: calc(100% / 5);">
+        </colgroup>
+        <tr>
+            <td colspan="3"></td>
+            <td>Субъект</td>
+            <td>Объект</td>
+        </tr>
+        <tr>
+            <td rowspan="5"> Ед. числ.</td>
+            <td colspan="2">1 лицо</td>
+            <td>Я</td>
+            <td>Меня</td>
+        </tr>
+        <tr>
+            <td colspan="2">2 лицо</td>
+            <td>Ты </td>
+            <td>Меня</td>
+        </tr>
+        <tr>
+            <td rowspan="3">3 лицо</td>
+            <td class="mnemonic-size">&#9794;</td>
+            <td>Он</td>
+            <td>Его</td>
+        </tr>
+        <tr>
+            <td class="mnemonic-size">&#9792;</td>
+            <td>Она</td>
+            <td>Ее</td>
+        </tr>
+        <tr>
+            <td class="mnemonic-size">&compfn;</td>
+            <td>Оно</td>
+            <td>Его</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Множ.числ.</td>
+            <td colspan="2">1 лицо</td>
+            <td>Мы</td>
+            <td>Нас</td>
+        </tr>
+        <tr>
+            <td colspan="2">2 лицо</td>
+            <td>Вы</td>
+            <td>Нас</td>
+        </tr>
+        <tr>
+            <td colspan="2">3 лицо</td>
+            <td>Они</td>
+            <td>Их</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>3.8</caption>
+        <colgroup>
+            <col style="width: calc(100% / 6);" class="without-borders">
+            <col style="width: calc(100% / 6);" class="without-borders">
+            <col style="width: calc(100% / 6);" class="without-borders">
+            <col style="width: calc(100% / 6);" class="without-borders">
+            <col style="width: calc(100% / 6);" class="without-borders">
+            <col style="width: calc(100% / 6);" class="without-borders">
+        </colgroup>
+        <tr class="without-borders">
+            <td class="grey-cell"></td>
+            <td colspan="4"></td>
+            <td class="pink-cell"></td>
+        </tr>
+        <tr class="without-borders">
+            <td rowspan="3"></td>
+            <td class="grey-cell"></td>
+            <td colspan="2"></td>
+            <td class="pink-cell"></td>
+            <td rowspan="3"></td>
+        </tr>
+        <tr class="without-borders">
+            <td></td>
+            <td colspan="2" class="black-cell"></td>
+            <td></td>
+        </tr>
+        <tr class="without-borders">
+            <td class="blue-cell"></td>
+            <td colspan="2"></td>
+            <td class="orange-cell"></td>
+        </tr>
+        <tr class="without-borders">
+            <td class="blue-cell"></td>
+            <td colspan="4"></td>
+            <td class="orange-cell"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
