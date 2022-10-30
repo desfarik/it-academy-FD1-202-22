@@ -1,0 +1,43 @@
+.color_pink {
+  background-color: #ffc0cb;
+}
+.color_green {
+  background-color: #7fffd4;
+}
+.color_blue {
+  background-color: #87ceeb;
+}
+.color_purple {
+  background-color: #dda0dd;
+}
+
+.background {
+  border: solid black 2px;
+  border-radius: 15px;
+  margin: fit-content;
+  text-align: center;
+}
+
+.border_big_green {
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 25px;
+}
+
+.border_little {
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.font_25px {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+.font_15px {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}

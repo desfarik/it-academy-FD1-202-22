@@ -1,0 +1,35 @@
+h2 {
+  margin-left: 45px;
+}
+
+.font_roboto_bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+}
+
+.container {
+  text-align: center;
+}
+
+.color_red {
+  color: #ff0000;
+}
+
+.color_blue {
+  color: #1e90ff;
+}
+
+.color_green {
+  color: #32cd32;
+}
+
+.border {
+  border: 5px solid;
+  border-radius: 5px;
+  padding: 0px 12px;
+  line-height: 75px;
+}
+
+.border_15px {
+  padding: 0px 15px;
+}
