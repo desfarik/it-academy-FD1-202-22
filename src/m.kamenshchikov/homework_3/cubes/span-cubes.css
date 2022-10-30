@@ -1,0 +1,23 @@
+span {
+  font-size: 100px;
+  border: 10px solid;
+  line-height: 180px;
+  border-radius: 10px;
+  padding: 4px 40px;
+  font-family: 'Anton', sans-serif;
+}
+.letter-A,
+.letter-D {
+  color: blue;
+}
+.letter-B,
+.letter-F {
+  color: red;
+}
+.letter-C,
+.letter-E {
+  color: green;
+}
+.container {
+    text-align: center;
+}
