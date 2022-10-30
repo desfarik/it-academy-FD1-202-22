@@ -1,0 +1,90 @@
+.container {
+    width: 400px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background:#ffc0cb;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+.header, .footer{
+    background: #7fffd4;
+    margin:10px 5px;
+    font-size:15px;    
+    font-weight: bold;
+    line-height:110%;
+    border:1px solid black;
+   
+   
+   
+}
+.footer{
+    margin-bottom: 2px;
+}
+.aquamarine-background{
+    background-color: aquamarine;
+    margin:10px 5px;
+    padding-top: 0px 5px;
+    border:1px solid black;
+    border-radius: 2px;
+}
+
+.some-random-image {
+    font-family: 'Roboto', sans-serif;
+    background:white;
+    font-size: 30px;
+    font-weight: bold;
+    margin:5px 15px 10px 15px;
+    padding:20px 5px;
+}
+
+.articale{
+    border:1px solid black;
+    border-radius: 2px;
+    padding: 5px 3px;
+    margin:10px 15px;
+    
+}
+.articale-heading
+{
+    margin: 5px 15px 5px 15px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background: #87ceeb;
+    line-height:120%;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 2px;
+}
+.purpl-background{
+    background-color: #dda0dd;
+    margin:5px 15px;
+    font-size: 10px;
+    text-align: left;
+    padding-left: 2px;
+    border:1px solid black;
+    border-radius: 2px;
+}
+
+.articale-text{
+    padding: 5px 3px;
+    line-height: 10px;
+    font-size: 8px;
+    text-align: justify;    
+}
+.some-random-banner {
+         
+margin:30px 50px 15px 15px;
+padding:10px 10px;
+width: 60px;
+ background-color: white;
+ font-size: 15px;
+text-align: left;
+}
+.second-banner{
+    margin-left:35%;
+}
+.third-banner{
+    margin-left: 75%;
+}
