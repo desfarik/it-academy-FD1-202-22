@@ -1,0 +1,18 @@
+.icons {
+  border: 10px solid #ab47bc;
+  width: 400px;
+  font-size: 100px;
+  text-align: center;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  padding: 5px;
+}
+.settings {
+  color: #4fc3f7;
+}
+.cancel {
+  color: #f06292;
+}
+.done {
+  color: #7dc681;
+}
