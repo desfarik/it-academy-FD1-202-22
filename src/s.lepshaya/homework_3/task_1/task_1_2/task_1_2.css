@@ -1,0 +1,33 @@
+.container {
+    width: 260px;
+    height: 100px;
+    border: 10px solid #ab47bc;
+    border-radius: 30px 0px;
+    overflow: hidden;
+    padding: 5px 0px;
+}
+
+.icon {
+    display: inline-block;
+    width: 70px;
+    height: 80px;
+    background-image: url(./icons.png);
+}
+
+.settings {
+    margin-left: 5px;
+    background-position-x: -25px;
+    background-position-y: -32px;
+}
+
+.close {
+    background-position-x: -100px;
+    background-position-y: -25px;
+    width: 90px;
+    height: 90px;
+}
+
+.done {
+    background-position-x: -190px;
+    background-position-y: -32px; 
+}

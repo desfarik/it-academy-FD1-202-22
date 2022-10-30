@@ -1,0 +1,32 @@
+
+.letter {
+    padding: 0px 15px;
+    line-height: 75px; 
+    border: 5px solid #000;
+    border-radius: 4px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container {
+    width: 250px;
+    text-align: center;
+}
+
+.letter-a , .letter-d{
+    border-color: #1e90ff;
+    color: #1e90ff;
+}
+.letter-b, .letter-f {
+    border-color:#ff0000 ;
+    color:#ff0000 ;
+}
+.letter-c, .letter-e {
+    border-color: #32cd32 ;
+    color: #32cd32;
+}
+.letter-e{
+    padding: 0px 20px;
+}
+.letter-f{
+    padding: 0px 20px;
+}
