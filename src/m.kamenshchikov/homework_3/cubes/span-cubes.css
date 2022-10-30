@@ -8,15 +8,15 @@ span {
 }
 .letter-A,
 .letter-D {
-  color: blue;
+  color: #1e90ff;
 }
 .letter-B,
 .letter-F {
-  color: red;
+  color: #ff0000;
 }
 .letter-C,
 .letter-E {
-  color: green;
+  color: #32cd32;
 }
 .container {
     text-align: center;

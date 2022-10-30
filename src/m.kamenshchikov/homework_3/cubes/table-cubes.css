@@ -4,20 +4,21 @@ table, td {
   text-align: center;
   font-size: 70px;
   margin: auto;
+  font-weight: bold;
 }
 .letter-A, .letter-D {
-    color: blue;
-    border: 10px solid blue;
+    color: #1e90ff;
+    border: 10px solid #1e90ff;
     border-radius: 10px;
 }
 .letter-B, .letter-F {
-    color:red;
-    border: 10px solid red;
+    color:#ff0000;
+    border: 10px solid #ff0000;
     border-radius: 10px;
 }
 .letter-C, .letter-E {
-    color:green;
-    border: 10px solid green;
+    color:#32cd32;
+    border: 10px solid #32cd32;
     border-radius: 10px;
 }
 
