@@ -1,0 +1,53 @@
+body {
+    margin: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 32px;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.blue-cell {
+    background-color: #7fffd4;
+}
+
+.brown-cell {
+    background-color: #ff7f50;
+}
+
+.text-table {
+    text-align: center;
+}
+
+.mnemonic-size {
+    font-size: 20px;
+}
+
+.grey-cell {
+    background-color: #808080;
+}
+
+.pink-cell {
+    background-color: #ffc0cb;
+}
+
+.black-cell {
+    background-color: black;
+}
+
+.orange-cell {
+    background-color: #ff7f50;
+}
+
+.without-borders {
+    border: hidden;
+}

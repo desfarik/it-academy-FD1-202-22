@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task2.css">
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col style="width: calc((300px - 10px) / 6);">
+            <col style="width: calc((300px - 10px) / 6);">
+            <col style="width: calc((300px - 10px) / 6);">
+            <col style="width: calc((300px - 10px) / 6);">
+            <col style="width: calc((300px - 10px) / 6);">
+            <col>
+        </colgroup>
+        <tr>
+            <td colspan="2" class="without-borders"></td>
+            <td colspan="2" class="blue-cube">A</td>
+            <td colspan="2" class="without-borders"></td>
+        </tr>
+        <tr>
+            <td class="without-borders"></td>
+            <td colspan="2" class="red-cube">B</td>
+            <td colspan="2" class="green-cube">C</td>
+            <td class="without-borders"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="blue-cube">D</td>
+            <td colspan="2" class="green-cube">E</td>
+            <td colspan="2" class="red-cube f">F</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <div class="cubes-container">
+        <span class="cubes letters-A-D">A</span>
+        <br>
+        <span class="cubes letters-B-F">B</span>
+        <span class="cubes letters-C-E">C</span>
+        <br>
+        <span class="cubes letters-A-D">D</span>
+        <span class="cubes letters-C-E">E</span>
+        <span class="cubes letters-B-F">F</span>
+    </div>
+</body>
+
+</html>
