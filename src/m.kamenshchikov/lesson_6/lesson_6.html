@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0"
+    />
+    <style>
+      .container {
+        background-color: #f1f1f1;
+        height: 100vh;
+        padding-top: 200px;
+      }
+      .success {
+        width: 800px;
+        height: 250px;
+        background-color: aquamarine;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .great {
+        background-color: aliceblue;
+        width: 800px;
+        height: 250px;
+        text-align: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      h2 {
+        margin: auto;
+        padding-top: 50px;
+      }
+      .check_circle {
+        color: aliceblue;
+        font-size: 150px;
+        padding-left: 320px;
+        padding-top: 70px;
+      }
+      .dialog {
+        width: 800px;
+        height: 700px;
+        border-radius: 5px;
+        background-color: blueviolet;
+        margin: auto;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      button {
+        width: 150px;
+        height: 50px;
+        background-color: rgb(240, 47, 79);
+        color: aliceblue;
+        border-radius: 30px;
+        font-size: 20px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+      }
+      .close {
+        font-weight: bold;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dialog">
+        <div class="success">
+          <span class="material-symbols-outlined check_circle">
+            check_circle
+          </span>
+        </div>
+        <div class="great">
+          <h2>Great!</h2>
+          <p>Your invitation succcessfully send.</p>
+          <p>
+            <button>
+              <span class="material-symbols-outlined close"> close </span> Close
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

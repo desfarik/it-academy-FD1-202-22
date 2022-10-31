@@ -1,0 +1,32 @@
+.icons {
+    border: solid;
+    width: 350px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-color: #ab47bc;
+    border-width: 10px;
+    vertical-align: middle;
+  
+  }
+  .done {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 100px;
+    color: #7dc681;
+  }
+  .cancel {
+    padding-left: 5px;
+    padding-right: 5px;
+  font-size: 100px;
+  color:#f06292;
+  font-weight: 800;
+  }
+  .settings {
+    padding-left: 5px;
+    padding-right: 5px;
+  font-size: 100px;
+  color: #4fc3f7;
+  font-variation-settings:
+  'FILL' 1 
+  }
+  
