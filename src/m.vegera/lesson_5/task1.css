@@ -1,0 +1,25 @@
+.body {
+    margin: 0;
+}
+
+.top {
+    height: 30px;
+    background-image: url('./top.png');
+    background-repeat: no-repeat;
+    /*background-color: blue;*/
+}
+
+.middle {
+    height: calc(100vh - 60px);
+    /*height: 90vh;*/
+    background-image: url('./middle.png');
+    background-repeat: repeat-y;
+}
+
+.bottom {
+    height: 30px;
+
+    background-image: url('./bottom.png');
+    background-repeat: no-repeat;
+
+}
