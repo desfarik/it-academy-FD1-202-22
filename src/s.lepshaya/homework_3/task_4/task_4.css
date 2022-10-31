@@ -1,0 +1,44 @@
+.container {
+    text-align: center;
+    width: 800px;
+}
+tr{
+    height: 50px;
+    border: 2px solid #000;
+}
+td {
+    border: 2px solid #000;
+    
+}
+table {
+    border-collapse: collapse;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 23px;
+}
+
+.table-color td{
+    width: calc(800px/6);
+    border: 0px solid #000;
+}
+.table-color tr{
+    border: 0px solid #000;
+}
+.grey {
+    background-color: #808080;
+}
+
+.pink {
+    background-color: #ffc0cb;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.orange {
+    background-color: #ff7f50;
+}
+
+.aquamarine {
+    background-color: #7fffd4;;
+}

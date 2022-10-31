@@ -1,0 +1,25 @@
+tr {
+    height: 50px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+.empty {
+    border: 0px solid #000;
+}
+.letter-a , .letter-d{
+    border: 5px solid #1e90ff;
+    color: #1e90ff;
+    border-radius: 4px;
+}
+.letter-b, .letter-f {
+    border: 5px solid #ff0000; ;
+    color:#ff0000 ;
+    border-radius: 4px;
+}
+.letter-c, .letter-e {
+    border: 5px solid #32cd32; ;
+    color: #32cd32;
+    border-radius: 4px;
+}
+

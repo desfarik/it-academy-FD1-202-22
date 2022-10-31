@@ -1,0 +1,25 @@
+.awesome-icons {
+    width: 160px;
+    border: 7px solid #ab47bc;
+    border-radius: 20px 0px 20px 0px;
+    padding: 10px 00px 10px 5px;
+    letter-spacing: 3px; 
+}
+.fa-solid, .fa-regular {
+    vertical-align: middle;
+}
+
+.fa-gear {
+    font-size: 45px;
+    color: #4fc3f7;
+}
+
+.fa-circle-xmark {
+    font-size: 50px;
+    color: #f06292;
+}
+
+.fa-check {
+font-size: 40px;
+color: #7dc681;
+}
