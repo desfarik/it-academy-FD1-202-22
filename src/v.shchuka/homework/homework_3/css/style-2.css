@@ -1,0 +1,67 @@
+body {
+  font-family: Anton, Arial, sans-serif;
+  font-size: 85px;
+}
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.cube-total {
+  width: 106px;
+  height: 106px;
+  border: 9px solid black;
+  display: inline-block;
+  text-align: center;
+  line-height: 106px;
+  border-radius: 9px;
+  margin: 2px;
+}
+.cubes-wrapper {
+  display: block;
+  white-space: pre-wrap;
+  text-align: center;
+  width: 527px;
+  min-width: 527px;
+  height: 384px;
+  line-height: 0px;
+}
+.cube-blue {
+  color: #1e90ff;
+  border-color: #1e90ff;
+}
+.cube-red {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+.cube-green {
+  color: #32cd32;
+  border-color: #32cd32;
+}
+.table-wrapper {
+  width: 527px;
+}
+
+table {
+  text-align: center;
+  margin-left: auto;
+  empty-cells: hide;
+  table-layout: fixed;
+  border-spacing: 3px;
+}
+td {
+  overflow: hidden;
+  border: 9px solid black;
+  border-radius: 9px;
+  height: 106px;
+  padding: 0px;
+}
+col {
+  width: 60.5px;
+}
+.cell {
+  outline: 1px solid red;
+  height: 106px;
+  overflow: hidden;
+  line-height: 106px;
+}
