@@ -1,0 +1,36 @@
+.border {
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 3px solid #ab47bc;
+  width: 85px;
+  border-radius: 30% 0%;
+  overflow: hidden;
+  }
+.icons {
+  float: left;
+  vertical-align: middle;
+  background-image: url("../images/sprite.png");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.icon_setting {
+  background-position-x: -387px;
+  background-position-y: -100px;
+  vertical-align: middle;
+}
+.icon_cancel {
+  background-position-x: -230px;
+  background-position-y: -260px;
+  }
+
+.icon_done {
+  background-position-x: -230px;
+  background-position-y: -40px;
+  margin-left: 60px;
+  margin-top: -23px;
+  margin-right: 5px;
+}

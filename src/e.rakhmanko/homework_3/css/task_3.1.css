@@ -1,0 +1,62 @@
+table,td {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 300px;
+}
+tr {
+    height: 20px;
+}
+.width_1 {
+    width: 100px;
+}
+
+.width_2 {
+    width: 300px;
+}
+.caption_font{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.td{
+    width:100px;
+}
+.col{
+    width: 100px;
+}
+.aquamarine{
+    background-color: aquamarine;
+
+}
+.coral{
+    background-color: coral;
+}
+.aquamarinius{
+    background-color: aquamarine;
+    border-color: aquamarine;
+    }
+.coralius{
+    background-color: coral;
+    border-color: coral;
+  }
+.pink{
+  
+    background-color:pink;
+    border-color: pink;
+}
+.gray{
+    background-color:gray;
+    border-color: gray;
+}
+.black{
+    background-color:black;
+ 
+}
+.five-color-table{
+    border-collapse: separate;
+    empty-cells: hide;
+    border:0px transparent;
+   
+}
