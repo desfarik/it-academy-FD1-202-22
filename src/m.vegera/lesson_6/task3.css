@@ -1,0 +1,8 @@
+body{
+    background-color: darkgray;
+}
+.item-page{
+    margin: auto;
+    width: 100px;
+    background-color: white;
+}
