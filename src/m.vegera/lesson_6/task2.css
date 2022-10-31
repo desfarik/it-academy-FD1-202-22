@@ -1,0 +1,27 @@
+body {
+    background-color: firebrick;
+
+}
+
+.page {
+    padding: 10px;
+    margin: 20px auto;
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.file-page {
+
+    border-top: 4px solid red;
+}
+
+.download-limit {
+    border-top: 4px solid blue;
+}
+
+.bold-text {
+    font-weight: bold;
+}

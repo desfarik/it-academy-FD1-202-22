@@ -1,0 +1,61 @@
+body {
+    background-color: grey;
+}
+
+.window {
+    margin: 10vh auto 10vh auto;
+    width: 80%;
+    height: 80vh;
+}
+
+.part-1 {
+    height: 45vh;
+    /*width: 80%;*/
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.part-2 {
+    margin: 0;
+    padding: 0;
+    height: 35vh;
+    /*width: 80%;*/
+    background-color: beige;
+}
+
+.common-button {
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    
+}
+
+.button {
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+
+}
+
+.result-1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+
+.result-2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.material-symbols-outlined {
+    color: white;
+    text-align: center;
+}
