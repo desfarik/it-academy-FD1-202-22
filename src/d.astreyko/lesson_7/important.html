@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            color: red;
+        }
+
+        div {
+            color: #000;
+        }
+
+        .box {
+            color: #a749b8;
+        }
+
+        .body .box {
+            color: #4fc2f3;
+        }
+
+        html > body > .box.box {
+            color: #7dc681!important;
+        }
+
+        #boxId {
+            color: #a749b8;
+        }
+    </style>
+</head>
+<body class="body">
+
+
+<div style="color: blue" id="boxId" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illo illum porro quaerat. Accusantium atque distinctio hic id nam praesentium sint ullam unde voluptates voluptatibus. Corporis esse odio sed sit.</div>
+</body>
+</html>

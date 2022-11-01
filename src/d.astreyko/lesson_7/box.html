@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background: #4fc2f3;
+        }
+
+        .container_2 .box {
+            margin-left: 0;
+        }
+
+        .container_2 > .box {
+            margin-left: auto;
+        }
+
+        .container_2 ~ .box {
+            background: blueviolet;
+        }
+
+        .container_2 + .box {
+            background: indianred;
+        }
+
+        .box_active .box, .box_disabled, .box {
+            color: #7d7d7d;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container_1">
+    <div class="box"></div>
+</div>
+<div class="container_2">
+    <div class="box"></div>
+    <div>
+        <div class="box"></div>
+    </div>
+    <div class="box"></div>
+</div>
+<div class="box box_active"></div>
+<div class="box box_disabled"></div>
+</body>
+</html>

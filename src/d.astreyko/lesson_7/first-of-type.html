@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        p > b:first-child {
+            color: red;
+        }
+
+        p > b:first-of-type {
+            color: red;
+        }
+
+        p > :nth-child(even) {
+            color: red;
+        }
+
+        p > :nth-child(2n) {
+            color: red;
+        }
+
+        p > :nth-child(odd) {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>
+        <span>span1</span>
+        <span class="solid">span2</span>
+        <span class="solid">span3</span>
+
+        <b class="solid">b1</b>
+        <b class="solid">b2</b>
+        <b class="solid">b3</b>
+
+    </p>
+
+
+</div>
+
+</body>
+</html>
