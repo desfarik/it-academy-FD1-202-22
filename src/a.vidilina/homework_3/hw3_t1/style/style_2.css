@@ -1,12 +1,3 @@
-h2 {
-  margin-left: 45px;
-}
-
-span.icon_size_100 {
-  font-size: 100px;
-  font-variation-settings: "OPSZ" 100;
-}
-
 .border {
   border: solid #ab47bc;
   border-radius: 25px 0 25px 0;
