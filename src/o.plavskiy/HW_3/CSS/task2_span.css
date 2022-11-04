@@ -1,0 +1,105 @@
+.cube_A {
+  display: inline-block;
+  color: #1e90ff;
+  border-width: 3px;
+  border-radius: 6px;
+
+  border-style: solid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  margin: 1px;
+}
+.cube_B {
+  display: inline-block;
+  color: red;
+  border-width: 3px;
+  border-radius: 6px;
+
+  border-style: solid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  margin: 1px;
+}
+.cube_C {
+  display: inline-block;
+  color: #32cd32;
+  border-width: 3px;
+  border-radius: 6px;
+
+  border-style: solid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  margin: 1px;
+}
+.cube_D {
+  display: inline-block;
+  color: #1e90ff;
+  border-width: 3px;
+  border-radius: 6px;
+
+  border-style: solid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  margin: 1px;
+}
+.cube_E {
+  display: inline-block;
+  color: #32cd32;
+  border-width: 3px;
+  border-radius: 6px;
+
+  border-style: solid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  margin: 1px;
+}
+.cube_F {
+  display: inline-block;
+  color: red;
+  border-width: 3px;
+  border-radius: 6px;
+
+  border-style: solid;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  margin: 1px;
+}
+.row_1 {
+  text-align: center;
+}
+.row_2 {
+  text-align: center;
+}
+.row_3 {
+  text-align: center;
+}

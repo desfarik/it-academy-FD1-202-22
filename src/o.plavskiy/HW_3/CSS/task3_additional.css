@@ -1,0 +1,131 @@
+.body {
+  font-family: "Roboto", sans-serif;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: black;
+  width: 400px;
+  height: 580px;
+  background-color: #ffc0cb;
+  margin: 0 auto;
+  padding: 10px 7px 10px;
+}
+.header_container {
+  height: 25px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: black;
+  border-width: 1px;
+  background-color: #7fffd4;
+  text-align: center;
+  line-height: 25px;
+}
+.main_container {
+  display: inline-block;
+  height: 500px;
+  width: 208px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: black;
+  border-width: 1px;
+  background-color: #7fffd4;
+  margin: 15px 0;
+}
+.top_image_container {
+  width: 177px;
+  height: 70px;
+  margin: 5px auto 10px;
+  background-color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 70px;
+}
+.first_article_container {
+  height: 137px;
+  width: 166px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  margin: 0 auto;
+  padding: 10px 3px 7px;
+}
+.heading_container {
+  width: 150px;
+  height: 43px;
+  background-color: #87ceeb;
+  margin: 0 auto 4px;
+  text-align: left;
+  font-size: 13px;
+  line-height: 22px;
+  padding-left: 5px;
+}
+.text_container {
+  width: 150px;
+  height: 85px;
+  background-color: #87ceeb;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #dda0dd;
+  font-size: 10px;
+  padding: 3px;
+  text-align: justify;
+}
+.second_article_container {
+  height: 137px;
+  width: 166px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  margin: 0 auto;
+  padding: 10px 3px 7px;
+  margin-top: 7px;
+  vertical-align: justify;
+  text-align: justify;
+}
+.bottom_image_container {
+  width: 177px;
+  height: 70px;
+  margin: 5px auto 10px;
+  background-color: white;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 70px;
+}
+.footer_container {
+  height: 25px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: black;
+  border-width: 1px;
+  background-color: #7fffd4;
+  text-align: center;
+  line-height: 25px;
+  margin-top: auto;
+}
+.banner_container {
+  display: inline-block;
+  height: 300px;
+  width: 161px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: black;
+  border-width: 1px;
+  background-color: #7fffd4;
+  vertical-align: top;
+  margin: 15px 5px 0;
+  padding: 3px;
+}
+.top_banner {
+width: 158px;
+height: 148px;
+background-color: white;
+margin: 0 auto;
+}
+.bottom_banner {
+  width: 158px;
+  height: 148px;
+  background-color: white;
+  margin: 2px auto 2px;
+}
