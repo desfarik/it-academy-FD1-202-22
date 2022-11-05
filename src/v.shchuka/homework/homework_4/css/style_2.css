@@ -1,0 +1,12 @@
+#special {
+  background-color: yellow;
+}
+p:first-of-type .alert:first-child {
+  border: 3px solid red;
+}
+.stop {
+  background-color: #87ceeb;
+}
+.go {
+  background-color: green;
+}
