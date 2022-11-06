@@ -67,7 +67,7 @@ tr:nth-child(even) > td:nth-child(odd) {
     -50px 100px 0 -10px black, -100px 50px 0 -10px black,
     -100px -50px 0 -10px black, -50px -100px 0 -10px black;
 }
-:hover {
+td:hover {
   cursor: pointer;
 }
 p {
