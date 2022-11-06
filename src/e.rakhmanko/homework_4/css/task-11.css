@@ -1,0 +1,17 @@
+tr:nth-child(odd) > td:nth-child(even) {
+  background-color: black;
+}
+tr:nth-child(even) > td:nth-child(odd) {
+  background-color: black;
+}
+
+.cell:nth-child(n):nth-child(-n + 9):nth-child(odd),
+.cell:nth-child(n + 10):nth-child(-n + 17):nth-child(even),
+.cell:nth-child(n + 18):nth-child(-n + 25):nth-child(odd),
+.cell:nth-child(n + 26):nth-child(-n + 32):nth-child(even),
+.cell:nth-child(n + 34):nth-child(-n + 41):nth-child(odd),
+.cell:nth-child(n + 42):nth-child(-n + 49):nth-child(even),
+.cell:nth-child(n + 50):nth-child(-n + 57):nth-child(odd),
+.cell:nth-child(n + 58):nth-child(-n + 65):nth-child(even) {
+  background-color: black;
+}

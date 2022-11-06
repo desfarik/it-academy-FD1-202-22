@@ -1,0 +1,14 @@
+body{
+    counter-reset: hash;
+}
+p::after {
+counter-increment: hash;
+content:' #'counter(hash);
+}
+p:hover{
+    background-color: green;
+}
+
+p:hover~p{
+    background-color: red;
+}
