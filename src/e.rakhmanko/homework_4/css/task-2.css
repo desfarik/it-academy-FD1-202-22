@@ -1,12 +1,12 @@
 #special {
   background-color: yellow;
 }
-span.alert:not(.stop):not(.go) {
+.alert:not(.stop,.go){
   border: 3px solid red;
 }
-span.alert.stop {
+.alert.stop {
   background-color: blue;
 }
-span.alert.go {
+.alert.go {
   background-color: green;
 }
