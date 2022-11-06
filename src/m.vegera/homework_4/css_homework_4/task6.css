@@ -1,0 +1,8 @@
+body {
+    counter-reset: Number;
+}
+
+p::after {
+    counter-increment: Number;
+    content: " #" counter(Number);
+}

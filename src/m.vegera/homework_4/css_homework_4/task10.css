@@ -1,0 +1,12 @@
+p:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+p:nth-child(even):hover~p:nth-child(even) {
+    background-color: red;
+}
+
+p:nth-child(odd):hover~p:nth-child(odd) {
+    background-color: red;
+}
