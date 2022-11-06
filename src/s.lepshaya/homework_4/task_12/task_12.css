@@ -1,0 +1,13 @@
+body:hover p {
+    color: red;
+}
+
+p{
+    margin: 0px;
+}
+
+p:hover,
+p:hover ~ p {
+    color: black !important;
+}
+
