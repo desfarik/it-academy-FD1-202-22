@@ -1,0 +1,34 @@
+/*table, tr, td{
+    border: solid 1px black;
+}*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 700px;
+}
+tr{
+    padding: 20px;
+}
+tr:nth-child(odd):not(:nth-child(1)) {
+    background-color: #f2f5fe;
+    
+}
+.status{
+    padding: 2px 3px;
+    border: solid 1px black;
+    border-radius: 3px;
+   
+}
+.status-color-unpaid{
+    color: rgb(224, 47, 47);
+    font-weight: bold;
+    background-color: rgb(238, 119, 119);
+    border-color: brown;
+}
+.status-color-paid{
+    color: #548555;
+    background-color: #c4e2c6;
+    font-weight: bold;
+    border-color: 548555;
+
+}
