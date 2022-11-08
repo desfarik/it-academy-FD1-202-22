@@ -6,6 +6,6 @@ body:hover p {
 p:hover ~ p{
     background-color: white;
 }
-/*p:hover{
-    background-color:white; !important}*/
+p:hover{
+    background-color:white !important}
 
