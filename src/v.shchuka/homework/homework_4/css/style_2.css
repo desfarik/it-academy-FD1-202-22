@@ -4,9 +4,9 @@
 p:first-of-type .alert:first-child {
   border: 3px solid red;
 }
-.stop {
+.alert.stop {
   background-color: #87ceeb;
 }
-.go {
+.alert.go {
   background-color: green;
 }

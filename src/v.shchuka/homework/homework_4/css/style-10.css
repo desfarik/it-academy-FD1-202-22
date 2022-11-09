@@ -9,9 +9,7 @@ p:hover {
   background-color: red;
   cursor: pointer;
 }
-p:nth-child(even):hover ~ :nth-child(even) {
-  background-color: red;
-}
+p:nth-child(even):hover ~ :nth-child(even),
 p:nth-child(odd):hover ~ :nth-child(odd) {
   background-color: red;
 }

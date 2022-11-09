@@ -10,7 +10,7 @@ a:hover {
 .container::first-line {
   color: red;
 }
-p:first-child {
+.container > :first-child {
   color: blue;
 }
 tr:nth-child(even) {
