@@ -1,10 +1,10 @@
-[title] {
+a[title] {
   border-color: pink;
 }
-[href*="contact"] {
+a[href*="contact"] {
   border-color: orange;
 }
-[href^="https://"]
+a[href^="https://"]
 {
   border-color: green;
 }
