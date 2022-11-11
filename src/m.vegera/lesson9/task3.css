@@ -1,0 +1,18 @@
+.container{
+    background-color: lightgrey;
+    height: 100px;
+    display: flex;
+  /*  justify-content: center;*/
+    margin: 20;
+}
+.content{
+   height: 80px;
+   width: 300px;
+   margin: auto 10px;
+  
+}
+.date{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+}

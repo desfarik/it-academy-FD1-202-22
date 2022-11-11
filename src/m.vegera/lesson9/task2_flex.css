@@ -1,0 +1,60 @@
+.container {
+    height: 100%;
+    /* margin: 2px;*/
+}
+
+.header {
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.main-part {
+    height: 650px;
+    display: flex;
+    margin: 1% 0;
+
+}
+
+.red-main-part {
+
+    width: 40%;
+    background-color: brown;
+
+}
+
+.additional-part {
+
+    margin-left: 1%;
+    width: 59%;
+}
+
+.additional-part-green {
+    height: 30%;
+    background-color: green;
+    margin-bottom: 1%;
+}
+
+.additional-part-yellow {
+    height: 30%;
+    background-color: yellow;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.additional-end-part {
+    display: flex;
+ 
+    height: 36%;
+   
+}
+
+.additional-part-blue {
+    background-color: blue;
+    width: 50%;
+}
+
+.additional-part-pink {
+    background-color: pink;
+    width: 50%;
+    margin-left: 2%;
+}

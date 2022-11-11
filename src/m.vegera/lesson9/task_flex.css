@@ -1,0 +1,26 @@
+.container {
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: solid 2px red;
+}
+
+.box {
+    width: 10vw;
+    height: 10vw;
+    background-color: blue;
+   }
+   .figure{
+    
+   }
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
