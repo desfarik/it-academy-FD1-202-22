@@ -1,0 +1,40 @@
+table {
+  border-collapse: collapse;
+  font-size: 25px;
+  border: solid #e7e7e7;
+}
+
+th,
+td,
+tr {
+  width: 150px;
+}
+
+tr:nth-child(odd):not(:first-child) {
+  background-color: #e7e7e7;
+}
+
+/*tr:not(first-child) > td {
+  color: blue;
+}*/
+
+.color_green {
+  background-color: #c3e4c7;
+  color: #5a8b5b;
+}
+
+.color_red {
+  background-color: #fec6d1;
+  color: #98424d;
+}
+
+.color_yellow {
+  background-color: #ffedbd;
+  color: #af9e54;
+}
+
+.border {
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+}

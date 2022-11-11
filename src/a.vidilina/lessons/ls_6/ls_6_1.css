@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(70deg, #5b3985 #4d939b);
+}
+
+table {
+  width: 1000px;
+  border-collapse: collapse;
+  color: white;
+  font-size: 25px;
+}
+
+tr > th {
+  border: solid #55608e 1px;
+  background-color: #55608e;
+  text-align: left;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+td {
+  background-color: #55608e9a;
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: #0c497ac4;
+}
+
+td:hover {
+  background-color: #0c497ac4;
+}
