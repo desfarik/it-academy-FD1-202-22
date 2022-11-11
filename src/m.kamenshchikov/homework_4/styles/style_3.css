@@ -1,0 +1,19 @@
+a {
+  color: orange;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  text-decoration: none;
+}
+.container::first-line {
+  color: red;
+}
+.container p:first-child {
+  color: blue;
+}
+table tr:nth-child(2n) {
+  background-color: #333;
+  color: white;
+}
