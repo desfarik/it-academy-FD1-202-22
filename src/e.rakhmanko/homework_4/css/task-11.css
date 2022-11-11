@@ -1,10 +1,6 @@
-tr:nth-child(odd) > td:nth-child(even) {
+tr:nth-child(odd) > td:nth-child(even),tr:nth-child(even) > td:nth-child(odd) {
   background-color: black;
 }
-tr:nth-child(even) > td:nth-child(odd) {
-  background-color: black;
-}
-
 .cell:nth-child(n):nth-child(-n + 9):nth-child(odd),
 .cell:nth-child(n + 10):nth-child(-n + 17):nth-child(even),
 .cell:nth-child(n + 18):nth-child(-n + 25):nth-child(odd),
