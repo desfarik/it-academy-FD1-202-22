@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display
+}
+.side-bar{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+.flex-grow{
+    flex-grow: 1;
+}
