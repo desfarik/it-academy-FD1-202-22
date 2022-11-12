@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 10vw;
+        height: 10vw;
+        background-color: red;
+      }
+      .top-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .bottom-container {
+        justify-content: space-between;
+        display: flex;
+        align-items: flex-end;
+      }
+      .container {
+        border: solid 1px red;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        aspect-ratio: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-container">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="bottom-container">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>
