@@ -1,0 +1,12 @@
+#special {
+  background-color: yellow;
+}
+.alert:not(.stop,.go){
+  border: 3px solid red;
+}
+.alert.stop {
+  background-color: blue;
+}
+.alert.go {
+  background-color: green;
+}
