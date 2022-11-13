@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f1f1f1;
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        width: 270px;
+        background-color: white;
+        border-radius: 20px;
+        margin: auto;
+        color: #718797;
+        padding: 20px;
+      }
+      .icon {
+        width: 60px;
+        height: 60px;
+        background-color: #f1f1f1;
+        margin: 20px;
+        border-radius: 15px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .list-item {
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .active {
+        background-color: #5374ff;
+        color: white;
+      }
+      .material-symbols-outlined {
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="list-item">
+        <div class="icon">
+          <span class="material-symbols-outlined"> circle </span>
+        </div>
+        <div>Global</div>
+      </div>
+      <div class="list-item">
+        <div class="icon">
+          <span class="material-symbols-outlined"> account_balance </span>
+        </div>
+        <div>Business</div>
+      </div>
+      <div class="list-item">
+        <div class="icon">
+          <span class="material-symbols-outlined"> play_arrow </span>
+        </div>
+        <div>Entertaiment</div>
+      </div>
+      <div class="list-item">
+        <div class="icon active">
+          <span class="material-symbols-outlined"> checkroom </span>
+        </div>
+        <div style="color:black ;">Sports</div>
+      </div>
+      <div class="list-item">
+        <div class="icon">
+          <span class="material-symbols-outlined"> fitness_center </span>
+        </div>
+        <div>Health</div>
+      </div>
+    </div>
+  </body>
+</html>
