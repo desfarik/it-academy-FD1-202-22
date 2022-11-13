@@ -1,0 +1,75 @@
+html {
+  font-family: sans-serif;
+  color: #718797;
+  line-height: 150%;
+}
+h2,
+b {
+  color: #313237;
+  line-height: 150%;
+}
+.contairner {
+  width: 1300px;
+  background-color: #e8eaee;
+  display: flex;
+}
+.section {
+  background-color: #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.image {
+  width: 50%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  width: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  gap: 10px;
+
+}
+.photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+.grow {
+  flex-grow: 1;
+}
+.section column {
+  background-color: #ffffff;
+  width: 40%;
+}
+.section.row {
+  width: 75%;
+  height: 30%;
+}
+
+.section.column {
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  padding: 20px;
+}
+.section.column > .image {
+  width: 100%;
+}
