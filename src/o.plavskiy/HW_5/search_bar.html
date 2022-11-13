@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search_bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      body {
+        background-color: #e8eaee;
+      }
+      .container {
+        font-family: 'Roboto', sans-serif;
+        width: 35vw;
+        background-color: white;
+        border-radius: 15px;
+        height: 70px;
+        padding: 15px;
+      }
+      .search_container {
+        align-items: center;
+        display: flex;
+       height: 45px;
+       background-color: #f2f5f8;
+       border-radius: 5px;
+       padding-left: 15px;
+      }
+      .search_icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+        background-color: #5374ff;
+        border-radius: 5px;
+      }
+      .flex-grow {
+        flex-grow: 1;
+      }
+      .text {
+        color: #94a5b1;
+      }
+      .sharps_container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        color: #718797;
+        font-weight: bold;
+        margin: 10px;
+      }
+      .sharp {
+        color: #c4cfd8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search_container">
+        <div class="text">Search for articles</div>
+        <div class="flex-grow"></div>
+        <div><span class="material-symbols-outlined search_icon">
+            manage_search
+            </span></div>
+      </div>
+      <div class="sharps_container">
+        <div><span class="sharp">#</span>Politics</div>
+        <div><span class="sharp">#</span>Science</div>
+        <div><span class="sharp">#</span>Movies</div>
+        <div><span class="sharp">#</span>Technology</div>
+      </div>
+    </div>
+  </body>
+</html>

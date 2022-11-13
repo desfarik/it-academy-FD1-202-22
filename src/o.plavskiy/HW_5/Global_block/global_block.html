@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>global_news</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      body {
+        background-color: #e8eaee;
+      }
+      .main_container {
+        display: flex;
+        background-color: white;
+        width: 55vw;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 5px;
+        font-family: "Roboto", sans-serif;
+      }
+      .picture {
+        height: 140px;
+        border-radius: 10px;
+        vertical-align: middle;
+      }
+      .header {
+        font-size: 10px;
+        font-weight: 600;
+      }
+      .information {
+        margin: 15px;
+      }
+      .text {
+        font-size: 7px;
+        color: #b0bec5;
+        margin: 10px 0;
+        text-align: justify;
+      }
+      .photo {
+        width: 25px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .information_about_author {
+        display: flex;
+        align-items: center;
+        line-height: 10px;
+      }
+      .name {
+        font-size: 7px;
+        font-weight: bold;
+      }
+      .date {
+        font-size: 6px;
+        color: #b0bec5;
+      }
+      .flex_grow {
+        flex-grow: 1;
+      }
+      .share {
+        font-size: 15px;
+        color: #8fa0ad;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_container">
+      <img class="picture" src="./capitol.jpg.webp" alt="capitol" />
+      <div class="information">
+        <div class="header">
+          The Republican midterm flameout is now official. Democrats have
+          retained control of the US Senate. Here's why that matters.
+        </div>
+        <div class="text">
+          Four days after tens of millions of Americans went to the polls,
+          Catherine Cortez Masto's narrow victory in Nevada late on Saturday
+          finally delivered a decisive result in the national political battle.
+        </div>
+        <div class="information_about_author">
+          <div>
+            <img class="photo" src="./anthonyzurcher.jpg" alt="author" />
+          </div>
+          <div class="information_about_article">
+            <div class="name">Anthony Zurcher</div>
+            <div class="date">Nov 13, 2022</div>
+          </div>
+          <div class="flex_grow"></div>
+          <span class="material-symbols-outlined share"> share </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
