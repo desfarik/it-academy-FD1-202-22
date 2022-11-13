@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+      table {
+        margin: 0 auto;
+        font-family: "Roboto", sans-serif;
+        border-collapse: collapse;
+      }
+      th {
+    font-size: 12px;
+      }
+      tr {
+        height: 30px;
+      }
+      tr:nth-child(even) {
+        background-color: aliceblue;
+      }
+      td:first-child {
+        text-align: left;
+        padding-left: 20px;
+      }
+      td:last-child {
+        text-align: right;
+        padding-right: 20px;
+      }
+      td:nth-child(4) {
+        text-align: center;
+      }
+      td:nth-child(4) {
+        font-weight: bold;
+      }
+      .batton_1{
+    border-radius: 2px;
+    background-color: #fdc6d1;
+    color: #93424a;
+    width: 100px;
+    margin: 0 auto;
+      }
+      .batton_2 {
+
+    border-radius: 2px;
+    background-color: #c4e2c6;
+    color: #497e50;
+    width: 100px;
+    margin: 0 auto;
+      }
+      .batton_3 {
+
+    border-radius: 2px;
+    background-color: #fff0bf;
+    color: #998b3c;
+    width: 100px;
+    margin: 0 auto;
+      }
+      .batton_4 {
+
+    border-radius: 2px;
+    background-color: #fff0bf;
+    color: #998b3c;
+    width: 100px;
+    margin: 0 auto;
+      }
+      .batton_5 {
+
+    border-radius: 2px;
+    background-color: #c4e2c6;
+    color: #497e50;
+    width: 100px;
+    margin: 0 auto;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col style="width: 120px" />
+        <col style="width: 120px" />
+        <col style="width: 120px" />
+        <col style="width: 120px" />
+        <col style="width: 120px" />
+      </colgroup>
+      <tr>
+        <th>INVOICE</th>
+        <th>COMPANY</th>
+        <th>DUE DATE</th>
+        <th>STATUS</th>
+        <th>AMOUNT</th>
+      </tr>
+      <tr>
+        <td>INV_1001</td>
+        <td>Paragon</td>
+        <td>1/5/2021</td>
+        <td><div class="batton_1">Unpaid</div></td>
+        <td>$520.18</td>
+      </tr>
+      <tr>
+        <td>INV_1002</td>
+        <td>Sonic</td>
+        <td>1/4/2021</td>
+        <td><div class="batton_2">Paid</div></td>
+        <td>$415.25</td>
+      </tr>
+      <tr>
+        <td>INV_1003</td>
+        <td>Innercircle</td>
+        <td>1/2/2021</td>
+        <td><div class="batton_3">Pending</div></td>
+        <td>$1324.84</td>
+      </tr>
+      <tr>
+        <td>INV_1004</td>
+        <td>Varsity Plus</td>
+        <td>12/30/2020</td>
+        <td><div class="batton_4">Pending</div></td>
+        <td>$998.26</td>
+      </tr>
+      <tr>
+        <td>INV_1005</td>
+        <td>Highlander</td>
+        <td>12/18/2020</td>
+        <td><div class="batton_5">Paid</div</td>
+        <td>$1152.35</td>
+      </tr>
+    </table>
+  </body>
+</html>

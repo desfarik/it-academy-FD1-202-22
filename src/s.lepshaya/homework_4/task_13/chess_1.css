@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+}
+.cell:nth-child(n):nth-child(-n+8):nth-child(even), 
+.cell:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.cell:nth-child(n+18):nth-child(-n+24):nth-child(even),
+.cell:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.cell:nth-child(n+33):nth-child(-n+40):nth-child(even),
+.cell:nth-child(n+41):nth-child(-n+48):nth-child(odd),
+.cell:nth-child(n+49):nth-child(-n+56):nth-child(even),
+.cell:nth-child(n+57):nth-child(-n+64):nth-child(odd)
+{
+    background-color: #b0b0b0;
+}
+
+.container {
+    width: 800px;
+    overflow: hidden;
+    
+}
+.figure{
+    width: 100px;
+    height: 100px;
+    display: none;
+
+}
+.cell{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: -5px -5px 0 0;
+    background-color: white;
+ }
+
+.cell:hover > .figure {
+    display: inline-block;
+    box-shadow: 
+    100px 0 20px -35px black, 
+    0 -100px  20px -35px black, 
+    -100px 0 20px -35px black, 
+    0 100px 20px -35px black,
+    200px 0 20px -35px black, 
+    0 -200px 20px -35px black, 
+    -200px 0 20px -35px black, 
+    0 200px 20px -35px black,
+    300px 0 20px -35px black, 
+    0 -300px 20px -35px black, 
+    -300px 0 20px -35px black, 
+    0 300px 20px -35px black,
+    400px 0 20px -35px black, 
+    0 -400px 20px -35px black, 
+    -400px 0 20px -35px black, 
+    0 400px 20px -35px black,
+    500px 0 20px -35px black, 
+    0 -500px 20px -35px black, 
+    -500px 0 20px -35px black, 
+    0 500px 20px -35px black,
+    600px 0 20px -35px black, 
+    0 -600px 20px -35px black, 
+    -600px 0 20px -35px black, 
+    0 600px 20px -35px black,
+    700px 0 20px -35px black, 
+    0 -700px 20px -35px black, 
+    -700px 0 20px -35px black, 
+    0 700px 20px -35px black;
+    position: relative;
+    z-index: 1; 
+}
+
+
+
+

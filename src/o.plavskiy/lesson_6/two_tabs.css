@@ -1,0 +1,43 @@
+.window_one {
+color: gray;
+  text-align: center;
+  padding-top: 20px;
+  height: 120px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px 40px 40px 40px;
+  box-shadow: 0 -3px red;
+  margin-bottom: 30px;
+  
+}
+.draft {
+  display: block;
+  font-weight: bold;
+}
+.text {
+  display: block;
+  font-size: 10px;
+  margin-top: 20px;
+}
+.window_two {
+    color: gray;
+    text-align: center;
+    padding-top: 20px;
+    height: 120px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px 40px 40px 40px;
+    box-shadow: 0 -3px blue;    
+}
+.cloud_download {
+font-weight: bold;
+color: blueviolet;
+font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+}
+.body{
+margin-left: 40px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>task9</title>
+    <style>
+      p {
+        font-size: 20px;
+      }
+      p:hover {
+    background-color: red;
+      }
+      p:nth-child(odd):hover ~ p:nth-child(odd) {
+      background-color: red;
+      }
+      p:nth-child(even):hover ~ p:nth-child(even) {
+      background-color: red;
+      }
+      body {
+        counter-reset: p;
+      }
+      p::after {
+        counter-increment: p;
+        content:"#"counter(p);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+  </body>
+</html>
