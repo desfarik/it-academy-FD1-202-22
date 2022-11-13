@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      p {
+        font-size: 20px;
+      }
+
+      body {
+        counter-reset: num;
+      }
+
+      p::after {
+        counter-increment: num;
+        content: " #" counter(num);
+      }
+
+      p:hover,
+      p:nth-child(even):hover ~ p:nth-child(even) {
+        background-color: red;
+      }
+
+      p:hover,
+      p:nth-child(odd):hover ~ p:nth-child(odd) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+    <p>Параграф</p>
+  </body>
+</html>
