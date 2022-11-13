@@ -1,0 +1,26 @@
+.heading1{
+
+    color:blue;
+    font-size: 200%; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    position: relative; 
+    top: 5px; 
+ font-weight: 600;
+}
+.heading2{
+    color: aliceblue;
+    background-color: blue;
+    font-size: 200%; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    position: relative; 
+    top: 5px;  
+    font-weight: 600;
+}
+.text1{
+    font-size: 200%; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    position: relative; 
+    top: 5px;  
+    
+}  
+
