@@ -1,6 +1,7 @@
 html {
   font-family: sans-serif;
   color: #718797;
+
 }
 h2,
 b {
@@ -12,6 +13,7 @@ b {
   background-color: #e8eaee;
   display: flex;
   flex-wrap: wrap;
+
 }
 .profile {
   background-color: #ffffff;
@@ -63,63 +65,68 @@ b {
   text-align: center;
   border-radius: 10px;
 }
-.profile {
-  height: 50%;
+.profile{
+    height: 50%;
+   
 }
-.sidebar {
-  flex-direction: column;
-  align-items: baseline;
-  padding: 30px;
+.sidebar{
+flex-direction: column;
+align-items: baseline;
+padding:30px;
+
 }
 
-.row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: larger;
-  font-weight: bold;
+.row{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: larger;
+    font-weight: bold;
 }
-.icons{
-  background-color: #ecf0f3;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px 10px 0px 10px;
+.material-symbols-outlined{
+    background-color: #ecf0f3;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding:10px 10px 0px 10px;
+
 }
-.sports {
-  background-color: #5374ff;
-  color: white;
+.sports{
+    background-color: #5374ff;
+    color:white;
 }
-.search {
-  background-color: #ffffff;
-  border-radius: 25px;
-  margin: 20px;
-  padding: 30px;
-  font-weight: bold;
+.search{
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 30px;
+    font-weight: bold;
+    
 }
-.search-line {
-  display: flex;
-  align-items: center;
-  background-color: #f2f5f8;
-  width: 400px;
-  padding-left: 10px;
+.search-line{
+    display: flex;
+    align-items: center;
+    background-color: #f2f5f8;
+    width: 400px;
+   padding-left: 10px;
+   
 }
-.loupe {
-  background-color: #5374ff;
-  color: white;
+.loupe{
+    background-color: #5374ff;
+    color:white;
 }
-.grow {
-  flex-grow: 1;
+.grow{
+    flex-grow: 1;
 }
-.hashtags {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+.hashtags{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-.direction {
-  width: 50px;
-  justify-content: center;
-  font-size: 40px;
-  border-radius: 50%;
+.direction{
+    width: 50px;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 50%;
 }
