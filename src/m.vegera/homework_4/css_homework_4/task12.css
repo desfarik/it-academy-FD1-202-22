@@ -1,0 +1,11 @@
+body:hover p {
+    background-color: red;
+    cursor: pointer;
+}
+
+p:hover ~ p{
+    background-color: white;
+}
+p:hover{
+    background-color:white !important}
+
