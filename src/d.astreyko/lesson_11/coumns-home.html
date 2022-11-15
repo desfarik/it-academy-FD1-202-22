@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .col {
+            width: 200px;
+        }
+
+        .col:first-child .row, .col-blue {
+            background: #4fc2f3;
+        }
+
+        .col:last-child {
+            background: #f26c61;
+        }
+
+        .flex-grow {
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="col">
+        <div class="row"> text 1</div>
+        <div class="flex-grow"></div>
+    </div>
+    <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam animi at dolores eius
+        error, excepturi non, numquam quae, qui quibusdam reiciendis sapiente? Facilis nam perferendis qui quod
+        suscipit.
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-blue">
+        text 1
+    </div>
+    <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam animi at dolores eius
+        error, excepturi non, numquam quae, qui quibusdam reiciendis sapiente? Facilis nam perferendis qui quod
+        suscipit.
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 50vw;
+            height: 50vw;
+            border: 1px solid #f26c61;
+        }
+
+        .container_2 {
+            width: 50%;
+            aspect-ratio: 1 / 1;
+            border: 1px solid #f26c61;
+        }
+
+        .container_3 {
+            width: 50%;
+            border: 1px solid #f26c61;
+        }
+
+        .container_3:before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+</div>
+
+<div class="container_2">
+</div>
+
+<div class="container_3">
+</div>
+</body>
+</html>

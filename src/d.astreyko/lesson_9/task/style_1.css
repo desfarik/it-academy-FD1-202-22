@@ -1,0 +1,20 @@
+.container {
+  width: 50vw;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+.box {
+  width: 20%;
+  aspect-ratio: 1/1;
+  background-color: rgb(40, 202, 102);
+  border: 1px solid black;
+}
+.container_2 {
+  display: flex;
+  width: 100%;
+  justify-items: flex-end;
+}

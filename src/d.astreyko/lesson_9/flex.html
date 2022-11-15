@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #4fc2f3;
+            margin: 10px;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .flex-container {
+            background: #7dc681;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>flex</h2>
+<div class="flex-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<h2>block</h2>
+
+<div style="background: #7dc681;">
+    <div>
+        <div class="box inline-block"></div>
+        <div class="box inline-block"></div>
+        <div class="box inline-block"></div>
+    </div>
+</div>
+
+</body>
+</html>
