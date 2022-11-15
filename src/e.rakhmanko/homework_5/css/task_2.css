@@ -54,13 +54,14 @@ b {
 .grow {
   flex-grow: 1;
 }
-.section column {
+.section .column {
   background-color: #ffffff;
   width: 40%;
 }
 .section.row {
-  width: 75%;
+
   height: 30%;
+  width: fit-content;
 }
 
 .section.column {

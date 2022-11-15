@@ -46,11 +46,12 @@ html {
   width: 400px;
 }
 .buttons {
+  border: 2px solid  #f2f5f8;
   background-color: #f2f5f8;
   border-radius: 10px;
   padding: 10px 25px;
 }
-.last {
+.last:hover {
   border: 2px solid #7994ff;
   color: #7994ff;
   background-color: #f2f7ff;
