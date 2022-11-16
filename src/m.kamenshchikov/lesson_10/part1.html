@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+      body {
+        margin-left: 30px;
+        font-family: "Roboto", sans-serif;
+      }
+      .first-row {
+        width: 600px;
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .date {
+        background-color: white;
+        width: 60px;
+        border-radius: 30px;
+        margin: 20px 20px;
+        text-align: center;
+        padding: 10px 5px;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        color: #4a148c;
+        font-weight: bold;
+      }
+      .chevron_right {
+        font-size: 40px;
+        color: #4a148c;
+        font-weight: bold;
+        padding: 10px;
+      }
+      span {
+        font-weight: 100;
+        font-size: 15px;
+      }
+      .second-row {
+        width: 600px;
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        color: #4a148c;
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+      .flex-grow {
+        flex-grow: 1;
+      }
+      h2 {
+        font-size: 30px;
+        color: #4a148c;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Today</h2>
+    <div class="first-row">
+      <div class="info">
+        <div class="date">23 <span>Mon</span></div>
+        <div>
+          <div>Food app concept</div>
+          <div><span>UI Design - 13:00 pm</span></div>
+        </div>
+      </div>
+      <div><span class="material-symbols-outlined chevron_right"> chevron_right </span></div>
+    </div>
+    <div class="second-row">
+      <div class="date">25 <span>Wed</span></div>
+      <div>
+        <div>Landing page UI full illustration</div>
+        <div><span>UI Design - 10:00 am</span></div>
+      </div>
+      <div class="flex-grow"></div>
+      <div><span class="material-symbols-outlined chevron_right"> chevron_right </span></div>
+    </div>
+  </body>
+</html>
