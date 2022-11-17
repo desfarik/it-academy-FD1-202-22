@@ -187,9 +187,9 @@ p {
     margin-top: 10px;
 }
 
-/*div.video-views:first-child{
+.video-views > :first-child{
     margin-right: 20px;
-}*/
+}
 
 .news-container-line {
     display: flex;
