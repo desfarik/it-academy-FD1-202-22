@@ -1,0 +1,13 @@
+.Checked-hover + label::before{
+font-family: 'Material Symbols Outlined';
+}
+ 
+.Checked-hover{
+    display: none;
+}
+.Checked-hover:checked + label::before{
+    content: "check_box";
+}
+.Checked-hover:not(:checked) + label::before{
+    content: "check_box_outline_blank";
+}
