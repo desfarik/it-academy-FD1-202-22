@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        input {
+            accent-color: red;
+        }
+
+    </style>
+
+    <style>
+        .material-symbols-outlined:hover {
+            font-variation-settings: 'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+
+        .icon:before {
+            font-family: 'Material Symbols Outlined';
+            content: 'settings';
+        }
+
+        .icon:hover:before {
+            color: red;
+            font-variation-settings: 'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+    </style>
+</head>
+<body>
+
+<span class="icon"></span>
+<span class="material-symbols-outlined">
+settings
+</span>
+<br>
+<form action="">
+
+    <input type="text" id="text">
+    <button type="button" onclick="text.value = ''">clear</button>
+
+    <input type="radio" name="custom-radio" value="1"> text1
+    <input type="radio" name="custom-radio" value="2"> text2
+
+    <br>
+    <input type="checkbox" name="custom-checkbox" value="1"> text1
+    <input type="checkbox" name="custom-checkbox" value="2"> text2
+
+    <button>submit</button>
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+</form>
+
+</body>
+</html>
