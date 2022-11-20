@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c57e02f75e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="layout_1-wrapper">
+      <div class="layout_1-title">Registration</div>
+      <form action="">
+        <div class="layout_1-checkboxes-wrapper">
+          <input
+            class="layout_1-checkbox"
+            id="personal"
+            type="checkbox"
+            name="personal"
+            hidden
+          />
+          <label class="layout_1-checkbox-label" for="personal"
+            ><span>Personal</span></label
+          >
+          <input
+            class="layout_1-checkbox"
+            id="company"
+            type="checkbox"
+            name="company"
+            hidden
+          />
+          <label class="layout_1-checkbox-label" for="company"
+            ><span>Company</span></label
+          >
+        </div>
+        <div class="layout_1-fields-wrapper">
+          <div class="layout_1-field-container">
+            <label for="layout_1-email">
+              <div class="layout_1-icon-container">
+                <span class="material-symbols-outlined layout_1-icon">
+                  mark_as_unread
+                </span>
+              </div>
+            </label>
+            <input
+              class="layout_1-field"
+              id="layout_1-email"
+              type="email"
+              name="email_1"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="layout_1-field-container">
+            <label for="layout_1-name">
+              <div class="layout_1-icon-container">
+                <span class="material-symbols-outlined layout_1-icon">
+                  person
+                </span>
+              </div>
+            </label>
+            <input
+              class="layout_1-field"
+              id="layout_1-name"
+              type="text"
+              name="name_1"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="layout_1-field-container">
+            <label for="layout_1-password">
+              <div class="layout_1-icon-container">
+                <span class="material-symbols-outlined layout_1-icon">
+                  shield
+                </span>
+              </div>
+            </label>
+            <input
+              class="layout_1-field"
+              id="layout_1-password"
+              type="password"
+              name="password_1"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="layout_1-checkboxes-wrapper padding-new">
+            <input
+              class="layout_1-checkbox"
+              id="male"
+              type="checkbox"
+              name="maler"
+              hidden
+            />
+            <label for="male" class="layout_1-checkbox-label"
+              ><span>Male</span></label
+            >
+            <input
+              class="layout_1-checkbox"
+              id="female"
+              type="checkbox"
+              name="female"
+              hidden
+            />
+            <label for="female" class="layout_1-checkbox-label"
+              ><span>Female</span></label
+            >
+          </div>
+        </div>
+        <div class="layout_1-footer-wrapper">
+          <div class="layout_1-footer-content">
+            By clicning Register, you agree on our
+            <a class="layout_1-footer-link" href="">terms and condition</a>.
+          </div>
+          <button class="layout_1-button" type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="layout_2-wrapper">
+      <div class="layout_2-container">
+        <div class="layout_2-title">Login #10</div>
+        <div class="layout_2-subtitle">Have an account?</div>
+        <form action="">
+          <div class="layout_2-field-container">
+            <input
+              class="layout_2-field"
+              type="text"
+              name="username_1"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="layout_2-field-container">
+            <input
+              class="layout_2-field"
+              id="layout_2-password"
+              type="password"
+              name="password#2"
+              placeholder="Password"
+              required
+            />
+            <label class="layout_2-field-label" for="layout_2-password"></label>
+          </div>
+          <div class="layout_2-field-container">
+            <button class="layout_2-field layout_2-button-sign" type="submit">
+              SIGN IN
+            </button>
+          </div>
+          <div class="layout_2-checkbox-container">
+            <input
+              class="layout_2-checkbox"
+              id="remember"
+              type="checkbox"
+              name="remember_1"
+              hidden
+            />
+            <label class="layout_2-checkbox-label" for="remember"
+              ><span>Remember Me</span></label
+            >
+            <div class="flex-grow"></div>
+            <a class="layout_2-link-forget" href="">Forgot Password</a>
+          </div>
+        </form>
+        <div class="layout_2-footer-text">&mdash; Or Sign in With &mdash;</div>
+        <form action="">
+          <div class="layout_2-footer-buttons">
+            <button class="layout_2-button-link" type="submit">Facebook</button>
+            <button class="layout_2-button-link" type="submit">Twitter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="layout_3-wrapper">
+      <div class="layout_3-image-container">
+        <div class="layout_3-image">
+          <img
+            src="./images/image3.png"
+            alt="Create an account"
+            width="250px"
+            height="250px"
+          />
+        </div>
+        <div><a class="layout_3-link-create" href="">Create an account</a></div>
+      </div>
+      <div class="layout_3-sign_in-container">
+        <form action="">
+          <div class="layout_3-title">Sign in</div>
+          <div class="layout_3-field-container">
+            <label
+              for="layout_3-name"
+              class="layout_3-field-label icon-person"
+            ></label>
+            <input
+              class="layout_3-field"
+              type="text"
+              id="layout_3-name"
+              name="name_3"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="layout_3-field-container">
+            <label
+              for="layout_3-password"
+              class="layout_3-field-label icon-lock"
+            ></label>
+            <input
+              class="layout_3-field"
+              type="password"
+              id="layout_3-password"
+              name="password_3"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="layout_3-checkbox-container">
+            <input
+              class="layout_3-checkbox"
+              type="checkbox"
+              id="layout_3-checkbox"
+              name="remember_2"
+              hidden
+            />
+            <label
+              for="layout_3-checkbox"
+              class="layout_3-checkbox-label-container"
+              ><span class="layout_3-checkbox-label">Remember me</span></label
+            >
+          </div>
+          <button class="layout_3-button" type="submit">Log in</button>
+        </form>
+        <form action="">
+          <div class="layout_3-footer-container">
+            <div>Or login with</div>
+            <button
+              type="submit"
+              class="layout_3-footer-button layout_3-facebook-color"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button class="layout_3-footer-button layout_3-twitter-color">
+              <i class="fa-brands fa-twitter"></i>
+            </button>
+            <button class="layout_3-footer-button layout_3-google-color">
+              <i class="fa-brands fa-google"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="layout_4-wrapper">
+      <form class="layout_4-form" action="">
+        <div class="layout_4-title">LOGIN</div>
+        <div class="layout_4-field-container">
+          <label for="layout_4-email"><span>Email</span></label>
+          <input
+            class="layout_4-field"
+            id="layout_4-email"
+            type="email"
+            name="email_2"
+            required
+          />
+        </div>
+        <div class="layout_4-field-container">
+          <label for="layout_4-password"><span>Password</span></label>
+          <input
+            class="layout_4-field"
+            id="layout_4-password"
+            type="password"
+            name="password_4"
+            required
+          />
+        </div>
+        <div class="layout_4-checkbox-container">
+          <input
+            class="layout_4-checkbox"
+            id="layout_4-remember"
+            type="checkbox"
+            name="remember_3"
+            hidden
+          />
+          <label class="layout_4-checkbox-label" for="layout_4-remember"
+            ><span>Remember me?</span></label
+          >
+        </div>
+        <button class="layout_4-button-login" type="submit">LOGIN</button>
+      </form>
+      <div class="layout_4-link-forget-container">
+        <a class="layout_4-link-forget" href="">Forgot Password?</a>
+      </div>
+      <div class="layout_4-or-container">
+        <div class="layout_4-or-line"></div>
+        <div class="layout_4-or">OR</div>
+        <div class="layout_4-or-line"></div>
+      </div>
+      <form action="">
+        <div class="layout_4-buttons-icon-container">
+          <button
+            type="submit"
+            class="layout_4-button-icon layout_4-google-color"
+          >
+            <i class="fa-brands fa-google"></i>
+          </button>
+          <button
+            type="submit"
+            class="layout_4-button-icon layout_4-facebook-color"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </button>
+          <button type="submit" class="layout_4-button-icon layout_4-in-color">
+            in
+          </button>
+        </div>
+      </form>
+      <div class="layout_4-footer-container">
+        Need an account? <a class="layout_4-link-sign" href="">SIGN UP</a>
+      </div>
+    </div>
+
+    <div class="layout_5-wrapper">
+      <div class="layout_5-sign_in-wrapper">
+        <div class="layout_5-x">
+          <span class="material-symbols-outlined custom-icon-close">
+            close
+          </span>
+        </div>
+        <div class="layout_5-sign_in-container">
+          <div class="layout_5-sign_in-inner">
+            <form action="">
+              <div class="layout_5-field-container">
+                <label class="layout_5-field-label" for="layout_5-name"></label>
+                <input
+                  class="layout_5-field"
+                  id="layout_5-name"
+                  type="text"
+                  name="username_2"
+                  placeholder="Username or email"
+                  required
+                />
+              </div>
+              <div class="layout_5-field-container">
+                <label
+                  class="layout_5-field-label"
+                  for="layout_5-password"
+                ></label>
+                <input
+                  class="layout_5-field"
+                  id="layout_5-password"
+                  type="password"
+                  name="password_5"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="layout_5-checkbox-buttom-wrapper">
+                <div>
+                  <input
+                    class="layout_5-checkbox"
+                    id="layout_5-remember"
+                    type="checkbox"
+                    name="remember_4"
+                    hidden
+                  />
+                  <label class="layout_5-checkbox-label" for="layout_5-remember"
+                    ><span class="layout_5-checkbox-label-text"
+                      >Remember me</span
+                    ></label
+                  >
+                </div>
+                <button class="layout_5-button-login" type="submit">
+                  LOGIN
+                </button>
+              </div>
+            </form>
+            <div class="layout_5-links-container">
+              <div class="layout_5-link-container">
+                <a class="layout_5-link-register" href="">Register now</a>
+              </div>
+              <div>
+                <a class="layout_5-link-forget" href="">Forgot password?</a>
+              </div>
+            </div>
+            <div class="layout_5-or-container">
+              <div class="layout_4-or-line"></div>
+              <div class="layout_5-or">or</div>
+              <div class="layout_4-or-line"></div>
+            </div>
+            <form action="">
+              <div class="layout_5-button-login_whith-container">
+                <div class="layout_5-icon layout_5-icon-facebook-color">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </div>
+                <button
+                  class="layout_5-button-login_whith layout_5-button-facebook-color"
+                  type="submit"
+                >
+                  LOGIN WITH FACEBOOK
+                </button>
+              </div>
+              <div class="layout_5-button-login_whith-container">
+                <div class="layout_5-icon layout_5-icon-twitter-color">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <button
+                  class="layout_5-button-login_whith layout_5-button-twitter-color"
+                  type="submit"
+                >
+                  LOGIN WITH TWITTER
+                </button>
+              </div>
+              <div class="layout_5-button-login_whith-container">
+                <div class="layout_5-icon layout_5-icon-google-color">
+                  <i class="fa-brands fa-google"></i>
+                </div>
+                <button
+                  class="layout_5-button-login_whith layout_5-button-google-color"
+                  type="submit"
+                >
+                  LOGIN WITH GOOGLE
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <img src="./images/image5.png" alt="" width="302px" height="354px" />
+    </div>
+
+    <div class="layout_6-wrapper">
+      <div class="layout_6-welcome_page-container">
+        <div class="layout_6-logo-container">
+          <div>
+            <img
+              src="./images/logo.png"
+              alt="logo"
+              width="58px"
+              height="47px"
+            />
+          </div>
+          <div class="layout_6-logo-text">LOGO</div>
+        </div>
+        <div class="layout_6-welcome_page-content">
+          <div class="layout_6-welcome_page-title">Welcome Page</div>
+          <div class="layout_6-welcome_page-subtitle-container">
+            <div class="layout_6-flex-width"></div>
+            <div class="layout_6-welcome_page-subtitle">
+              Sign in to continue access
+            </div>
+            <div class="flex-grow"></div>
+          </div>
+        </div>
+        <div class="layout_6-welcome_page-footer">
+          <a class="layout_6-welcome_page-footer-link" href=""
+            >www.yoursite.com</a
+          >
+        </div>
+      </div>
+      <div class="layout_6-sign_in-container">
+        <div class="layout_6-sign_in-title">Sign In</div>
+        <form action="">
+          <div>
+            <label>
+              <input
+                class="layout_6-field"
+                type="email"
+                name="email_3"
+                placeholder="Email Address"
+                required
+              />
+            </label>
+          </div>
+          <div class="layout_6-field-line"></div>
+          <div>
+            <label>
+              <input
+                class="layout_6-field"
+                type="password"
+                name="password_6"
+                placeholder="Password"
+              />
+            </label>
+          </div>
+          <div class="layout_6-field-line"></div>
+          <button class="layout_6-button-continue" type="submit">
+            <span class="flex-grow"></span>
+            CONTINUE
+            <span class="flex-grow"></span>
+          </button>
+        </form>
+        <div class="layout_6-or">or Connect with Social Media</div>
+        <form action="">
+          <button
+            class="layout_6-button-social_media layout_6-twitter-color"
+            type="submit"
+          >
+            <i class="fa-brands fa-twitter layout_6-icon"></i
+            ><span>Sign in with Twitter</span>
+          </button>
+          <button
+            class="layout_6-button-social_media layout_6-facebook-color"
+            type="submit"
+          >
+            <i class="fa-brands fa-facebook-f layout_6-icon"></i
+            ><span>Sign in with Facebook</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
