@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radio_buttons</title>
+    <style>
+      .culomn {
+        display: flex;
+        flex-direction: column;
+      }
+      .radio_form + label:before {
+        content: "radio_button_unchecked";
+      }
+    </style>
+  </head>
+  <body>
+    <span class="material-symbols-outlined"> radio_button_unchecked </span>
+    <span class="material-symbols-outlined"> radio_button_checked </span>
+    <form action="" class="culomn">
+      <p>Pick your favorite season</p>
+      <div class="radio_form">
+        <input id="radio_1" type="radio" hidden />
+        <label for="radio_1">Winter</label>
+      </div>
+      <div class="radio_form">
+        <input id="radio_2" type="radio" />
+        <label for="radio_2">Spring</label>
+      </div>
+      <div class="radio_form">
+        <input id="radio_3" type="radio" />
+        <label for="radio_3">Summer</label>
+      </div>
+      <div class="radio_form">
+        <input id="radio_4" type="radio" />
+        <label for="radio_4">Autumn</label>
+      </div>
+    </form>
+  </body>
+</html>
