@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    background-color: #ebebeb;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0px 1px 5px 1px grey;
+}
+
+.title {
+    padding: 10px;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 3px solid lightgray;
+    color: gray;
+
+}
+
+.radio-personal-company {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid lightgray;
+    padding: 25px 30px;
+}
+
+.custom-radio-label::before {
+    font-family: 'Material Symbols Outlined';
+    font-size: 25px;
+
+}
+
+.custom-radio-label {
+    font-size: 20px;
+    color: black;
+}
+
+.radio-gender-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.radio_personal:checked+.custom-radio-label::before,
+.radio_gender:checked+.custom-radio-label::before {
+    content: 'check_circle';
+    color: #3c54ac;
+    margin-right: 10px;
+    font-size: 30px;
+    font-variation-settings: 'FILL' 1
+}
+
+.radio_personal:not(:checked)+.custom-radio-label::before,
+.radio_gender:not(:checked)+.custom-radio-label::before {
+    content: 'radio_button_unchecked';
+    color: #3c54ac;
+    margin-right: 10px;
+    font-size: 30px;
+    font-variation-settings: 'FILL' 1
+}
+
+.gender_male,
+.gender_female {
+    margin: 0px 25px;
+}
+
+input[type='radio']+label {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    padding: 30px 20px;
+
+}
+
+.entry-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 45px;
+    color: lightgray;
+    box-shadow: 0px 1px 5px 1px lightgray;
+}
+
+.entry-field-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.entry-field-wrapper:last-child {
+    margin-bottom: 0px;
+}
+
+.entry-field-icon {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #3c54ac;
+    color: white;
+}
+
+.entry-field::placeholder {
+    color: #bdbdbd;
+    text-indent: 10px;
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+}
+
+.agreement {
+    width: 60%;
+}
+
+.btn-register {
+    width: 35%;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background: #3c54ac;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
