@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radio_buttons</title>
+    <style>
+      input {
+        display: none;
+      }
+      label {
+        display: block;
+      }
+      label::before {
+        font-family: "Material Symbols Outlined";
+        content: "radio_button_unchecked";
+        width: 16px;
+        height: 16px;
+      }
+      label:hover::before {
+        outline: 3px solid red;
+        border-radius: 50%;
+      }
+      .custom_radio:checked + .custom_radio_lable::before {
+        content: "radio_button_checked";
+      }
+      .custom_radio:not(:checked) + .custom_radio_lable::before {
+        content: "radio_button_unchecked";
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" class="culomn">
+      <p>Pick your favorite season:</p>
+      <input
+        class="custom_radio"
+        id="radio"
+        name="season"
+        value="Winter"
+        type="radio"
+        hidden
+      />
+      <label class="custom_radio_lable" for="radio">Winter</label>
+      <input
+        class="custom_radio"
+        id="radio2"
+        name="season"
+        value="Spring"
+        type="radio"
+      />
+      <label class="custom_radio_lable" for="radio2">Spring</label>
+      <input
+        class="custom_radio"
+        id="radio3"
+        name="season"
+        value="Summer"
+        type="radio"
+      />
+      <label class="custom_radio_lable" for="radio3">Summer</label>
+      <input
+        class="custom_radio"
+        id="radio4"
+        name="season"
+        value="Autumn"
+        type="radio"
+      />
+      <label class="custom_radio_lable" for="radio4">Autumn</label>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

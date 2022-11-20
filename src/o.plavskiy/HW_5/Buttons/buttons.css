@@ -1,0 +1,28 @@
+body {
+    background-color: #e8eaee;
+  }
+  .left_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    color: #8d8d8d;
+    margin-right: 35px;
+  }
+  .right_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    color: #8d8d8d;
+  }
+  .container {
+    display: flex;
+    width: 30vw;
+  }
