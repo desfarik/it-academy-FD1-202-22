@@ -1,0 +1,35 @@
+
+
+.icon {
+    display: inline-block;
+    width:70px;
+    height: 80px;
+    background-image: url(image/icons_task1_2.png);
+}
+
+.settings-icon {
+    margin-left: 10px;
+    background-position-x: -12px;
+    background-position-y: -28px;
+}
+
+.close-icon {
+    background-position-x: -90px;
+    background-position-y: -18px;
+    width: 90px;
+    height: 90px;
+  }
+
+.cancel-icon {
+    background-position-x: -180px;
+    background-position-y: -26px;
+}
+.div {
+    width: 250px;
+    height: 90px;
+    border: 6px solid #ab47bc;
+    border-radius: 12px 0;
+    overflow: hidden;
+    padding: 5px 0px;
+    margin: auto;
+}
