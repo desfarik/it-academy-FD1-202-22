@@ -1,0 +1,23 @@
+div {
+    margin-bottom: 10px;
+}
+
+.radio-block+label::before {
+    font-family: 'Material Symbols Outlined';
+}
+
+.radio-block {
+    display: none;
+}
+
+.radio-block:checked+label::before {
+    content: "radio_button_checked";
+}
+
+.radio-block:not(:checked)+label::before {
+    content: "radio_button_unchecked";
+}
+
+.radio-block:checked+label::before {
+    color: palevioletred;
+}

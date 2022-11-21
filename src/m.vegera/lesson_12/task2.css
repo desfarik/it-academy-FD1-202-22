@@ -1,0 +1,41 @@
+.page{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+.picture-block{
+    width: 50%;
+    background-color: #a5c4b5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    
+}
+
+.item-square{
+    width: 15px;
+    height: 6px;
+    background-color: white;
+    border-radius: 2px;
+}
+.item-circle{
+    width: 6px;
+    height: 6px;
+    background-color: #cee6d6;
+    border-radius: 50%;  
+}
+.items{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+.information-block{
+    padding: 20px;
+}
+.input{
+    border: hidden;
+    border-bottom: solid 1px #f2f2f2;
+}
