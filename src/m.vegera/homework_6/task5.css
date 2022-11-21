@@ -34,12 +34,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: solid 1px;
 
 }
 
 .login-with-network-item {
     width: 200px;
-    height: 30px;
+    height: 32px;
     background-color: #ffffff;
     border-radius: 5px;
     border-bottom-left-radius: 0;
@@ -57,7 +58,7 @@ a {
 
 .flex-block {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 10px;
 }
 
@@ -105,4 +106,21 @@ hr {
 .google-button {
     background-color: #f34038;
     border-color: #f34038;
+}
+
+.password-visability {
+    background: none;
+    border: solid 1px;
+    border-left: none;
+}
+
+.none-right-border {
+    border: solid 1px;
+    border-right: none;
+}
+.close-button{
+    background: none;
+    border: none;
+    width: 10px;
+    height: 10px;
 }

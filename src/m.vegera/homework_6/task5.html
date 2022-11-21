@@ -13,23 +13,27 @@
 
 <body>
     <div class="page">
-
-        <span class="material-symbols-outlined">
-            close
-        </span>
+        <button class="close-button">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </button>
         <div class="information-block">
             <div class="flex-block">
                 <label class="field-symbol-item" for="input-name"><span class="material-symbols-outlined symbol-size">
                         person
                     </span></label>
-                <input class="text-information" id="input-name" type="text" placeholder="Username or email">
+                <input class="flex-grow" id="input-name" type="text" placeholder="Username or email">
             </div>
             <div class="flex-block">
                 <label class="field-symbol-item" for="input-password"><span
                         class="material-symbols-outlined symbol-size">
                         security
                     </span></label>
-                <input class="text-information" id="input-password" type="password" placeholder="Password">
+                <input class="flex-grow none-right-border" id="input-password" type="password" placeholder="Password">
+                <button class="password-visability"><span class="material-symbols-outlined">
+                        visibility
+                    </span></button>
             </div>
             <div class="register-container">
                 <div><input type="checkbox" name="checkbox" id="checkbox" value="checkbox">
@@ -49,15 +53,18 @@
             </div>
             <div class="flex-block">
                 <img class="field-symbol-item" src="./pics/facebook.png" alt="">
-                <button class="login-with-network-item facebook-button"><a href="">LOGIN WITH FACEBOOK</a></button>
+                <button class="login-with-network-item facebook-button flex-grow"><a href="">LOGIN WITH
+                        FACEBOOK</a></button>
             </div>
             <div class="flex-block">
                 <img class="field-symbol-item" src="./pics/twitter.png" alt="">
-                <button class="login-with-network-item twitter-button"><a href="">LOGIN WITH TWITTER</a></button>
+                <button class="login-with-network-item twitter-button flex-grow"><a href="">LOGIN WITH
+                        TWITTER</a></button>
             </div>
             <div class="flex-block">
                 <img class="field-symbol-item" src="./pics/gmail.png" alt="">
-                <button class="login-with-network-item google-button"><a href="">LOGIN WITH GOOGLE</a></button>
+                <button class="login-with-network-item google-button flex-grow"><a href="">LOGIN WITH
+                        GOOGLE</a></button>
             </div>
 
         </div>
