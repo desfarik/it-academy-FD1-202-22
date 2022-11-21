@@ -29,25 +29,28 @@
     <div class="layout_1-wrapper">
       <div class="layout_1-title">Registration</div>
       <form action="">
-        <div class="layout_1-checkboxes-wrapper">
+        <div class="layout_1-radio-wrapper">
           <input
-            class="layout_1-checkbox"
+            class="layout_1-radio"
             id="personal"
-            type="checkbox"
-            name="personal"
+            type="radio"
+            name="type"
+            value="personal"
             hidden
+            checked
           />
-          <label class="layout_1-checkbox-label" for="personal"
+          <label class="layout_1-radio-label" for="personal"
             ><span>Personal</span></label
           >
           <input
-            class="layout_1-checkbox"
+            class="layout_1-radio"
             id="company"
-            type="checkbox"
-            name="company"
+            type="radio"
+            name="type"
+            value="company"
             hidden
           />
-          <label class="layout_1-checkbox-label" for="company"
+          <label class="layout_1-radio-label" for="company"
             ><span>Company</span></label
           >
         </div>
@@ -103,25 +106,28 @@
               required
             />
           </div>
-          <div class="layout_1-checkboxes-wrapper padding-new">
+          <div class="layout_1-radio-wrapper padding-new">
             <input
-              class="layout_1-checkbox"
+              class="layout_1-radio"
               id="male"
-              type="checkbox"
-              name="maler"
+              type="radio"
+              name="gender"
+              value="male"
               hidden
+              checked
             />
-            <label for="male" class="layout_1-checkbox-label"
+            <label for="male" class="layout_1-radio-label"
               ><span>Male</span></label
             >
             <input
-              class="layout_1-checkbox"
+              class="layout_1-radio"
               id="female"
-              type="checkbox"
-              name="female"
+              type="radio"
+              name="gender"
+              value="female"
               hidden
             />
-            <label for="female" class="layout_1-checkbox-label"
+            <label for="female" class="layout_1-radio-label"
               ><span>Female</span></label
             >
           </div>
