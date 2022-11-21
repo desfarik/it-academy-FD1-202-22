@@ -1,0 +1,108 @@
+.page {
+    display: flex;
+    color: grey;
+    width: 700px;
+    margin: auto;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.information-block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.picture-block {
+    width: 50%;
+}
+
+.field-symbol-item {
+
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-with-network-item {
+    width: 200px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.login-button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #4889f7;
+    color: white;
+    border-color: #4889f7;
+}
+
+.flex-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.register-container {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.register-now-link {
+    color: #4889f7;
+}
+
+.reset-password-link {
+    color: grey;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    color: grey;
+    background-color: grey;
+}
+
+.separator-block {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.facebook-button {
+    background-color: #3a5b96;
+    border-color: #3a5b96;
+}
+
+.twitter-button {
+    background-color: #11adea;
+    border-color: #11adea;
+}
+
+.google-button {
+    background-color: #f34038;
+    border-color: #f34038;
+}

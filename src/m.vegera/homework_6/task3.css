@@ -1,0 +1,106 @@
+.page {
+    display: flex;
+    padding: 20px;
+    color: #8c8c8c;
+    width: 1000px;
+    margin: auto;
+}
+
+p {
+    margin: 0;
+}
+
+p a[href] {
+    color: #8c8c8c;
+}
+
+.picture-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.sign-in-block {
+    width: 50%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-sign-in {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.input-container {
+    display: flex;
+    border-bottom: solid 1px #a9a9a9;
+    margin-bottom: 20px;
+}
+
+.field-symbol-item {
+    font-size: 16px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.none-border {
+    border: none;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+.checkbox-item+label::before {
+    font-family: 'Material Symbols Outlined';
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+.checkbox-item {
+    display: none;
+}
+
+.checkbox-item:checked+label::before {
+    content: "check_box";
+}
+
+.checkbox-item:not(:checked)+label::before {
+    content: "check_box_outline_blank";
+
+}
+
+.log-in-button {
+    background-color: #6dabe4;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.login-with-block {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.item-link {
+    width: 20px;
+    height: 20px;
+
+}
