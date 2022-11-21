@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <style>
+    .container {
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+    .left-content {
+      width: 50%;
+    }
+    .image {
+      height: 70%;
+      display: flex;
+      justify-content: center;
+    }
+    .right-content {
+      width: 50%;
+      padding: 0px 150px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    .left-footer {
+      height: 30%;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .new-acc {
+      font-size: 20px;
+      color: black;
+    }
+    .header {
+      font-weight: bolder;
+      font-size: 70px;
+    }
+    .name-row,
+    .pass-row {
+      border-bottom: 1px solid;
+      display: flex;
+      margin: 40px 0px;
+    }
+    .person-icon,
+    .pass-icon {
+      font-size: 50px;
+      font-variation-settings: "FILL" 1;
+    }
+    input {
+      border: none;
+      outline: none;
+      font-size: 35px;
+    }
+    input::-webkit-input-placeholder {
+      color: black;
+    }
+    label::before {
+      content: " check_box_outline_blank";
+      font-family: "Material Symbols Outlined";
+      font-size: 30px;
+    }
+    .custom-checkbox:checked + label::before {
+      content: "check_box";
+    }
+    label {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+    }
+    button {
+      background: #6eabe4;
+      color: white;
+      width: fit-content;
+      font-size: 20px;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 5px;
+      margin: 40px 0px;
+    }
+    .right-footer {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    p {
+      font-size: 25px;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+    
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="left-content">
+        <div class="image">
+          <img src="./img/background-form3.jpg" alt="" />
+        </div>
+        <div class="left-footer">
+          <a class="new-acc" href="">Create an account</a>
+        </div>
+      </div>
+      <div class="right-content">
+        <p class="header">Sign in</p>
+        <div class="name-row">
+          <div>
+            <span class="material-symbols-outlined person-icon"> person </span>
+          </div>
+          <input type="text" name="name" placeholder="John Doe" />
+        </div>
+        <div class="pass-row">
+          <div>
+            <span class="material-symbols-outlined pass-icon"> lock </span>
+          </div>
+          <input type="password" name="name" placeholder="Password" />
+        </div>
+        <div class="checkbox">
+          <input
+            id="custom-checkbox"
+            type="checkbox"
+            name="checkbox"
+            class="custom-checkbox"
+            hidden
+          />
+          <label for="custom-checkbox">Remember Me</label>
+        </div>
+        <button>Log in</button>
+        <div class="right-footer">
+          <p>Or login with</p>
+          <div>
+            <a href=""
+              ><img class="logo" src="./img/google.svg" alt="google logo"
+            /></a>
+          </div>
+          <div>
+            <a href=""
+              ><img class="logo" src="./img/twitter.svg" alt="twitter logo"
+            /></a>
+          </div>
+          <div>
+            <a href=""
+              ><img class="logo" src="./img/facebook.svg" alt="facebook logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

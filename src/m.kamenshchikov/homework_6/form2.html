@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(./img/background-form2.jpg);
+        margin: 0;
+        padding: 150px 50px;
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+        margin: 0;
+      }
+      .header {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        margin-top: 50px;
+      }
+      .sign-in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .login {
+        margin: 10px;
+        height: 50px;
+        width: 400px;
+        font-size: 20px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        padding: 0px 30px;
+        background: rgba(255, 255, 255, 0.3);
+      }
+      input::-webkit-input-placeholder {
+        color: white;
+      }
+      .sign-in-button {
+        text-transform: uppercase;
+        width: 460px;
+        height: 50px;
+        padding: 10px 0px;
+        border-radius: 25px;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        background-color: #ffcbb2;
+        margin: 10px;
+      }
+      label {
+        font-size: 20px;
+        color: #ffcbb2;
+      }
+      label::before {
+        content: "check_box_outline_blank";
+        font-family: "Material Symbols Outlined";
+        font-variation-settings: "FILL" 1;
+      }
+      .custom-checkbox:checked + label::before {
+        content: "check_box";
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .login-help {
+        width: 460px;
+        display: flex;
+        justify-content: space-between;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 460px;
+        margin: 50px 0px;
+        align-items: center;
+      }
+      .row {
+        border: 1px solid white;
+        width: 20px;
+      }
+      span {
+        margin: 0px 5px;
+        font-size: 20px;
+        color: white;
+      }
+      .social {
+        background: white;
+        width: 220px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: black;
+      }
+      .sign-in-links {
+        display: flex;
+        justify-content: space-between;
+        width: 460px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login #10</h1>
+    <div class="header">
+      <p>Have an account?</p>
+    </div>
+    <div class="sign-in">
+      <input class="login" type="text" name="name" placeholder="Username" />
+      <input
+        class="login"
+        type="password"
+        name="Password"
+        placeholder="Password"
+      />
+      <button class="sign-in-button" type="submit">sign in</button>
+    </div>
+    <div class="login-help">
+      <input
+        class="custom-checkbox"
+        id="checkbox"
+        type="checkbox"
+        name="remember"
+        hidden
+      />
+      <label for="checkbox">Remember Me</label>
+      <a href="">Forgot password</a>
+    </div>
+    <div class="footer">
+      <div class="row"></div>
+      <span>Or Sign In With</span>
+      <div class="row"></div>
+    </div>
+    <div class="sign-in-links">
+      <a class="social" href="">Facebook</a>
+      <a class="social" href="">Twitter</a>
+    </div>
+  </body>
+</html>

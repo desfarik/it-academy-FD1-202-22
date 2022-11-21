@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        margin: auto;
+        background-color: #ebebeb;
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid #c9c9c9;
+        box-shadow: 1px 0px 16px lightgrey;
+        padding: 0px 30px;
+        font-family: "Open Sans", sans-serif;
+      }
+      .header {
+        text-align: center;
+        font-size: 40px;
+        color: #757575;
+        border-bottom: 1px solid #a5a4a3;
+        padding: 10px;
+      }
+      p {
+        margin: 0;
+      }
+      .face-choice {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        padding: 25px 10px;
+        border-bottom: 1px solid #a5a4a3;
+        color: #757575;
+      }
+      label::before {
+        content: "radio_button_unchecked";
+        font-family: "Material Symbols Outlined";
+        margin: 0px 15px;
+        font-variation-settings: "FILL" 1;
+        color: #3b59b1;
+      }
+      .radio:checked + label:before {
+        content: "check_circle";
+      }
+      .icon {
+        background-color: #3b59b1;
+        width: 50px;
+        height: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login {
+        display: flex;
+        margin: 20px 20px;
+        flex-direction: column;
+      }
+      input {
+        width: 210px;
+        border: none;
+        font-size: 20px;
+        color: #757575;
+        padding-left: 10px;
+        box-sizing: border-box;
+        outline: none;
+      }
+      /* ??? При выставлении у input ширины 100% изменяется заданная ширина блока с иконкой ??? */
+      .login-row {
+        display: flex;
+        margin: 10px 0px;
+        box-shadow: 1px 1px 10px #757575;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .gender {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #757575;
+        margin-bottom: 50px;
+      }
+      .registration {
+        font-size: 12px;
+        display: flex;
+        margin: 10px;
+        align-items: center;
+      }
+      button {
+        background: #3b59b1;
+        color: white;
+        font-size: 20px;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        margin: 10px;
+      }
+      a {
+        color: #3b59b1;
+      }
+      label {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>Registration</p>
+      </div>
+      <div class="face-choice">
+        <input
+          id="radio1"
+          type="radio"
+          name="person"
+          value="Personal"
+          class="radio"
+          hidden
+        />
+        <label for="radio1">Personal</label>
+        <input
+          id="radio2"
+          type="radio"
+          name="person"
+          value="Company"
+          class="radio"
+          hidden
+        />
+        <label for="radio2">Company</label>
+      </div>
+      <div class="login">
+        <div class="login-row">
+          <div class="icon">
+            <span class="material-symbols-outlined"> mail </span>
+          </div>
+          <input type="text" name="email" placeholder="Email" />
+        </div>
+        <div class="login-row">
+          <div class="icon">
+            <span class="material-symbols-outlined"> person </span>
+          </div>
+          <input type="text" name="name" placeholder="Name" />
+        </div>
+        <div class="login-row">
+          <div class="icon">
+            <span class="material-symbols-outlined"> lock </span>
+          </div>
+          <input type="password" name="password" placeholder="Password" />
+        </div>
+      </div>
+      <div class="gender">
+        <input
+          type="radio"
+          name="gender"
+          id="gender-M"
+          value="Male"
+          class="radio"
+          hidden
+        />
+        <label for="gender-M">Male</label>
+        <input
+          type="radio"
+          name="gender"
+          id="gender-F"
+          value="Female"
+          class="radio"
+          hidden
+        />
+        <label for="gender-F">Female</label>
+      </div>
+      <div class="registration">
+        <span
+          >By clicking Register, you agree on our
+          <a href="">terms and condition</a>.</span>
+        <button type="submit">Register</button>
+      </div>
+    </div>
+  </body>
+</html>
