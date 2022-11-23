@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+      }
+      .picture {
+        width: 60%;
+        height: 100vh;
+        background-color: #a5d6a7;
+      }
+      .content {
+        width: 40%;
+        padding: 50px 100px;
+        box-sizing: border-box;
+      }
+      .header {
+        font-family: "Pacifico", cursive;
+        font-size: 40px;
+        text-align: center;
+      }
+      .input-header {
+        text-align: center;
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+        color: #9e9e9e;
+      }
+      .input {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        flex-direction: column;
+      }
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #9e9e9e;
+        height: 50px;
+        outline: none;
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+      .input-name {
+        color: #9e9e9e;
+        font-size: 15px;
+        margin: 0px;
+      }
+      .link {
+        text-align: right;
+        color: #9e9e9e;
+        text-decoration: none;
+      }
+      button {
+        border: none;
+        font-size: 20px;
+        padding: 10px 50px;
+        margin: 20px auto;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+      }
+      .test {
+        display: flex;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+        color: #9e9e9e;
+      }
+      .row {
+        border-bottom: 1px solid #9e9e9e;
+        width: 100px;
+        margin: 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="picture"></div>
+      <div class="content">
+        <div class="header">
+          <p>Lovebirds</p>
+        </div>
+        <div class="input-header">
+          <p>Welcome to Lovebirds</p>
+        </div>
+        <div class="input">
+          <p class="input-name">Username or email</p>
+          <input type="text" name="username" id="name" />
+          <label for="name"></label>
+          <p class="input-name">Password</p>
+          <input type="text" name="username" id="name1" />
+          <label for="name1"></label>
+          <a class="link" href="">Forgot password?</a>
+          <button>Sign in</button>
+        </div>
+        <div class="test">
+          <div class="row"></div>
+          <span class="or">or</span>
+          <div class="row"></div>
+        </div>
+        <div class="google">
+            <p>Sign in with Google</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
