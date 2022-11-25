@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        button {
+            margin: 15px;
+        }
+
+        [badge] {
+            position: relative;
+        }
+
+        [badge]:before {
+            content: attr(badge);
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            background: purple;
+            border-radius: 14px;
+            padding: 2px;
+            min-width: 15px;
+            color: white;
+        }
+
+        [badge-color="blue"]::before {
+            background: blue;
+            color: white;
+        }
+
+        [badge-color="red"]::before {
+            background: red;
+            color: white;
+        }
+
+        [badge-position="before"]::before {
+            left: -10px;
+            right: auto;
+        }
+
+        .box {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<button badge="2k" badge-color="blue">
+    text1
+</button>
+<br>
+<button badge="5"
+        badge-color="red"
+        badge-position="before">text2</button>
+<br>
+<button badge="10">text3</button>
+
+
+<div class="box" badge="box" badge-color="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+    facilis ipsum iste maxime minus
+    nemo, non nostrum numquam quam, quasi quos, repellat temporibus. Ab animi cumque delectus ex explicabo itaque!
+</div>
+
+</body>
+</html>
