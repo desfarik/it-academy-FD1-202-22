@@ -127,3 +127,7 @@ body {
 .fa-twitter {
     font-size: 28px;
 }
+
+button {
+    cursor: pointer;
+}

@@ -198,6 +198,7 @@ body {
 
 .btn--twitter {
     background-color: #11adea;
+    
 }
 
 .google .icon-login-with {
@@ -208,4 +209,7 @@ body {
 
 .btn--google {
     background-color: #f43f38;
+}
+button  {
+    cursor: pointer;
 }

@@ -126,3 +126,10 @@ body {
     color: #e92836;
     font-size: 30px;
 }
+
+.footer i:hover {
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
