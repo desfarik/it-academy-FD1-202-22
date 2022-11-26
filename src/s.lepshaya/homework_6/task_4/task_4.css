@@ -143,3 +143,11 @@ body {
 .link-sign-up {
     color: black;
 }
+
+button {
+    cursor: pointer;
+}
+
+.icons i:hover {
+    cursor: pointer;
+}
