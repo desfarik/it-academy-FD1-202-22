@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animated_input</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #1e2a3c;
+      }
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .inputBox {
+        position: relative;
+      }
+      .inputBox input {
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background-color: #1e2a3c;
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        font-size: 1em;
+      }
+      .inputBox span {
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 1em;
+        color:  rgba(255, 255, 255, 0.25);
+        text-transform: uppercase;
+        transition: 0.5s;
+      }
+      .inputBox input:valid ~ span,
+      .inputBox input:focus ~ span {
+        color: #00dfc4;
+        transform: translateX(10px) translateY(-7px);
+        font-size: 0.65em;
+        padding: 0 10px;
+        background-color: #1e2a3c;
+        border-left: 1px solid #00dfc4;
+        border-right: 1px solid #00dfc4;
+        letter-spacing: 0.2em;
+      }
+      .inputBox:nth-child(2) input:valid ~ span,
+      .inputBox:nth-child(2) input:focus ~ span {
+        background-color: #00dfc4;
+        color: #1e2a3c;
+        border-radius: 2px;
+      }
+      .inputBox input:valid,
+      .inputBox input:focus {
+        border: 1px solid #00dfc4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inputBox">
+      <input type="text" required="required" />
+      <span>First name</span>
+    </div>
+    <div class="inputBox">
+      <input type="text" required="required" />
+      <span>Last name</span>
+    </div>
+  </body>
+</html>

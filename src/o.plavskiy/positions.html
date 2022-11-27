@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      .main_button {
+        border-radius: 3px;
+        background-color: #795548;
+        border: none;
+        color: white;
+        font-size: 10px;
+        padding: 5px 10px;
+        position: relative;
+      }
+      .top_button {
+        font-size: 7px;
+        width: fit-content;
+        padding: 0px 2px;
+        background-color: #e53935;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        position: absolute;
+        left: 70px;
+        top: 5px;
+      }
+      [badge]::before {
+        content: attr(badge);
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: red;
+        border-radius: 3px;
+        font-size: 10px;
+        color: white;
+        padding: 0px 3px;
+      }
+      [badge] {
+        position: relative;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="main_button">Components</button>
+      <button class="top_button">New</button>
+      <button badge="2k" badge-color="red">Text</button>
+      <button>Сергей пЕсак</button>
+    </div>
+  </body>
+</html>

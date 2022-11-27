@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>figma_1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin: 0;
+      }
+
+      *{
+        box-sizing: border-box;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .buttons_group {
+        gap: 40px;
+        display: flex;
+        font-size: 15px;
+        letter-spacing: 0.03em;
+        color: black;
+      }
+      .header_right_icons_group {
+        gap: 40px;
+        display: flex;
+      }
+      .green_plant {
+        width: 100%;
+        z-index: 1;
+      }
+      .container {
+        display: flex;
+        margin-top: 70px;
+        width: 100%;
+      }
+      .green_back {
+        height: 65%;
+        width: 100%;
+        background-color: #e7f8ee ;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+      }
+      .right-block {
+        position: relative;
+      }
+      .view_button {
+        background-color: #2E7F42;
+        border: none;
+        color: white;
+        padding: 20px;
+        letter-spacing: 0.05em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <div class="header">
+        <img src="./images/plant 1.svg" alt="plant_logo" />
+        <div class="buttons_group">
+          <span cl>Catalog</span>
+          <span>About</span>
+          <span>Blog</span>
+          <span>Contact us</span>
+        </div>
+        <div class="header_right_icons_group">
+          <img src="./images/Profile.svg" alt="Profile_icon" />
+          <img src="./images/Buy.svg" alt="food_trolley" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="left-block">
+            <span>Introducing Monstera Tauerii</span>
+            <h1>
+                The best plant under one roof
+                </h1>
+            <div class="text">We have the highest quality Monstera variety in New Zealand perfect for the pricing you deserve and a sure way to transform your garden</div>
+            <button class="view_button">View Garden</button>
+        </div>
+        <div class="right-block">
+          <div class="green_back"></div>  
+          <img class="green_plant" src="./images/big_green_plant.png" alt="big_green_plant" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

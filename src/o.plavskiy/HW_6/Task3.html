@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task3</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      body {
+        background-color: #f6f6f6;
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        width: fit-content;
+        display: flex;
+      }
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .name_input,
+      .password_input {
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+      }
+      .checkbox_label {
+        font-size: 10px;
+      }
+      .align{
+        display: flex;
+        align-items: center;
+      }
+      .button {
+        background-color: #6eabe5;
+        padding: 10px 20px;
+        font-size: 10px;
+        color: white;
+        border: none;
+        border-radius: 3px;
+      }
+      .name_container {
+        display: flex;
+        align-items: center center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <div class="left_block"></div>
+        <div class="text"></div>
+      </div>
+      <div class="right_block column">
+        <div class="title">Sign in</div>
+          <form class="name_container">
+            <label>
+              <span class="material-symbols-outlined person">
+                person
+                </span>
+              <input class="name_input" name="name" type="text" />
+            </label>
+          </form>
+          <form>
+            <input
+              id="password"
+              class="password_input"
+              name="password"
+              type="password"
+            />
+            <label for="password"></label>
+          </form>
+        <form class="align">
+          <input id="checkbox" type="checkbox" />
+          
+          <label for="checkbox" class="checkbox_label"> Remember me</label>
+        </form>
+        <button class="button">Log in</button>
+        <div class="row">
+          <div class="text"></div>
+          <div class="icon_container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

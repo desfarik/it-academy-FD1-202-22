@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+      .eye {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: white;
+        position: absolute;
+        top: 5px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow: hidden;
+        background-image: url(./mountain.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100vh;
+        display: flex;
+        min-width: 600px;
+      }
+      .container {
+        margin: 0 auto;
+        text-align: center;
+        width: 350px;
+        margin-top: 80px;
+      }
+      .title {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+      .input {
+        outline: none;
+        border-radius: 15px;
+        border: none;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        display: flex;
+        width: 100%;
+        margin: 5px 0;
+        font-size: 20px;
+        
+      }
+      ::placeholder {
+        color: white;
+      }
+      .align {
+        display: flex;
+        align-items: center;
+      }
+      .password_input {
+        position: relative;
+        display: flex;
+      }
+      .eye_label::before {
+        content: "visibility_off";
+        font-family: "Material Symbols Outlined";
+      }
+      #eye_checkbox:checked + .eye_label::before {
+        content: "visibility";
+        font-family: "Material Symbols Outlined";
+      }
+      .eye_label {
+        color: white;
+        display: flex;
+        align-self: center;
+        position: absolute;
+        font-size: 20px;
+        right: 10px;
+      }
+      .submit_button {
+        background-color: #ff4081;
+        border-radius: 15px;
+        border: none;
+        width: 100%;
+        padding: 15px;
+        color: white;
+        margin: 10px 0;
+        cursor: pointer;
+      }
+      .question_title {
+        color: white;
+        font-size: 20px;
+      }
+      .row {
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+      }
+      .password {
+        padding-right: 40px;
+      }
+      .checkbox_password {
+        display: flex;
+        align-items: center;
+      }
+      .custom_checkbox + label::before {
+        font-family: "Material Symbols Outlined";
+        content: "check_box_outline_blank";
+        font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+      }
+      .custom_checkbox_lable {
+        color: #ff4081;
+        display: flex;
+        align-items: center;
+      }
+      .custom_checkbox:checked + label::before {
+        font-family: "Material Symbols Outlined";
+        content: "check_box";
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+      .button {
+        background-color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        width: 50%;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .buttoms_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+      }
+      .line {
+        width: 10px;
+        border: 0.5px solid white;
+        height: 0px;
+      }
+      .alternative_sign_in {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        color: white;
+        margin: 30px 0px 15px;
+      }
+    </style>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Login #10</div>
+      <form class="form_container">
+        <p class="question_title">Have an account?</p>
+        <div class="username_input">
+          <input
+            class="input"
+            type="text"
+            name="login"
+            placeholder="Username"
+          />
+        </div>
+        <div class="password_input">
+          <input
+            class="input password"
+            id="myInput"
+            name="password"
+            type="password"
+            placeholder="Password"
+          />
+          <input
+            id="eye_checkbox"
+            type="checkbox"
+            onclick="myFunction()"
+            hidden
+          />
+          <label for="eye_checkbox" class="eye_label"></label>
+        </div>
+        <button class="submit_button" type="submit">SIGN IN</button>
+        <div class="row">
+          <div class="checkbox_password">
+            <input
+              class="custom_checkbox"
+              id="checkbox"
+              type="checkbox"
+              name="remember_password"
+              hidden
+            />
+            <label class="custom_checkbox_lable" for="checkbox"
+              >Remember me</label
+            >
+          </div>
+          <div>Forgot Password</div>
+        </div>
+      </form>
+      <div class="alternative_sign_in">
+        <div class="line"></div>
+        <div>Or Sign in With</div>
+        <div class="line"></div>
+      </div>
+      <div class="buttoms_container">
+        <button class="button">Facebook</button>
+        <button class="button">Twitter</button>
+      </div>
+    </div>
+  </body>
+</html>
