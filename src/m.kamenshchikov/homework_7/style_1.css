@@ -1,0 +1,213 @@
+body {
+  background: #f1f1f1;
+  font-family: "Roboto", sans-serif;
+  padding-top: 50px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.head {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.location-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location-icon {
+  font-variation-settings: "FILL" 1;
+}
+.location-header {
+  color: gray;
+}
+.location-name {
+  font-size: 18px;
+}
+.unread-notification {
+  width: 7px;
+  height: 7px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+.search-menu {
+  border: none;
+  font-size: 20px;
+  padding: 10px 50px;
+  outline: none;
+}
+.main {
+  margin-top: 40px;
+  position: relative;
+  padding: 0px 20px;
+}
+.search-icon {
+  position: absolute;
+  left: 35px;
+  top: 10px;
+}
+.filter-name {
+  cursor: pointer;
+  background: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 5px;
+  border: none;
+  font-size: 16px;
+}
+.filters {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+.filters-icons {
+  width: 20px;
+}
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-name:hover {
+  background-color: #616161;
+  color: white;
+}
+.suggestions {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+.suggestion-item {
+  width: fit-content;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+}
+.suggestion-preview {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+.price {
+  background: white;
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 10px;
+  position: absolute;
+  top: 18px;
+  left: 150px;
+  font-weight: bold;
+}
+.like-icon-box {
+  cursor: pointer;
+  width: 50px;
+  border: none;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 150px;
+  top: 135px;
+  box-shadow: 1px 2px 5px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.like-icon {
+  width: 30px;
+}
+.suggestion-info {
+  display: flex;
+
+  justify-content: space-between;
+}
+.grade-icon {
+  color: gold;
+}
+.grade-icon:hover {
+  font-variation-settings: "FILL" 1;
+  cursor: pointer;
+}
+.suggestion-location,
+.suggestion-rate,
+.recommended-location {
+  display: flex;
+  color: #616161;
+  align-items: center;
+  gap: 5px;
+}
+.recommended-item {
+  width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+}
+.recommended-preview {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+.recommended {
+  display: flex;
+  overflow: auto;
+  gap: 10px;
+}
+.recommended-location-box {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.recommended-name {
+  margin: 0;
+}
+.foot-menu {
+  background: white;
+  padding: 30px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  box-sizing: border-box;
+}
+.foot-menu-icon {
+  cursor: pointer;
+    color: gray;
+    font-size: 32px;
+    /* тут фонт-сайз не работает почему то */
+}
+.foot-menu-icon:hover {
+    color: black;
+    font-size: 32px;
+    /* а тут работает  */
+}
