@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin: 0;
+        min-width: 1000px;
+      }
+      .header {
+        height: 50px;
+        display: flex;
+        padding: 10px 72px;
+      }
+      .header-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        background: #175827;
+        border-radius: 50%;
+      }
+      .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+      .log-in-icon {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      .flex-grow {
+        flex-grow: 1;
+      }
+      .main {
+        height: calc(100vh - 70px);
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        padding: 70px 0px 0px 72px;
+      }
+      .content {
+        width: 50%;
+        padding-right: 36px;
+        box-sizing: border-box;
+      }
+      .background {
+        width: 50%;
+        display: flex;
+        align-items: flex-end;
+      }
+      .box-background {
+        background: #e8f5e9;
+        height: 70%;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+      }
+      .image-background {
+        object-fit: fill;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+      }
+      .header-text {
+        font-size: 52px;
+        margin-top: 0;
+      }
+      .content-text {
+        font-size: 18px;
+      }
+      .heading-text {
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0;
+      }
+
+      .header-links {
+        text-decoration: none;
+        color: black;
+      }
+      .view-garden {
+        display: flex;
+        background: #2e7f42;
+        border-radius: 3px;
+        color: white;
+        width: 170px;
+        padding: 20px 24px;
+        font-size: 20px;
+        justify-content: space-between;
+        margin-top: 70px;
+      }
+      .garden-link {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-icon">
+        <img src="./images/Vector.png" alt="" />
+      </div>
+      <div class="flex-grow"></div>
+      <div class="navigation">
+        <a class="header-links" href="">Catalog</a>
+        <a class="header-links" href="">About</a>
+        <a class="header-links" href="">Blog</a>
+        <a class="header-links" href="">Contact Us</a>
+      </div>
+      <div class="flex-grow"></div>
+      <div class="log-in-icon">
+        <img src="./images/Profile.svg" alt="prof-icon" />
+        <img src="./images/Buy.svg" alt="buy-icon" />
+      </div>
+    </div>
+    <div class="main">
+      <img class="image-background" src="./images/background1.png" alt="" />
+      <div class="content">
+        <p class="heading-text">Introducing Monstera Tauerii</p>
+        <h1 class="header-text">The best plant under one roof</h1>
+        <p class="content-text">
+          We have the highest quality Monstera variety in New Zealand perfect
+          for the pricing you deserve and a sure way to transform your garden
+        </p>
+        <div class="view-garden">
+          <div>
+            <a class="garden-link" href="">View Garden</a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </div>
+        </div>
+      </div>
+      <div class="background">
+        <div class="box-background"></div>
+      </div>
+    </div>
+  </body>
+</html>
