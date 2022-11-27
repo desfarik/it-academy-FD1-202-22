@@ -80,10 +80,13 @@ form {
 
 }
 
-.picture {
-    width: 80%;
+.picture_seach {
+    width: 20%;
+    height: 80%;
     background: #f2f2f2;
     color: white;
+    overflow: hidden;
+    border-radius: 20px;
 
 }
 
@@ -115,30 +118,36 @@ form {
     color: #959595;
 }
 
+.location_box {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+}
+
 .location {
-    width: 90%;
+    width: 40%;
     border-radius: 20px;
     background-color: white;
-    display: flex;
-    margin: 40px;
-    padding-bottom: 15px;
+
+    margin: 30px;
+    padding: 15px;
+    text-align: left;
+
+
 }
 
 .picture {
-    width: 40%;
-    height: 100%;
+    width: 80%;
+
     border-radius: 20px;
     overflow: hidden;
-    margin: 20px;
-    padding-bottom: 5px;
+
+    margin: auto;
+
 }
 
 .info_location {
-    width: 60%;
-    padding: 30px;
     font-size: small;
-    margin-top: revert;
-
 }
 
 .place_date_location {
