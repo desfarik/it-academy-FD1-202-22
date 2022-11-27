@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        [badge]:before {
+            content: attr(badge);
+        }
+        button{
+          position: relative;
+        }
+        before{
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+        [badge-color]:before {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<button badge="2k" badge-color="blue">text1</button>
+<button badge="5" badge-color="red">text2</button>
+<button badge="10">text3</button>
+</body>
+</html>
