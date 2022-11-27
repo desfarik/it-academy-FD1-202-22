@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 1000px;
+    min-width: 1000px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    box-shadow: 0px 0px 10px 2px lightgray;
+}
+
+.left-block {
+    width: 50%;
+    padding: 50px 100px;
+    box-sizing: border-box;
+}
+
+.cancel-icon {
+    position: relative;
+    left: -70px;
+    top: -20px;
+}
+
+.right-block {
+    width: 50%;
+}
+
+.entry-field {
+    margin-top: 15px;
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.entry-field-icon {
+    color: lightgray;
+    font-variation-settings: 'FILL' 1;
+}
+
+.input-entry-field {
+    height: 40px;
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-indent: 15px;
+    font-size: 15px;
+    color: gray;
+}
+
+.input-entry-field::placeholder {
+    text-indent: 15px;
+    color: gray;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.icon-wrapper {
+    height: 40px;
+    width: 50px;
+    border-right: 1px solid lightgray;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visability {
+    width: 50px;
+    color: lightgray;
+    font-variation-settings: 'FILL' 1;
+    position: relative;
+    right: -265px;
+    top: -35px;
+}
+
+.wrapper-checkbox-btn {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-custom-label::before {
+    font-family: 'Material Symbols Outlined';
+    margin-right: 10px;
+}
+
+.checkbox-custom-label {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.checkbox-remember:checked+.checkbox-custom-label::before {
+    content: 'check_box';
+    font-size: 27px;
+    color: lightgray;
+    font-variation-settings: 'FILL' 1;
+}
+
+.checkbox-remember:not(:checked)+.checkbox-custom-label::before {
+    content: 'check_box_outline_blank';
+    font-size: 27px;
+    color: lightgray;
+}
+
+.btn--login {
+    width: 30%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4687f8;
+    color: white;
+}
+
+.wrapper-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.link-register {
+    text-decoration: none;
+    color: skyblue;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.link-forgot-password {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.row-line {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: grey;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.line {
+    flex-grow: 1;
+    border-top: 1px solid lightgray;
+    height: 0px;
+}
+
+.login-with {
+    display: flex;
+    margin-top: 15px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.icon-login-with {
+    width: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-login-with {
+    color: white;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+.facebook .icon-login-with {
+    background-color: #233b64;
+    color: white;
+    border-right: 1px solid #233b64;
+}
+
+.btn--facebook {
+    background-color: #3a5b96;
+}
+
+.twitter .icon-login-with {
+    background-color: #1096c5;
+    color: white;
+    border-right: 1px solid #1096c5;
+}
+
+.btn--twitter {
+    background-color: #11adea;
+    
+}
+
+.google .icon-login-with {
+    background-color: #be3531;
+    color: white;
+    border-right: 1px solid #be3531;
+}
+
+.btn--google {
+    background-color: #f43f38;
+}
+button  {
+    cursor: pointer;
+}

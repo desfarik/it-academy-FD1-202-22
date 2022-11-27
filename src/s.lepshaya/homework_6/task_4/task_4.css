@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #6d9bc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 350px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.row-field {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.entry-field {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 20px;
+    text-indent: 10px;
+    box-sizing: border-box;
+}
+
+.custom-checkbox-label::before {
+    font-family: 'Material Symbols Outlined';
+    font-size: 25px;
+    color: #ed5683;
+    margin-right: 15px;
+
+}
+
+.custom-checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    font-weight: 400;
+
+}
+
+.checkbox-remember:not(:checked)+.custom-checkbox-label::before {
+    content: 'check_box_outline_blank';
+}
+
+.checkbox-remember:checked+.custom-checkbox-label::before {
+    content: 'check_box';
+    font-variation-settings: 'FILL' 1;
+}
+
+.btn-login {
+    width: 100%;
+    border: none;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #ed5683;
+    color: white;
+    font-size: 18px;
+    margin: 15px 0;
+    box-shadow: 0px 2px 5px 1px gray;
+}
+
+.link-forgot-password {
+    text-align: right;
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+.section {
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+}
+
+.line {
+    flex-grow: 1;
+    border-top: 1px solid lightgray;
+}
+
+.section-element {
+    border: 1px solid lightgray;
+    color: lightgray;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.icon-sign-in {
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 4px solid black;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.fa-google {
+    color: #d72f37;
+    border-color: #d72f37;
+}
+
+.fa-facebook-f {
+    color: #687faf;
+    border-color: #687faf;
+
+}
+
+.fa-linkedin-in {
+    color: #4c81c3;
+    border-color: #4c81c3;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.link-sign-up {
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+.icons i:hover {
+    cursor: pointer;
+}
