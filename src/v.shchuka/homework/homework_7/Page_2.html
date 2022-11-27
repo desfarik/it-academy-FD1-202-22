@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="stylesheet" href="./css/style_2.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header-wrapper">
+        <a class="link header-icon-container focus" href=""
+          ><span class="material-symbols-outlined header-icon-link-menu">
+            menu
+          </span></a
+        >
+        <div class="header-title">Detail</div>
+        <a class="link header-icon-container focus" href="">
+          <span class="material-symbols-outlined header-icon-link-dots">
+            more_horiz
+          </span>
+        </a>
+      </div>
+      <div class="page-wpapper">
+        <form action="" id="form">
+          <div class="kapuas-wrapper">
+            <div class="kapuas-img-container">
+              <img
+                class="kapuas-img"
+                src="./images/Sungai_Kapuas.jpg"
+                alt="Sungai Kapuas"
+              />
+              <div>
+                <input
+                  class="icon-love-input"
+                  type="checkbox"
+                  id="kapuas-love"
+                  name="kapuas-like"
+                  hidden
+                />
+                <label class="icon-love-label" for="kapuas-love"></label>
+              </div>
+            </div>
+            <div class="kapuas-title">Sungai Kapuas</div>
+            <div class="kapuas-footer-container">
+              <span class="material-symbols-outlined kapuas-icon">
+                location_on
+              </span>
+              <span>Yogyakarta</span>
+              <span class="material-symbols-outlined kapuas-icon">
+                calendar_month
+              </span>
+              <span>20 Aug - 29 Aug</span>
+            </div>
+          </div>
+        </form>
+        <div class="traveler-wrapper">
+          <div class="traveler-container">
+            <div class="traveler-rating-title">Rating</div>
+            <div class="traveler-rating-star-container">
+              <input
+                class="icon-star-input"
+                type="checkbox"
+                id="star"
+                name="star"
+                hidden
+              />
+              <label class="icon-star-label" for="star"></label>
+              <span class="rating-text">4.5</span>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="traveler-container">
+            <div class="traveler-joined-title">Joined Traveler</div>
+            <div class="traveler-avatars-container">
+              <img
+                class="avatar-img avatar_1-position"
+                src="./images/avatar_1.png"
+                alt="avatar"
+              />
+              <img
+                class="avatar-img avatar_2-position"
+                src="./images/avatar_2.png"
+                alt="avatar"
+              />
+              <img
+                class="avatar-img avatar_3-position"
+                src="./images/avatar_3.png"
+                alt="avatar"
+              />
+              <span class="avatar-plus">+6</span>
+            </div>
+          </div>
+          <img class="map-img" src="./images/maps.png" alt="map" />
+        </div>
+        <div class="destination-title">About Destination</div>
+        <div class="destination-content">
+          The Kapuat River is a river in the Indonesian part of Borneo island,
+          at the geographic enter or Martime Southeast Asia. At 1,143 kilometers
+          in length... <a class="link focus" href="">Read More</a>
+        </div>
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer-price-container">
+          <div class="footer-price-title">Total Price</div>
+          <div>
+            <span class="price">$250.00</span>
+            <span class="per_person">/Person</span>
+          </div>
+        </div>
+        <button class="footer-button focus" type="submit" form="form">
+          Book Now
+          <span class="material-symbols-outlined icon-arrow">
+            arrow_forward_ios
+          </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+.page {
+  background-color: #fafafa;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.page-wpapper {
+  padding-left: 28px;
+  padding-right: 28px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 208px);
+}
+.header-wrapper {
+  padding: 56px 28px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 4px #e6e6e6;
+  background-color: white;
+}
+.header-icon-link {
+  font-size: 18px;
+}
+.header-location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-location-title {
+  color: #adadad;
+  font-size: 13px;
+}
+.header-location-city-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-location-city {
+  font-size: 15px;
+  padding-top: 2px;
+}
+.header-icon-location {
+  font-size: 15px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+[notification]::after {
+  content: attr(notification);
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-family: "Material Symbols Rounded";
+  font-size: 7px;
+}
+.form {
+  padding: 8px;
+  display: flex;
+  box-shadow: 0 4px 4px #e6e6e6;
+  background-color: white;
+}
+.button-search {
+  border: none;
+  position: relative;
+  color: #adadad;
+  background-color: white;
+}
+.input-search {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 8px;
+}
+::placeholder {
+  color: #adadad;
+}
+.input-search:focus::placeholder {
+  opacity: 0;
+}
+.icon-search {
+  padding-left: 4px;
+}
+.relaction-links-wrapper {
+  display: flex;
+  gap: 10px;
+  width: calc(100% + 28px);
+  margin-top: 30px;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+.relaction-link-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  font-size: 13px;
+  background-color: #f2f2f2;
+  gap: 8px;
+  border-radius: 8px;
+}
+.relaction-img {
+  width: 23px;
+  height: 23px;
+  border-radius: 5px;
+}
+.relaction-link-container:focus {
+  background-color: black;
+}
+.relaction-link-container:focus .relaction-content {
+  color: white;
+}
+.margin-right {
+  margin-right: 28px;
+}
+.view-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.view-link {
+  text-decoration: none;
+  color: #adadad;
+  font-size: 15px;
+}
+.view-link:focus {
+  color: black;
+}
+.view-title {
+  font-weight: 500;
+}
+.popular-cards-wrapper {
+  display: flex;
+  gap: 20px;
+  width: calc(100% + 28px);
+  margin-top: 20px;
+  margin-bottom: 15px;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+.popular-card-container {
+  padding: 8px;
+  box-shadow: 0 4px 4px #e6e6e6;
+  border-radius: 10px;
+  position: relative;
+  background-color: white;
+}
+.popular-card-img {
+  width: 193px;
+  height: 188px;
+  border-radius: 8px;
+}
+.popular-card-footer-wrapper {
+  display: flex;
+  gap: 24px;
+  margin-top: 6px;
+  font-size: 13px;
+  padding-left: 8px;
+}
+.popular-card-footer-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #adadad;
+}
+.popular-card-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 12px;
+  padding-left: 10px;
+}
+.popular-icon-location {
+  font-size: 18px;
+  color: black;
+}
+.icon-star-label::before {
+  content: "star";
+  color: #ebd58c;
+  font-size: 18px;
+  font-family: "Material Symbols Outlined";
+}
+.icon-star-input:checked + .icon-star-label::before {
+  font-family: "Material Symbols Rounded";
+}
+[cost]::after {
+  content: attr(cost);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 13px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+.icon-love-label::before {
+  content: "favorite";
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 4px 4px #e6e6e6, 0 -3px 0 3px white;
+  font-size: 18px;
+  color: #db1524;
+  top: 180px;
+  right: 24px;
+  font-family: "Material Symbols Outlined";
+}
+.icon-love-input:checked + .icon-love-label::before {
+  font-family: "Material Symbols Rounded";
+}
+.recommendation-card-img {
+  width: 66px;
+  height: 66px;
+  border-radius: 6px;
+}
+.recommendation-cards-wrapper {
+  display: flex;
+  gap: 38px;
+  width: calc(100% + 28px);
+  overflow: auto;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.recommendation-card-container {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 8px 20px 8px 8px;
+  box-shadow: 0 4px 4px #e6e6e6;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-color: white;
+}
+.recommendation-card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.recommendation-icon-location {
+  font-size: 19px;
+  color: black;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+}
+.footer-link {
+  text-decoration: none;
+  color: #adadad;
+}
+.footer-icon {
+  font-size: 28px;
+  font-family: "Material Symbols Outlined";
+}
+.footer-icon-home::before {
+  content: "home";
+  color: black;
+  font-family: "Material Symbols Rounded";
+  font-size: 28px;
+}
+
+.footer-icon:focus::before {
+  color: black;
+  font-family: "Material Symbols Rounded";
+}
+.footer-button {
+  background-color: transparent;
+  border: none;
+  color: #adadad;
+  position: relative;
+}
+.footer-button::before {
+  content: "favorite";
+}
+.footer-button:focus::before {
+  font-family: "Material Symbols Rounded";
+}
+
+.footer-icon-calendar::before {
+  content: "calendar_month";
+}
+.footer-icon-calendar:focus::before {
+  content: "date_range";
+}
+.footer-icon-person::before {
+  content: "person";
+}
+.footer-icon-person:focus::before {
+  content: "account_circle";
+}
+[badge]::after {
+  content: attr(badge);
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  font-family: "Material Symbols Rounded";
+  font-size: 20px;
+}
+[badge]:focus::after {
+  display: none;
+}
+.focus:focus {
+  opacity: 0.5;
+}
