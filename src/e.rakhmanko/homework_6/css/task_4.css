@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+.contairner {
+  width: 400px;
+  background-color: #6d9bc2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.login-form {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #7a7979;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px 3px #5c83a2;
+  padding: 40px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-variant: small-caps;
+  font-size: 25px;
+}
+.input-field {
+  border: 2px solid #eaeaea;
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  outline: none;
+}
+
+.checkbox-label::before {
+  font-family: "Material Symbols Outlined";
+  font-size: 20px;
+  color: #ed5683;
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.checkbox:not(:checked) + .checkbox-label::before {
+  content: "check_box_outline_blank";
+}
+
+.checkbox:checked + .checkbox-label::before {
+  content: "check_box";
+  font-variation-settings: "FILL" 1;
+}
+
+
+.login-button {
+  width: 100%;
+  background-color: #ed5683;
+  border: none;
+  color: white;
+  font-variant: small-caps;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: 0px 1px 5px 1px #cacaca;
+}
+.login-button{
+  cursor: pointer;
+}
+.password-reset {
+  display: flex;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.forgot-password {
+  text-decoration: none;
+  color: #b4b4b4;
+}
+.line {
+  border: 1px;
+  width: 100%;
+}
+.decoration {
+  display: flex;
+  align-items: center;
+}
+.line {
+  border: 1px solid #dedede;
+  height: 0;
+  width: 100%;
+}
+.or {
+  color: #dedede;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 5px;
+}
+.social-networks-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-networks-icons {
+  border: 2px solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+}
+.fa-google {
+  color: #d5252d;
+  border-color: #d5252d;
+}
+.fa-facebook-f {
+  color: #566fa6;
+  border-color: #566fa6;
+}
+.fa-linkedin-in {
+  color: #5b8bc8;
+  border-color: #5b8bc8;
+}
+.need-anacount {
+  display: flex;
+  justify-content: center;
+}
+.singup {
+  color: inherit;
+}

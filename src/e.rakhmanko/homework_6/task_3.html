@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/3ae0c0ee8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/task_3.css" />
+    <title>Task_3</title>
+  </head>
+  <body>
+    <div class="contairner">
+      <div class="block">
+        <div class="image-block width-50">
+          <img src="./images/man.png" alt="" />
+        </div>
+        <div class="registration-field width-50">
+          <div class="title">Sing in</div>
+          <form action="">
+            <div class="inputs-type-text">
+              <span class="material-symbols-outlined person"> person </span>
+              <input
+                class="border-outline-none"
+                type="text"
+                name="username"
+                placeholder="Username"
+             
+              />
+            </div>
+
+            <div class="inputs-type-text">
+              <span class="material-symbols-outlined lock"> lock </span>
+              <input
+                class="border-outline-none"
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="checkbox-remember-me">
+              <input
+                class="checkbox-remember"
+                type="checkbox"
+                name="checkbox"
+                id="checkbox-remember"
+                hidden
+              />
+              <label for="checkbox-remember" class="checkbox-label"
+                >Remember me</label
+              >
+            </div>
+
+            <button class="button-login" type="submit" value="Login">
+              Log in
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="block">
+        <div class="create-an-account-link width-50">
+          <a class="create-an-account-link" href="">Create an account</a>
+        </div>
+        <div class="social-networks-links width-50">
+          <span>Or login with</span>
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""> <i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-square-google-plus"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

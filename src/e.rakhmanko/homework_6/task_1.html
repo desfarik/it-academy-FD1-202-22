@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/task_1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contairner">
+      <div class="title">Registration</div>
+      <form action="">
+        <div class="radio-buttons">
+          <div>
+            <input
+              class="radio"
+              type="radio"
+              id="personal"
+              name="user"
+              value="personal"
+            />
+            <label for="personal"> Personal</label>
+          </div>
+          <div>
+            <input
+              class="radio"
+              type="radio"
+              id="company"
+              name="user"
+              value="company"
+            />
+            <label for="company"> Company</label>
+          </div>
+        </div>
+        <div class="forms">
+          <label class="text-form">
+            <button type="submit" value="email">
+              <span class="material-symbols-outlined"> mail </span>
+            </button>
+            <input
+              class="input-line"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </label>
+
+          <label class="text-form"
+            ><button type="submit" value="user-name">
+              <span class="material-symbols-outlined"> account_box </span>
+            </button>
+            <input
+              class="input-line"
+              type="text"
+              placeholder="Name"
+              name="login"
+            />
+          </label>
+
+          <label class="text-form"
+            ><button type="submit" value="password">
+              <span class="material-symbols-outlined"> security </span>
+            </button>
+            <input
+              class="input-line"
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+          </label>
+        </div>
+        <div class="radio-buttons radio-buttons-gender ">
+          <div>
+            <input
+              class="radio"
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+            />
+            <label for="male"> Male</label>
+          </div>
+          <div>
+            <input
+              class="radio"
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+            />
+            <label for="female">Famale</label>
+          </div>
+        </div>
+        <div class="registration">
+          <div class="text-link">
+            By clicking Register,you agree on our
+            <a href="">terms and condition.</a>
+          </div>
+          <div class="registration-button">
+            <button type="submit">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

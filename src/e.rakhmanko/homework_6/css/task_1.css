@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+.contairner {
+  font-family: sans-serif;
+  color: #9b9fa2;
+  width: 300px;
+  background-color: #ebebeb;
+  border: 2px solid #d8d8d8;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  border-bottom: 2px inset#d8d8d8;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+.registration {
+  display: flex;
+  justify-content: space-between;
+}
+.radio-buttons {
+  display: flex;
+  border-bottom: 2px inset #d8d8d8;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.radio-buttons-gender {
+  border: none;
+  justify-content: center;
+}
+
+.text-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.text-link {
+  width: 50%;
+}
+
+.radio + label::before {
+  font-family: "Material Symbols Outlined";
+}
+.radio {
+  display: none;
+}
+.radio:checked + label::before {
+  content: " check_circle";
+ 
+}
+
+.radio:not(:checked) + label::before {
+  content: "radio_button_unchecked";
+ 
+}
+.radio:checked + label::before,.radio:not(:checked) + label::before {
+ color: #3c54ac;
+  margin-right: 10px;
+  font-size: 25px;
+  font-variation-settings: "FILL" 1;
+}
+button {
+  background-color: #3b57a6;
+  border: #3b57a6;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  }
+.input-line {
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.text-link {
+  font-size: smaller;
+}
+button[type="submit"] {
+  cursor: pointer;
+}
