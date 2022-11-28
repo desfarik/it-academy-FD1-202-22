@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page_1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      body {
+        background-color: #fafafa;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 0 0 20px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+      .popular_row,
+      .recommended_row {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow: auto;
+      }
+      .button {
+        background-color: white;
+        color: black;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        font-size: 15px;
+      }
+      .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .top_bar {
+        margin: 10px 20px 5px;
+      }
+      .subtitle {
+        font-size: 12px;
+        color: #acacac;
+      }
+      .popular_block_subtitle {
+        font-size: 12px;
+        color: #acacac;
+      }
+      .title_block {
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      .subtitle_block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .location_icon {
+        font-size: 14px;
+        font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
+      }
+      .all_titels_block {
+        line-height: 20px;
+        text-align: center;
+      }
+      .search_container {
+        width: 100%;
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        padding: 10px 10px 10px 35px;
+        border-radius: 1px;
+      }
+      .search_block {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        margin: 0 20px;
+      }
+      .search_icon {
+        position: absolute;
+        left: 5px;
+      }
+      .filter_button {
+        background-color: #f2f2f2;
+        border: none;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .picture {
+        height: 20px;
+        width: 20px;
+        border-radius: 5px;
+        background-color: white;
+      }
+      .filter_picture {
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        padding: 4px;
+        border-radius: 7px;
+      }
+      .filter_container {
+        display: flex;
+        gap: 10px;
+        overflow: auto;
+        margin: 10px 0;
+      }
+      .text_container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 20px 0;
+      }
+      .main_text {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .ordinary_text {
+        font-size: 17px;
+        color: #acacac;
+      }
+      .popular_block {
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        width: fit-content;
+        padding: 8px;
+        position: relative;
+      }
+
+      .popular_image {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .text_block {
+        width: 85%;
+      }
+      .star {
+        font-size: 15px;
+        color: #fdd835;
+      }
+      .rating_block {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .block_location_icon {
+        font-size: 14px;
+      }
+      .location_block {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .flex-grow {
+        flex-grow: 1;
+      }
+      .filter_button:focus {
+        background-color: #373737;
+        color: white;
+      }
+      .filter_button:focus + .filter_picture {
+        background-color: white;
+        height: 30px;
+        width: 30px;
+      }
+      .price_box {
+        background-color: white;
+        border-radius: 5px;
+        padding: 3px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-weight: bold;
+      }
+      .recomended_block {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        width: fit-content;
+        padding: 8px 20px 8px 8px;
+        gap: 10px;
+      }
+      .recommendation_picture {
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+      }
+      .bottom_bar {
+        background-color: white;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .bottom_icon {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top_container">
+      <div class="top_bar bar">
+        <span class="material-symbols-outlined button"> menu </span>
+        <div class="flex-grow"></div>
+        <div class="all_titels_block">
+          <div class="subtitle">Location</div>
+          <div class="subtitle_block">
+            <span class="material-symbols-outlined location_icon">
+              location_on
+            </span>
+            <div class="title">Pontianak</div>
+          </div>
+        </div>
+        <div class="flex-grow"></div>
+        <span class="material-symbols-outlined button"> notifications </span>
+      </div>
+      <div class="search_block">
+        <input
+          class="search_container"
+          type="text"
+          placeholder="Search destination..."
+        />
+        <span class="material-symbols-outlined search_icon"> search </span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="filter_container">
+        <button class="filter_button">
+          <img
+            class="filter_picture"
+            src="./images/beach.png"
+            alt="beach_picture"
+          />
+          Beach
+        </button>
+        <button class="filter_button">
+          <img
+            class="filter_picture"
+            src="./images/mountain_picture.jpg"
+            alt="mountain_picture"
+          />
+          Mountain
+        </button>
+        <button class="filter_button">
+          <img
+            class="filter_picture"
+            src="./images/camping.png"
+            alt="camping"
+          />
+          Camping
+        </button>
+        <button class="filter_button">
+          <img class="filter_picture" src="./images/cancer.png" alt="cancer" />
+          Sea
+        </button>
+        <button class="filter_button">
+          <img
+            class="filter_picture"
+            src="./images/bicycle.png"
+            alt="cycle"
+          />Cycling
+        </button>
+      </div>
+      <div class="text_container">
+        <div class="main_text">Popular</div>
+        <div class="ordinary_text">View all</div>
+      </div>
+      <div class="popular_row">
+        <div class="popular_container">
+          <div class="popular_block">
+            <img class="popular_image" src="./images/nature.jpg" alt="nature" />
+            <div class="price_box">$250</div>
+            <div class="text_block">
+              <div class="title_block">Sungai Kapuas</div>
+              <div class="row">
+                <div class="location_block subtitle">
+                  <span class="material-symbols-outlined block_location_icon">
+                    location_on
+                  </span>
+                  <div>Yogyakarta</div>
+                </div>
+                <div class="rating_block subtitle">
+                  <span class="material-symbols-outlined star"> star </span>
+                  <div>4.5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular_container">
+          <div class="popular_block">
+            <img
+              class="popular_image"
+              src="./images/nature3.jpg"
+              alt="nature"
+            />
+            <div class="price_box">$305</div>
+            <div class="text_block">
+              <div class="title_block">Hitsujiama Park</div>
+              <div class="row">
+                <div class="location_block subtitle">
+                  <span class="material-symbols-outlined block_location_icon">
+                    location_on
+                  </span>
+                  <div>Japan</div>
+                </div>
+                <div class="rating_block subtitle">
+                  <span class="material-symbols-outlined star"> star </span>
+                  <div>4.7</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popular_container">
+          <div class="popular_block">
+            <img
+              class="popular_image"
+              src="./images/nature2.jpg"
+              alt="nature"
+            />
+            <div class="price_box">$170</div>
+            <div class="text_block">
+              <div class="title_block">Agung Mountain</div>
+              <div class="row">
+                <div class="location_block subtitle">
+                  <span class="material-symbols-outlined block_location_icon">
+                    location_on
+                  </span>
+                  <div>Pontianak</div>
+                </div>
+                <div class="rating_block subtitle">
+                  <span class="material-symbols-outlined star"> star </span>
+                  <div>4.1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text_container">
+        <div class="main_text">Recommended</div>
+        <div class="ordinary_text">View all</div>
+      </div>
+      <div class="recommended_row">
+        <div class="recomandation_container">
+          <div class="recomended_block">
+            <img
+              class="recommendation_picture"
+              src="./images/recommendation_1.jpg"
+              alt="recommendation_picture"
+            />
+            <div class="text_block">
+              <div class="popular_title_block">Pantai Nusa</div>
+              <div class="row">
+                <div class="location_block subtitle">
+                  <span class="material-symbols-outlined block_location_icon">
+                    location_on
+                  </span>
+                  <div>Bali</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recomandation_container">
+          <div class="recomended_block">
+            <img
+              class="recommendation_picture"
+              src="./images/recommendation_2.jpg"
+              alt="recommendation_picture"
+            />
+            <div class="text_block">
+              <div class="title_block">Sungai Kapuas</div>
+              <div class="row">
+                <div class="location_block subtitle">
+                  <span class="material-symbols-outlined block_location_icon">
+                    location_on
+                  </span>
+                  <div>Yogyakarta</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recomandation_container">
+          <div class="recomended_block">
+            <img
+              class="recommendation_picture"
+              src="./images/recommendation_3.jpg"
+              alt="recommendation_picture"
+            />
+            <div class="text_block">
+              <div class="title_block">Sungai Kapuas</div>
+              <div class="row">
+                <div class="location_block subtitle">
+                  <span class="material-symbols-outlined block_location_icon">
+                    location_on
+                  </span>
+                  <div>Yogyakarta</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-grow"></div>
+    <div class="bottom_bar bar">
+      <span class="material-symbols-outlined bottom_icon"> home </span>
+      <span class="material-symbols-outlined bottom_icon"> favorite </span>
+      <span class="material-symbols-outlined bottom_icon"> calendar_month </span>
+      <span class="material-symbols-outlined bottom_icon"> account_circle </span>
+    </div>
+  </body>
+</html>
