@@ -1,0 +1,210 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+.page {
+  background-color: #fafafa;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.page-wpapper {
+  padding-left: 28px;
+  padding-right: 28px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 208px);
+}
+.header-wrapper {
+  padding: 56px 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px #e6e6e6;
+  background-color: white;
+}
+.header-icon-link-menu {
+  font-size: 18px;
+}
+.header-icon-link-dots {
+  font-size: 28px;
+  font-weight: 700;
+}
+.header-title {
+  font-weight: 500;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.calendar-wpapper {
+  padding: 16px 16px 28px 16px;
+  box-shadow: 0 4px 4px #e6e6e6;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 28px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.icon-arrow {
+  font-size: 18px;
+}
+.calendar-container-day {
+  display: flex;
+  gap: 29px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  position: relative;
+  font-weight: 500;
+}
+.calendar-container-month {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding-left: 2px;
+  color: #adadad;
+  gap: 38px;
+}
+.calendar-position-wpapper {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: black;
+  position: absolute;
+  left: 134px;
+  top: -7px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.calendar-position-container {
+  display: flex;
+  gap: 29px;
+}
+.dots {
+  padding-left: 6px;
+  gap: 41px;
+  margin-top: 8px;
+}
+.icon-dot {
+  font-size: 6px;
+}
+.view-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.view-link {
+  text-decoration: none;
+  color: #adadad;
+  font-size: 15px;
+}
+.view-link:focus {
+  color: black;
+}
+.view-title {
+  font-weight: 500;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 8px 20px 8px 8px;
+  box-shadow: 0 4px 4px #e6e6e6;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.card-img {
+  width: 105px;
+  height: 84px;
+  border-radius: 10px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card-icon {
+  font-size: 19px;
+  color: black;
+}
+.card-footer-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #adadad;
+  margin-top: 8px;
+  font-size: 13px;
+}
+.focus:focus {
+  opacity: 0.5;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+}
+.footer-link {
+  text-decoration: none;
+  color: #adadad;
+}
+.footer-icon {
+  font-size: 28px;
+  font-family: "Material Symbols Outlined";
+}
+.footer-icon:focus::before {
+  color: black;
+  font-family: "Material Symbols Rounded";
+}
+.footer-button {
+  background-color: transparent;
+  border: none;
+  color: #adadad;
+  position: relative;
+}
+.footer-button::before {
+  content: "favorite";
+}
+.footer-button:focus::before {
+  font-family: "Material Symbols Rounded";
+}
+.footer-icon-home::before {
+  content: "home";
+}
+.footer-icon-home:focus::before {
+  content: "house";
+}
+.footer-icon-calendar::before {
+  content: "date_range";
+  color: black;
+}
+.footer-icon-person::before {
+  content: "person";
+}
+.footer-icon-person:focus::before {
+  content: "account_circle";
+}
+[badge]::after {
+  content: attr(badge);
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  font-family: "Material Symbols Rounded";
+  font-size: 20px;
+}
+[badge]:focus::after {
+  display: none;
+}
+.focus:focus {
+  opacity: 0.5;
+}
