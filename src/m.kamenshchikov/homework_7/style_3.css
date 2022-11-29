@@ -1,0 +1,130 @@
+body {
+  background: #f1f1f1;
+  font-family: "Roboto", sans-serif;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.head {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.unread-notification {
+  width: 7px;
+  height: 7px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+.arrows {
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+.month {
+  display: flex;
+  align-items: center;
+}
+.main {
+  margin-top: 30px;
+  padding: 0px 20px;
+}
+.calendar {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.date {
+  display: flex;
+}
+.day {
+  width: calc(100% / 7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+.date-icon {
+  font-variation-settings: "FILL" 1;
+  color: white;
+  font-size: 10px;
+}
+.noted {
+  background-color: gray;
+}
+.noted-start {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.noted-end {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.places {
+  width: 350px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.place-preview {
+  width: 100px;
+  height: 90px;
+  border-radius: 10px;
+}
+.place-info > p {
+  margin: 5px;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+.place-info > h3 {
+  margin: 5px;
+}
+.foot-menu {
+  background: white;
+  padding: 30px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  box-sizing: border-box;
+}
+.foot-menu-icon {
+  color: gray;
+  font-size: 32px;
+  cursor: pointer;
+}
+.foot-menu-icon:hover {
+  color: black;
+}

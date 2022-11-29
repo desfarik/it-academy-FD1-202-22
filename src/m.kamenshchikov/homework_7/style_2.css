@@ -1,0 +1,178 @@
+body {
+  background: #f1f1f1;
+  font-family: "Roboto", sans-serif;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.head {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.main {
+  padding: 0px 20px;
+}
+.location {
+  background: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+.kapuas-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.like-icon-box {
+  cursor: pointer;
+  width: 70px;
+  border: none;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 250px;
+  top: 220px;
+  box-shadow: 1px 2px 5px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.like-icon {
+  width: 50px;
+}
+.location-info {
+  color: gray;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.location-icon {
+  margin: 0px 8px;
+}
+.rating {
+  background: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+.rate {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: gray;
+}
+.rate-icon {
+  color: gold;
+  font-variation-settings: "FILL" 1;
+}
+.rate-icon-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.vertical-line {
+  border: 1px solid gray;
+  height: 64px;
+  display: flex;
+}
+.person-icon {
+  width: 30px;
+  border-radius: 50%;
+}
+.icon1 {
+  position: absolute;
+  top: 40px;
+}
+.icon2 {
+  position: absolute;
+  right: 44px;
+  top: 40px;
+}
+.icon3 {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+}
+.see-more {
+  width: 30px;
+  height: 30px;
+  background: lightgray;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  right: 15px;
+}
+.traveler {
+  position: relative;
+}
+.traveler-header {
+  margin: 0;
+}
+.maps {
+  width: 100px;
+  border-radius: 10px;
+}
+.about {
+  margin-top: 20px;
+}
+.info-about {
+  color: gray;
+}
+.read-more-button {
+  border: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  padding: 0;
+}
+.foot-menu {
+  padding: 15px;
+  box-sizing: border-box;
+  background: white;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price > h3,
+h5 {
+  margin: 5px;
+}
+.booking {
+  border: none;
+  background: #424242;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.price-text {
+  color: gray;
+  font-size: 16px;
+}
