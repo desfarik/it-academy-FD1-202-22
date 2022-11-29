@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+          .user {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              background: #4fc2f3;
+          }
+
+          .user-wrapper:nth-child(2) .user {
+              background: #f26c61;
+          }
+          .user-wrapper:nth-child(3) .user {
+              background: #7dc681;
+          }
+          .user-wrapper:nth-child(4) .user {
+              background: #a749b8;
+          }
+
+          .container {
+              display: flex;
+          }
+
+          .user-wrapper {
+              width: 20px;
+          }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="user-wrapper">
+        <div class="user"></div>
+    </div>
+    <div class="user-wrapper">
+        <div class="user"></div>
+    </div>
+    <div class="user-wrapper">
+        <div class="user"></div>
+    </div>
+    <div class="user-wrapper">
+        <div class="user"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .day-list {
+            display: flex;
+        }
+
+        .day {
+            width: 40px;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .day.day--selected {
+            background: black;
+            color: white;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .day.day--selected:after {
+            content: '●';
+            display: block;
+        }
+
+        .day--selected + .day--selected:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 10px;
+            height: 100%;
+            background: black;
+            top: 0;
+            left: -5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="day-list">
+    <span class="day day--selected">20</span>
+    <span class="day">21</span>
+    <span class="day day--selected">22</span>
+    <span class="day ">23</span>
+    <span class="day day--selected">24</span>
+    <span class="day day--selected">25</span>
+    <span class="day">26</span>
+    <span class="day">27</span>
+    <span class="day">28</span>
+</div>
+</body>
+</html>
