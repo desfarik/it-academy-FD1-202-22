@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="stylesheet" href="./css/style_1.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header-wrapper">
+        <a class="link header-icon-container focus" href=""
+          ><span class="material-symbols-outlined header-icon-link">
+            menu
+          </span></a
+        >
+        <div class="header-location-container">
+          <div class="header-location-title">Location</div>
+          <div class="header-location-city-container">
+            <span class="material-symbols-rounded header-icon-location">
+              location_on
+            </span>
+            <div class="header-location-city">Pontianak</div>
+          </div>
+        </div>
+        <a class="link header-icon-container focus" notification="lens" href="">
+          <span class="material-symbols-outlined header-icon-link">
+            notifications
+          </span>
+        </a>
+      </div>
+      <div class="page-wpapper">
+        <form action="">
+          <div class="form">
+            <button class="button-search focus" type="submit">
+              <span class="material-symbols-rounded icon-search"> search </span>
+            </button>
+            <input
+              class="input-search"
+              type="search"
+              name="search"
+              placeholder="Search destination..."
+            />
+          </div>
+        </form>
+        <div class="relaction-links-wrapper">
+          <a href="" class="link relaction-link-container">
+            <img class="relaction-img" src="./images/beach.png" alt="" />
+            <span class="relaction-content">Beach</span>
+          </a>
+          <a href="" class="link relaction-link-container">
+            <img class="relaction-img" src="./images/mountain.png" alt="" />
+            <span class="relaction-content">Mountain</span>
+          </a>
+          <a href="" class="link relaction-link-container">
+            <img class="relaction-img" src="./images/camping.png" alt="" />
+            <span class="relaction-content">Camping</span>
+          </a>
+          <a href="" class="link relaction-link-container margin-right">
+            <img class="relaction-img" src="./images/surfing.png" alt="" />
+            <span class="relaction-content">Surfing</span>
+          </a>
+        </div>
+        <div class="view-links-wrapper">
+          <div class="view-title">Popular</div>
+          <a class="view-link" href="">View All</a>
+        </div>
+        <form action="" id="form">
+          <div class="popular-cards-wrapper">
+            <a
+              href="Page_2.html"
+              class="popular-card-container link focus"
+              cost="$250"
+            >
+              <img
+                class="popular-card-img"
+                src="./images/Sungai_Kapuas.jpg"
+                alt="Sungai Kapuas"
+              />
+              <div class="popular-card-title">Sungai Kapuas</div>
+              <div class="popular-card-footer-wrapper">
+                <div class="popular-card-footer-container">
+                  <span class="material-symbols-outlined popular-icon-location">
+                    location_on
+                  </span>
+                  <span>Yogyakarta</span>
+                </div>
+                <div class="popular-card-footer-container">
+                  <input
+                    class="icon-star-input"
+                    type="checkbox"
+                    id="kapuas-star"
+                    name="kapuas-star"
+                    hidden
+                  />
+                  <label class="icon-star-label" for="kapuas-star"></label>
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div>
+                <input
+                  class="icon-love-input"
+                  type="checkbox"
+                  id="kapuas-love"
+                  name="kapuas-like"
+                  hidden
+                />
+                <label class="icon-love-label" for="kapuas-love"></label>
+              </div>
+            </a>
+            <a
+              href=""
+              class="popular-card-container link margin-right focus"
+              cost="$350"
+            >
+              <img
+                class="popular-card-img"
+                src="./images/Agung_Moutain.jpg"
+                alt="Agung Moutain"
+              />
+              <div class="popular-card-title">Agung Moutain</div>
+              <div class="popular-card-footer-wrapper">
+                <div class="popular-card-footer-container">
+                  <span class="material-symbols-outlined popular-icon-location">
+                    location_on
+                  </span>
+                  <span>Pontianak</span>
+                </div>
+                <div class="popular-card-footer-container">
+                  <input
+                    class="icon-star-input"
+                    type="checkbox"
+                    id="agung-star"
+                    name="agung-star"
+                    hidden
+                  />
+                  <label class="icon-star-label" for="agung-star"></label>
+                  <span>4.6</span>
+                </div>
+              </div>
+              <div>
+                <input
+                  class="icon-love-input"
+                  type="checkbox"
+                  id="agung-love"
+                  name="agung-like"
+                  hidden
+                />
+                <label class="icon-love-label" for="agung-love"></label>
+              </div>
+            </a>
+          </div>
+        </form>
+        <div class="view-links-wrapper">
+          <div class="view-title">Recommended</div>
+          <a class="view-link" href="">View All</a>
+        </div>
+
+        <div class="recommendation-cards-wrapper">
+          <a href="" class="recommendation-card-container link focus">
+            <img
+              class="recommendation-card-img"
+              src="./images/Pantai_Nusa.jpg"
+              alt="Sungai Kapuas"
+            />
+            <div>
+              <div class="recommendation-card-title">Pantai Nusa</div>
+              <div class="popular-card-footer-container">
+                <span
+                  class="material-symbols-outlined recommendation-icon-location"
+                >
+                  location_on
+                </span>
+                <span>Bali</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href=""
+            class="recommendation-card-container link margin-right focus"
+          >
+            <img
+              class="recommendation-card-img"
+              src="./images/pulau-bajo.jpg"
+              alt="Sungai Kapuas"
+            />
+            <div class="recommendation-card-content">
+              <div class="recommendation-card-title">Pulau Bajo</div>
+              <div class="popular-card-footer-container">
+                <span
+                  class="material-symbols-outlined recommendation-icon-location"
+                >
+                  location_on
+                </span>
+                <span>Pontianak, Indonesia</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer-link footer-icon-home"></div>
+        <button
+          class="footer-button footer-icon"
+          type="submit"
+          form="form"
+          badge="favorite"
+        ></button>
+        <a
+          class="footer-link footer-icon footer-icon-calendar"
+          href="Page_3.html"
+        ></a>
+        <a class="footer-link footer-icon footer-icon-person" href=""></a>
+      </div>
+    </div>
+  </body>
+</html>

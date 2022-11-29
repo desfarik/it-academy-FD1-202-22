@@ -1,0 +1,239 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+.page {
+  background-color: #fafafa;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.page-wpapper {
+  padding-left: 28px;
+  padding-right: 28px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 208px);
+}
+.header-wrapper {
+  padding: 56px 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px #e6e6e6;
+  background-color: white;
+}
+.header-icon-link-menu {
+  font-size: 18px;
+}
+.header-icon-link-dots {
+  font-size: 28px;
+  font-weight: 700;
+}
+.header-title {
+  font-weight: 500;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.kapuas-wrapper {
+  padding: 10px;
+  box-shadow: 0 4px 4px #e6e6e6;
+  border-radius: 10px;
+  background-color: white;
+  overflow-x: auto;
+}
+.kapuas-img-container {
+  position: relative;
+}
+.kapuas-img {
+  width: 316px;
+  height: 291px;
+  border-radius: 10px;
+}
+.kapuas-title {
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 16px;
+  padding-left: 10px;
+}
+.kapuas-footer-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #adadad;
+  font-size: 13px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.kapuas-icon {
+  font-size: 18px;
+  color: black;
+}
+.icon-love-label::before {
+  content: "favorite";
+  width: 52px;
+  height: 52px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 4px 4px #e6e6e6, 0 -3px 0 3px white;
+  font-size: 28px;
+  color: #db1524;
+  top: 268px;
+  left: 242px;
+  font-family: "Material Symbols Outlined";
+}
+.traveler-wrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 8px 16px;
+  box-shadow: 0 4px 4px #e6e6e6;
+  border-radius: 10px;
+  background-color: white;
+}
+.traveler-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.traveler-rating-title {
+  font-size: 13px;
+  color: #adadad;
+}
+.traveler-rating-star-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.icon-love-input:checked + .icon-love-label::before {
+  font-family: "Material Symbols Rounded";
+}
+.icon-star-label::before {
+  content: "star";
+  color: #ebd58c;
+  font-size: 18px;
+  font-family: "Material Symbols Outlined";
+}
+.icon-star-input:checked + .icon-star-label::before {
+  font-family: "Material Symbols Rounded";
+}
+.rating-text {
+  font-weight: 500;
+}
+.line {
+  width: 1px;
+  height: 38px;
+  background-color: #dbd5d5;
+}
+.traveler-joined-title {
+  font-size: 13px;
+  font-weight: 500;
+}
+.traveler-avatars-container {
+  position: relative;
+  width: 100%;
+  height: 23px;
+}
+.avatar-img {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+.avatar_1-position {
+  position: absolute;
+  left: 1px;
+}
+.avatar_2-position {
+  position: absolute;
+  left: 18px;
+}
+.avatar_3-position {
+  position: absolute;
+  right: 28px;
+}
+.avatar-plus {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 9px;
+}
+.map-img {
+  width: 80px;
+  height: 62px;
+  border-radius: 10px;
+}
+.destination-title {
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.destination-content {
+  font-size: 12px;
+  color: #adadad;
+  line-height: 1.5em;
+  margin-bottom: 12px;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.footer-price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-price-title {
+  font-size: 13px;
+}
+.price {
+  font-size: 21px;
+  font-weight: 500;
+}
+.per_person {
+  font-size: 12px;
+  color: #adadad;
+}
+.footer-button {
+  background-color: #313131;
+  border: none;
+  color: white;
+  display: flex;
+  gap: 10px;
+  padding: 15px 18px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.icon-arrow {
+  font-size: 15px;
+}
+.focus:focus {
+  opacity: 0.5;
+}
