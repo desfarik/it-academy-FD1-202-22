@@ -1,0 +1,103 @@
+body {
+  background-color: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
+}
+.contairner {
+  width: 600px;
+  border-radius: 20px;
+
+  background-color: white;
+  padding: 30px 20px;
+  box-shadow: 2px 3px 5px 3px gray;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #757575;
+}
+.block {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.image-block img {
+  width: 100%;
+}
+.registration-field {
+  margin-top: 30px;
+}
+.width-50 {
+  width: 50%;
+}
+.title {
+  margin-bottom: 15px;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #232323;
+}
+
+.inputs-type-text {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #757575;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+
+.border-outline-none {
+  border: none;
+  outline: none;
+}
+
+.person,
+.lock {
+  color: black;
+  font-variation-settings: "FILL" 1;
+  font-weight: 200;
+  font-size: 25px;
+}
+.checkbox-label::before {
+  font-family: "Material Symbols Outlined";
+  margin-right: 15px;
+}
+.checkbox-remember:not(:checked) + .checkbox-label::before,
+.checkbox-remember:checked + .checkbox-label::before {
+  content: "check_box";
+  font-size: 25px;
+  font-weight: 400;
+}
+.checkbox-remember:checked + .checkbox-label::before {
+  color: black;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.button-login {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: #6faae3;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+.button-login:hover{
+  cursor: pointer;
+}
+.create-an-account-link {
+  text-align: center;
+  color: #a7a7a7;
+}
+.fa-square-facebook {
+  color: #3f5d99;
+}
+.fa-square-twitter {
+  color: #219feb;
+}
+.fa-square-google-plus {
+  color: #e42534;
+}

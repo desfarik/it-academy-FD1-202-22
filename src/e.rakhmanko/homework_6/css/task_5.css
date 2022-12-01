@@ -1,0 +1,167 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+.contairner {
+  width: 800px;
+  box-shadow: 12px 19px 20px 20px grey;
+  display: flex;
+  color: #757575;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.width-50 {
+  width: 50%;
+}
+.block-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.block-left {
+  margin: 15px;
+}
+.autorization-field {
+  margin: 20px 30px;
+}
+.input-field {
+  display: flex;
+  align-items: center;
+  border: 2px solid #757575;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.icons,
+.checkbox-rmmbr:not(:checked) + .checkbox-remember-label::before,
+.checkbox-rmmbr:checked + .checkbox-remember-label::before {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.input-text-setting{
+  border: none;
+  outline: none;
+  width: 70%;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.icons-border-right{
+  border-right: 2px solid;
+  padding: 10px;
+
+}
+.visibility{
+  padding: 10px;
+  
+}
+.checkbox-label{
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+.checkbox-label::before {
+  font-family: "Material Symbols Outlined";
+}
+
+.checkbox:not(:checked) + .checkbox-label::before {
+  content: "check_box_outline_blank";
+  font-size: 25px;
+  color: inherit;
+}
+.checkbox:checked + .checkbox-label::before {
+  content: "check_box";
+}
+.checkbox:not(:checked) + .checkbox-label::before,
+.checkbox:checked + .checkbox-label::before {
+  color: inherit;
+  font-size: 25px;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.login-button {
+  background-color: #468af9;
+  color: white;
+  font-variant: small-caps;
+  border: none;
+
+  border-radius: 5px;
+  width: 30%;
+}
+.links-decoration {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+.color-blue {
+  color: #468af9;
+}
+.alternativ-varient{
+  display: flex;
+  align-items: center;
+  
+}
+.line{
+  border:1px solid #b8b8bd;
+  width: 100%;
+  height: 0;
+  
+}
+.or{
+  padding:10px;
+}
+.networks-links{
+  display: flex;
+
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.button-login{
+  flex-grow: 1;
+  border:none;
+   font-variant: small-caps;
+   color: white;
+   font-size: 18px;
+}
+.networks-icons{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+  color: white;
+}
+.facebook{
+  background-color: #233c67;
+ 
+}
+.twitter{
+  background-color: #1297c8;
+ 
+}
+.google{
+ 
+  background-color: #c12c28;
+}
+.login-with-facebook{
+  background-color:#3a5b96 ;
+
+}
+.login-with-twitter{
+  background-color: #11adea;
+}
+.login-with-google{
+  background-color:#f54039 ;
+}
+.login-button,.button-login,.visability:hover{
+  cursor: pointer;
+}
