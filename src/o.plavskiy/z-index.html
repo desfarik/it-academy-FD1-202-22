@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index</title>
+    <style>
+      .container .box:first-child {
+        background-color: aqua;
+      }
+      .container .box:nth-child(2) {
+        background-color: rgb(56, 228, 37);
+        z-index: 3;
+        right: -20px;
+      }
+
+      .container .box:nth-child(3) {
+        background-color: yellow;
+        z-index: 2;
+        right: -10px;
+        top: 50px;
+      }
+      .container .box:last-child {
+        background-color: red;
+        z-index: 1;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+      }
+      .container {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

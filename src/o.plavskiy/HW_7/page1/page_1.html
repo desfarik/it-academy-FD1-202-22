@@ -10,17 +10,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>page_1</title>
     <style>
+      *{
+        box-sizing: border-box;
+      }
       @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
       body {
         background-color: #fafafa;
         font-family: "Roboto", sans-serif;
         margin: 0;
+        overflow: hidden;
       }
       .container {
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin: 0 0 0 20px;
+        height: calc(100vh - 40px - 70px);
+        overflow: auto;
       }
       .row {
         display: flex;
@@ -38,20 +44,37 @@
       .button {
         background-color: white;
         color: black;
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         text-align: center;
-        line-height: 30px;
+        line-height: 35px;
         border-radius: 50%;
-        font-size: 15px;
+        border: none;
+        font-size: 20px;
       }
+
+      .button:focus {
+        background-color: red;
+      }
+      .button:focus {
+        background: rgb(238, 174, 198);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 174, 198, 1) 8%,
+          rgba(148, 187, 233, 1) 95%
+        );
+        color: white;
+      }
+
       .bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
       .top_bar {
-        margin: 10px 20px 5px;
+     width: 100%;
+        position: fixed;
+        z-index: 1;
       }
       .subtitle {
         font-size: 12px;
@@ -142,14 +165,13 @@
         background-color: white;
         border-radius: 10px;
         border: none;
-        width: fit-content;
+        width: 45vw;
         padding: 8px;
         position: relative;
       }
 
       .popular_image {
-        width: 250px;
-        height: 250px;
+        width: 100%;
         border-radius: 10px;
       }
       .text_block {
@@ -199,7 +221,7 @@
         background-color: white;
         border-radius: 10px;
         border: none;
-        width: fit-content;
+        width: 55vw;
         padding: 8px 20px 8px 8px;
         gap: 10px;
       }
@@ -210,7 +232,7 @@
       }
       .bottom_bar {
         background-color: white;
-        padding: 30px 0;
+        padding: 20px 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -221,25 +243,40 @@
       .bottom_icon {
         font-size: 30px;
       }
+      .heart_icon {
+        background-color: white;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        line-height: 35px;
+        text-align: center;
+        border: 5px solid white;
+        border-radius: 50%;
+        bottom: 60px;
+        right: 20px;
+        color: red;
+        font-variation-settings: "FILL" 1;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
     </style>
   </head>
   <body>
-    <div class="top_container">
-      <div class="top_bar bar">
-        <span class="material-symbols-outlined button"> menu </span>
-        <div class="flex-grow"></div>
-        <div class="all_titels_block">
-          <div class="subtitle">Location</div>
-          <div class="subtitle_block">
-            <span class="material-symbols-outlined location_icon">
-              location_on
-            </span>
-            <div class="title">Pontianak</div>
-          </div>
+    <div class="top_bar bar">
+      <button class="material-symbols-outlined button">menu</button>
+      <div class="flex-grow"></div>
+      <div class="all_titels_block">
+        <div class="subtitle">Location</div>
+        <div class="subtitle_block">
+          <span class="material-symbols-outlined location_icon">
+            location_on
+          </span>
+          <div class="title">Pontianak</div>
         </div>
-        <div class="flex-grow"></div>
-        <span class="material-symbols-outlined button"> notifications </span>
       </div>
+      <div class="flex-grow"></div>
+      <button class="material-symbols-outlined button">notifications</button>
+    </div>
+    <div class="container">
       <div class="search_block">
         <input
           class="search_container"
@@ -248,8 +285,6 @@
         />
         <span class="material-symbols-outlined search_icon"> search </span>
       </div>
-    </div>
-    <div class="container">
       <div class="filter_container">
         <button class="filter_button">
           <img
@@ -296,6 +331,7 @@
           <div class="popular_block">
             <img class="popular_image" src="./images/nature.jpg" alt="nature" />
             <div class="price_box">$250</div>
+            <span class="material-symbols-outlined heart_icon"> favorite </span>
             <div class="text_block">
               <div class="title_block">Sungai Kapuas</div>
               <div class="row">
@@ -432,12 +468,15 @@
         </div>
       </div>
     </div>
-    <div class="flex-grow"></div>
     <div class="bottom_bar bar">
       <span class="material-symbols-outlined bottom_icon"> home </span>
       <span class="material-symbols-outlined bottom_icon"> favorite </span>
-      <span class="material-symbols-outlined bottom_icon"> calendar_month </span>
-      <span class="material-symbols-outlined bottom_icon"> account_circle </span>
+      <span class="material-symbols-outlined bottom_icon">
+        calendar_month
+      </span>
+      <span class="material-symbols-outlined bottom_icon">
+        account_circle
+      </span>
     </div>
   </body>
 </html>

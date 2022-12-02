@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calendar</title>
+    <style>
+      .calendar {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .row {
+        display: flex;
+      }
+
+      .selected {
+        background-color: black;
+        color: white;
+      }
+      .number,
+      .day {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        text-align: center;
+      }
+      .number {
+        border-radius: 5px;
+        height: 30px;
+        justify-content: space-between;
+        padding-bottom: 10px;
+      }
+      .selected::after {
+        content: "";
+        width: 3px;
+        height: 3px;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+      .point {
+        font-size: 15px;
+        font-variation-settings: "FILL";
+      }
+      .selected + .selected::before {
+        content: "";
+        background-color: black ;
+        height: 100%;
+        width: 10px;
+        position: absolute;
+        left: -5px;
+      }
+      .selected {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calendar">
+      <div class="day_row row">
+        <span class="day">S</span>
+        <span class="day">M</span>
+        <span class="day">T</span>
+        <span class="day">W</span>
+        <span class="day">T</span>
+        <span class="day">F</span>
+        <span class="day">S</span>
+      </div>
+      <div class="number_row row">
+        <span class="number">20</span>
+        <span class="number">21</span>
+        <span class="number">22</span>
+        <span class="number selected">23</span>
+        <span class="number selected">24</span>
+        <span class="number selected">25</span>
+        <span class="number">26</span>
+      </div>
+    </div>
+  </body>
+</html>
