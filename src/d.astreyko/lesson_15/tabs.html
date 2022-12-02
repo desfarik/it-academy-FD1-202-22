@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-header {
+            display: inline-block;
+        }
+
+        input:nth-child(1):checked ~ .tab-content-container .tab-content:nth-child(1),
+        input:nth-child(2):checked ~ .tab-content-container .tab-content:nth-child(2),
+        input:nth-child(3):checked ~ .tab-content-container .tab-content:nth-child(3) {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<input type="radio" name="tab" id="tab1" hidden>
+<input type="radio" name="tab" id="tab2" hidden>
+<input type="radio" name="tab" id="tab3" hidden>
+
+<div class="tab-header-container">
+    <label for="tab1" class="tab-header">tab 1</label>
+    <label for="tab2" class="tab-header">tab 2</label>
+    <label for="tab3" class="tab-header">tab 3</label>
+</div>
+<div class="tab-content-container">
+    <div class="tab-content">content 1</div>
+    <div class="tab-content">content 2</div>
+    <div class="tab-content">content 3</div>
+</div>
+</body>
+</html>
