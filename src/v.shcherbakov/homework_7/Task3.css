@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px;
+    margin: 20px;
 
 }
 
@@ -30,15 +30,12 @@ body {
 }
 
 .calendar {
-    margin: 40px;
-    width: 90%;
+    margin: 20px;
     background-color: white;
     border-radius: 20px;
+    overflow: hidden;
 }
 
-ul {
-    list-style-type: none;
-}
 
 .month {
     width: 100%;
@@ -46,65 +43,39 @@ ul {
     font-size: large;
     display: flex;
     justify-content: space-around;
-    margin: 15px 0px;
+    padding: 15px 0px;
 }
 
-
-.weekdays {
-    margin: 0;
-    padding: 10px 0px;
-
+.day-list {
+    display: flex;
 }
-
-.weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    color: #666;
+.day {
+    width: 40px;
     text-align: center;
+    padding: 8px;
 }
 
-.days {
-    padding: 10px 0;
-    margin: 0;
+.day.day--selected {
+    background: black;
+    color: white;
+    border-radius: 5px;
+    position: relative;
 }
 
-.days li {
-    list-style-type: none;
+.day.day--selected:after {
+    content: '●';
+    display: block;
+}
+
+.day--selected + .day--selected:before {
+    content: '';
     display: inline-block;
-    width: 13.6%;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 12px;
-
-}
-
-.days li .active {
-    padding: 5px;
-    background: #1abc9c;
-    color: white !important
-}
-
-/* Add media queries for smaller screens */
-@media screen and (max-width: 720px) {
-    .weekdays li, .days li {
-        width: 13.1%;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .weekdays li, .days li {
-        width: 12.5%;
-    }
-
-    .days li .active {
-        padding: 2px;
-    }
-}
-
-@media screen and (max-width: 290px) {
-    .weekdays li, .days li {
-        width: 12.2%;
-    }
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: -5px;
 }
 
 .menu_view {
@@ -119,30 +90,31 @@ ul {
 }
 
 .location {
-    width: 90%;
+
     border-radius: 20px;
     background-color: white;
     display: flex;
     margin: 40px;
-    padding-bottom: 15px;
+
 }
 
 .picture {
     width: 40%;
-    height: 100%;
+    height: 100px;
     border-radius: 20px;
     overflow: hidden;
     margin: 20px;
-    padding-bottom: 5px;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+   justify-content: center;
+
 }
 
 .info_location {
     width: 60%;
-    padding: 30px;
-    font-size: small;
-    margin-top: revert;
-
-}
+    font-size: x-small;
+ }
 
 .place_date_location {
     color: #979797;
@@ -152,12 +124,11 @@ ul {
 
 .icon_bar {
     width: 100%;
-    height: 40%;
-    height: border-box;
+    height: 50px;
     display: flex;
-    justify-content: space-around;
     font-size: large;
     margin: 30px 0px;
     background-color: white;
-    align-items: end;
+    align-items: center;
+    justify-content: space-around;
 }
