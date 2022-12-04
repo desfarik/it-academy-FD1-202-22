@@ -1,0 +1,154 @@
+.page {
+    display: flex;
+    color: grey;
+    width: 700px;
+    margin: auto;
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input[placeholder] {
+    font-size: 12px;
+}
+
+.picture-block {
+    width: 50%;
+    background: url(./pics/task6.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.text-picture-block {
+    display: flex;
+}
+
+.text-picture-container {
+    color: white;
+    width: 30%;
+}
+
+.size-flex-grow {
+    width: 50%;
+}
+
+.link-site {
+    margin: 10px;
+
+}
+
+.sign-in-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.title-sign-in {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: black;
+}
+
+.input-container {
+    display: flex;
+    border-bottom: solid 1px #a9a9a9;
+    margin-bottom: 20px;
+}
+
+.none-border {
+    border: none;
+}
+
+.field-symbol-item {
+
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flex-block {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.login-with-network-item {
+    width: 200px;
+    height: 30px;
+    border: none;
+
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.twitter-button {
+    background-color: #11adea;
+
+}
+
+.facebook-button {
+    background-color: #3a5b96;
+}
+
+.continue-button {
+    height: 32px;
+    color: white;
+    font-size: 16px;
+    background-image: linear-gradient(to right, #7855a7, #de37c1);
+    margin-bottom: 20px;
+    border: none;
+    font-size: 12px;
+}
+
+.network-link {
+    color: white;
+}
+
+.text {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.continue-block {
+    display: flex;
+}
+
+.continue-icon {
+    height: 32px;
+    background: #de37c1;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.icon {
+    font-size: 12px;
+    text-align: center;
+}

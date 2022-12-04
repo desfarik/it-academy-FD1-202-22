@@ -1,0 +1,91 @@
+.form-registration {
+    width: 250px;
+    background-color: #ebebeb;
+    border: solid 1px #d2d2d2;
+    text-align: center;
+    color: #87665f;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.text-information {
+    margin-bottom: 5px;
+}
+
+.item {
+    display: inline-block;
+}
+
+.flex-block {
+    display: flex;
+    justify-content: center;
+
+}
+
+.field-symbol-item {
+    background-color: #3a58af;
+    color: white;
+    font-size: 16px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #3a58af;
+}
+
+.symbol-size {
+    font-size: 16px;
+    line-height: 0;
+}
+
+.radio-block {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.radio-item {
+    display: none;
+}
+
+.radio-item+label::before {
+    font-family: 'Material Symbols Outlined';
+    color: #3a58af;
+    /*width: 16px;
+    height: 16px;
+    background-color: #3a58af;
+    border-radius: 50%;*/
+}
+
+.radio-item:checked+label::before {
+    content: "check_circle";
+}
+
+.radio-item:not(:checked)+label::before {
+    content: "radio_button_unchecked";
+}
+
+.borders {
+    border-bottom: solid 1px #d2d2d2;
+    border-top: solid 1px #d2d2d2;
+}
+
+.conditions-block {
+    width: 50%;
+    text-align: justify;
+    margin: 0;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.button {
+    background-color: #3a58af;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}

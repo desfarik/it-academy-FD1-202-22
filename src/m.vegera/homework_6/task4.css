@@ -1,0 +1,127 @@
+.page {
+    width: 250px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: grey
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.input-block {
+    width: 250px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-item {
+    height: 20px;
+    border-radius: 5px;
+    border: solid 1px grey;
+}
+
+.checkbox-icon+label::before {
+    font-family: 'Material Symbols Outlined';
+    font-size: 18px;
+
+}
+
+.checkbox-icon {
+    display: none;
+}
+
+.checkbox-icon:checked+label::before {
+    content: "check_box";
+    color: #ed5683;
+
+}
+
+.checkbox-icon:not(:checked)+label::before {
+    content: "check_box_outline_blank";
+}
+
+.checkbox-block {
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #ed5683;
+    text-align: center;
+    color: white;
+    border-color: #ed5683;
+    margin-bottom: 0;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.separator-block {
+    display: flex;
+    margin-top: 20px;
+}
+
+.container-OR {
+    border-width: 1px;
+    border: solid 1px grey;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    color: grey;
+    background-color: grey;
+}
+
+.login-with-block {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+    mar
+}
+
+.login-with-item {
+    width: 20px;
+    height: 20px;
+    border: solid 3px #5386c6;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.login-with-item-border {
+    border-color: #ed5683;
+}
+
+.facebook-link {
+    color: #ed5683;
+    font-weight: bold;
+
+}
+
+.login-with-item-color {
+    color: #5386c6;
+    font-weight: bold;
+}
+
+
+.flex-block {
+    display: flex;
+}
+
+.sign-up-link {
+    text-decoration: underline;
+    color: grey;
+}

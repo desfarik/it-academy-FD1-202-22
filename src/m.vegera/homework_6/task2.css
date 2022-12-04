@@ -1,0 +1,97 @@
+body {
+    background-image: url(./pics/mountain2.jpg);
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.page {
+    margin: 50px auto;
+    width: 300px;
+    height: 100vh;
+    color: #d6dfe0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.input-item {
+
+    margin-bottom: 20px;
+}
+
+.text-information {
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    opacity: 0.3;
+    /* background-color: rgba(0,0,0,0);*/
+}
+
+.sign-in-button {
+    background-color: #ffcbb2;
+    color: #362a25;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.sign-in-option-block {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-link-block {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sign-by-network-button {
+    width: 140px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #656565;
+    border-radius: 5px;
+    border: none;
+}
+
+a[href] {
+    text-decoration: none;
+    color: white;
+}
+
+button a[href] {
+    color: #656565;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.checkbox-icon+label::before {
+    font-family: 'Material Symbols Outlined';
+    font-size: 18px;
+}
+
+.checkbox-icon {
+    display: none;
+}
+
+.checkbox-icon:checked+label::before {
+    content: "check_box";
+    color: #ffcbb2;
+}
+
+.checkbox-icon:not(:checked)+label::before {
+    content: "check_box_outline_blank";
+}
