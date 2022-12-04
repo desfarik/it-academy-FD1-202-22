@@ -1,0 +1,144 @@
+body {
+  overflow: hidden;
+  margin: 0px;
+}
+.contairner {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: #f3f3f3;
+
+  color: #6d6d6d;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.text-decoration-none {
+  text-decoration: none;
+  color: inherit;
+}
+.font-size {
+  font-size: 28px;
+}
+
+.header-icons-contairner {
+  border-radius: 50%;
+  background-color: white;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titels-decoration {
+  font-weight: bold;
+  font-size: large;
+}
+.notofication {
+  position: relative;
+  font-size: 30px;
+}
+.black-dot {
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" -25, "opsz" 24;
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  font-size: 16px;
+}
+
+.main {
+  overflow: auto;
+  height: calc(100vh - 160px);
+  margin: 12px 20px;
+}
+
+.calendar {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.month {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.day-list {
+  display: flex;
+  justify-content: center;
+}
+
+.day {
+  width: 40px;
+  text-align: center;
+  padding: 8px;
+}
+
+.day-selected {
+  background: black;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.day-selected:after {
+  content: "●";
+  display: block;
+}
+
+.day-selected + .day-selected:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: -5px;
+}
+.wiew-all-link {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.content-block {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+.location-image {
+  border-radius: 10px; 
+  width: 150px;
+  height: 120px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.location-title {
+  margin-bottom: 5px;
+}
+.location-information {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 10px 0px;
+}
+.calendar-icon {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
+  color: black;
+}

@@ -1,0 +1,230 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+.contairner {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #f3f3f3;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header-icons-contairner {
+  border-radius: 50%;
+  background-color: white;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.link-decoration {
+  text-decoration: none;
+  color: inherit;
+}
+.main {
+  padding-left: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 160px);
+}
+.location-contairner {
+  text-align: center;
+}
+.location-dote {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.location-on {
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 48;
+}
+.location-on-not-fill,
+.location-on {
+  font-size: 16px;
+}
+
+.notofication {
+  position: relative;
+  font-size: 30px;
+}
+.black-dot {
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" -25, "opsz" 24;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 16px;
+}
+
+.search-field {
+  background-color: white;
+  margin-top: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.search-iteams {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.options,
+.popular-offers,
+.recomedations {
+  overflow: auto;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.option-link {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.option-link:active,
+.recomendation-variant-link:active {
+  background-color: #313131;
+  color: white;
+}
+.option-link img {
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+.wiew-all-link {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.font-weight {
+  font-weight: bold;
+}
+.view-all {
+  text-decoration: none;
+  color: inherit;
+}
+
+.popular-offers-variant {
+  background-color: white;
+  padding: 5px 5px 10px 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.popular-offers-variant-link {
+  position: relative;
+}
+[price]::after {
+  content: attr(price);
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  font-size: 13px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+.popular-offers-img {
+  width: 200px;
+  height: 195px;
+  border-radius: 10px;
+}
+.like-label:before {
+  font-family: "Material Symbols Outlined";
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  box-shadow: 0 4px 4px #cccccc;
+}
+.checkbox-like:checked + .like-label:before {
+  content: "favorite";
+
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: red;
+}
+
+.checkbox-like:not(:checked) + .like-label:before {
+  content: "favorite";
+  color: red;
+}
+
+.checkbox-star-label:before {
+  font-family: "Material Symbols Outlined";
+}
+.input-star:checked + .checkbox-star-label:before {
+  content: "star";
+
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: yellow;
+}
+
+.input-star:not(:checked) + .checkbox-star-label:before {
+  content: "star";
+  color: yellow;
+}
+.popular-offers-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.popular-offers-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.place-location-dot {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.recomendation-variant-link {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+  background-color: white;
+
+  width: 210px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.recomendation-variant-link img {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px 0px;
+}
+.home-icon {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
+  color: black;
+}
