@@ -1,0 +1,14 @@
+
+button[badge]{
+    position: relative;
+    width: 100px;
+    height: 30px;
+}
+[badge]:before{
+    content: attr(badge);
+    position: absolute;
+    top: -10px;
+    right: 3px;
+    border: solid 1px grey;
+    
+}

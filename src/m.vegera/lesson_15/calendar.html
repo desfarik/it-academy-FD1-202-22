@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .day-list {
+        display: flex;
+      
+        
+    }
+
+    .day {
+        color: black;
+        width: 40px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .day-selected {
+        color: white;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        position: relative;
+  
+    }
+
+    .day-selected::after {
+        content: "\2022";
+
+    }
+
+    .day-selected + .day-selected::before{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 100%;
+        position: absolute;
+        background-color: red;
+        top: 0;
+        left: -5px;
+        
+    }
+    {}
+</style>
+
+<body>
+    <div class="day-list">
+        <span class="day">20</span>
+        <span class="day">21</span>
+        <span class="day">22</span>
+        <span class="day day-selected">23</span>
+        <span class="day day-selected">24</span>
+        <span class="day day-selected">25</span>
+        <span class="day">26</span>
+    </div>
+</body>
+
+</html>
