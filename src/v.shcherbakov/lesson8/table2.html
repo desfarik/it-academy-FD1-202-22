@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style>
+        .container {
+            width: 1000px;
+            text-align: center;
+            background-color:#ebeff0;
+            margin: auto;
+        }
+
+        tr {
+            height: 100px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 18px;
+            table-layout: auto;
+            border-bottom: none;
+            border-color: white;
+        }
+
+        .status {
+            border-radius: 2px;
+            border: solid 0px white;
+            width: 60%;
+            margin: auto;
+        }
+
+        .status_color1 {
+            background-color: pink;
+            color: red;
+        }
+
+        .status_color2 {
+            background-color: #a5dc70;
+            color: green;
+        }
+
+        .status_color3 {
+            background-color: #e2d458;
+            color: black;
+        }
+
+        .color_buton_first {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <table border="1">
+        <colgroup>
+            <col style="width: calc(1000px/5) ;">
+            <col style="width: calc(1000px/5) ;">
+            <col style="width: calc(1000px/5) ;">
+            <col style="width: calc(1000px/5) ;">
+            <col style="width: calc(1000px/5) ;">
+        </colgroup>
+        <tr>
+            <td>INVOICE</td>
+            <td>COMPANY</td>
+            <td>DUE DATE</td>
+            <td>STATUS</td>
+            <td>AMOUNT</td>
+        </tr>
+        <tr>
+            <td class="color_buton_first">INV_1001</td>
+            <td>Paragon</td>
+            <td>1/5/2021</td>
+            <td>
+                <div class="status status_color1">Unpaid</div>
+            </td>
+            <td>$520.16</td>
+        </tr>
+        <tr>
+            <td class="color_buton_first">
+                INV_1002
+            </td>
+            <td>Sonic</td>
+            <td>1/4/2021</td>
+            <td>
+                <div class="status status_color2">Paid</div>
+            </td>
+            <td>$415.25</td>
+        </tr>
+        <tr>
+            <td class="color_buton_first">
+                INV_1003
+            </td>
+            <td>Innercircle</td>
+            <td>1/2/2021</td>
+            <td>
+                <div class="status status_color3">Pending</div>
+            </td>
+            <td>$1324.84</td>
+        </tr>
+        <tr>
+            <td class="color_buton_first">
+                INV_1004
+            </td>
+            <td>Varsity Plus</td>
+            <td>12/30/2020</td>
+            <td>
+                <div class="status status_color3">Pending</div>
+            </td>
+            <td>$988.26</td>
+        </tr>
+        <tr>
+            <td class="color_buton_first">
+                INV_1005
+            </td>
+            <td>Highlander</td>
+            <td>12/18/2020</td>
+            <td>
+                <div class="status status_color2">Paid</div>
+            </td>
+            <td>$1152.35</td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

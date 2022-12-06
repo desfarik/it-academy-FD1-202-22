@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1</title>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+    <style>
+        .container {
+            width: 200px;
+            border-radius: 12px;
+            background-color: #ebebeb;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .registration {
+            border-bottom: 1px solid #cfcfcf;
+            text-align: center;
+            color: #80859b;
+            padding-bottom: 10px;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .personal_form {
+            border-bottom: 1px solid #cfcfcf;
+            color: #80859b;
+            padding-bottom: 10px;
+
+        }
+
+        .personal_company {
+            display: flex;
+            justify-content: space-around;
+            font-size: 16px;
+            align-items: center;
+
+        }
+
+        .checkbox-icon {
+            display: none;
+        }
+
+        input[type="radio"]:checked + label > .checkbox-icon.checked,
+        input[type="radio"]:not(:checked) + label > .checkbox-icon:not(.checked) {
+            display: inline-block;
+        }
+
+        .checkbox-icon {
+            color: white;
+            font-size: 16px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+
+        .info {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .info_form {
+            padding: 10px;
+            border-radius: 12px;
+        }
+
+        .mail_form {
+            padding-bottom: 10px;
+            color: #80859b;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .register_info {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .register_info_text {
+            width: 70%;
+            color: #80859b;
+            margin-top: 20px;
+            font-size: 10px;
+        }
+
+        button {
+            width: 90px;
+            height: 30px;
+            background-color: blue;
+            color: white;
+            border-radius: 6px;
+            border: 0px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="registration">Registration</div>
+    <div class="personal_form">
+        <form
+                class="personal_company"
+                action="">
+            <input
+                    id="personal"
+                    type="radio"
+                    name="gender"
+                    value="personal"
+                    hidden>
+
+
+            <label for="personal">
+
+                  <span class="material-symbols-outlined checkbox-icon ">
+                brightness_1
+                </span>
+                <span class="material-symbols-outlined checkbox-icon checked">
+                check_circle
+                </span>
+                Personal
+            </label>
+            <br>
+            <div></div>
+            <input
+                    id="company"
+                    type="radio"
+                    name="gender"
+                    value="company"
+                    hidden>
+            <label for="company">
+
+                 <span class="material-symbols-outlined checkbox-icon ">
+                brightness_1
+                </span>
+                <span class="material-symbols-outlined checkbox-icon checked">
+                check_circle
+                </span>
+                Company</label>
+        </form>
+    </div>
+    <div class="info">
+
+        <form
+                class="info_form"
+                action="">
+            <div >
+            <span class="material-symbols-outlined">
+            mail
+            </span>
+            <input
+                    type="text"
+                    name="email"
+                    placeholder="Email"
+                    value=""
+            >
+            </div>
+        </form>
+        <form
+                class="info_form"
+                action="">
+            <input
+                    type="text"
+                    placeholder="Name"
+                    name="name">
+        </form>
+        <form
+                class="info_form"
+                action="">
+            <input
+                    type="password"
+                    placeholder="Password"
+                    name="password">
+        </form>
+
+    </div>
+    <div class="mail_form">
+        <form
+                class="personal_company"
+                action="">
+            <input
+                    id="mail"
+                    type="radio"
+                    name="gender"
+                    value="personal"
+                    hidden>
+
+
+            <label for="mail">
+
+                  <span class="material-symbols-outlined checkbox-icon ">
+                brightness_1
+                </span>
+                <span class="material-symbols-outlined checkbox-icon checked">
+                check_circle
+                </span>
+                Mail
+            </label>
+            <br>
+            <div></div>
+            <input
+                    id="femail"
+                    type="radio"
+                    name="gender"
+                    value="company"
+                    hidden>
+            <label for="femail">
+
+                 <span class="material-symbols-outlined checkbox-icon ">
+                brightness_1
+                </span>
+                <span class="material-symbols-outlined checkbox-icon checked">
+                check_circle
+                </span>
+                Femail
+            </label>
+        </form>
+    </div>
+    <div class="register_info">
+        <div class="register_info_text">By clicking Register, you agree on our
+            <a href="./condition.html">terms and condition.</a></div>
+        <button>Register</button>
+    </div>
+</div>
+</body>
+</html>

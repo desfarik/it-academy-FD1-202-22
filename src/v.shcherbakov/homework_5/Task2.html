@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task2</title>
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+        body {
+            margin: auto;
+            width: 1600px;
+
+        }
+
+        .page_backgraund {
+            background-color: #e8eaee;
+            font-family: 'Roboto', sans-serif;
+            padding: 50px 50px;
+        }
+
+        .box_1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box_2 {
+            display: flex;
+            margin: 25px 0px;
+        }
+
+        .box_3 {
+            width: 70%;
+            margin-left: 70px;
+        }
+
+        .box_4 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .box_5 {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .container {
+            margin-left: 30px;
+            padding-top: 30px;
+        }
+
+        .box_lamp {
+            width: 75%;
+            padding: 10px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 15px 30px -25px gray;
+
+        }
+
+        .photo {
+            width: 50%;
+        }
+
+        .flex_autor {
+            flex-grow: 1;
+        }
+
+        .block-content {
+            width: 50%;
+            padding: 0px 40px;
+        }
+
+        .block_coffe_firsttext {
+            font-size: 30px;
+        }
+
+        .block_coffe_secondtext {
+            font-size: 15px;
+            color: #a9acb4;
+            text-align: justify;
+            line-height: 25px;
+            margin: 35px 0px;
+        }
+
+        .author {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-name-date {
+            margin-left: 15px;
+            line-height: 25px;
+            font-size: 14px;
+            color: #a9acb4;
+        }
+
+        .author-name-date::first-line {
+            color: black;
+            font-weight: 800;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 15%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px -25px gray;
+            color: gray;
+        }
+
+        .menu__name {
+            line-height: 50px;
+            font-size: 18px;
+            vertical-align: top;
+        }
+
+        .menu__icon {
+            text-align: center;
+            border-radius: 10px;
+            width: 50px;
+            font-size: 30px;
+            line-height: 50px;
+            background-color: #f2f5f8;
+        }
+
+        .menu__icon:hover {
+            background-color: #5374ff;
+            color: white;
+        }
+
+        .block-2 {
+            width: 25%;
+            border-radius: 20px;
+            padding: 35px;
+            background-color: white;
+        }
+
+        .block-2__title {
+            margin: 10px 0px 20px 0px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            width: 300px;
+        }
+
+        .search {
+            background-color: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-right: 50px;
+            box-shadow: 0 15px 30px -25px gray;
+            flex-grow: 1;
+        }
+
+        .search-content {
+            display: flex;
+            border-radius: 10px;
+            background-color: #f2f5f8;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .search__field {
+            flex-grow: 1;
+        }
+
+        .search__field span {
+            line-height: 60px;
+            color: gray;
+            padding-left: 15px;
+        }
+
+        .search__icon {
+            width: 60px;
+            border-radius: 10px;
+            background-color: #5374ff;
+            text-align: center;
+
+        }
+
+        .search__icon span {
+            line-height: 60px;
+            font-size: 30px;
+            color: white;
+
+        }
+
+        .search__tags {
+            display: flex;
+            justify-content: space-between;
+            color: gray;
+            font-size: 18px;
+        }
+
+
+        .player {
+            display: flex;
+            background-color: white;
+            padding: 15px;
+            border-radius: 20px;
+            align-items: center;
+            box-shadow: 0 15px 30px -25px gray;
+        }
+
+        .player-content {
+            margin-left: 20px;
+            margin-right: 70px;
+        }
+
+        .player__icon span {
+            color: #5374ff;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .player__title {
+            margin: 8px 0px;
+        }
+
+        .player__title span {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 0px;
+        }
+
+        .view-amount span {
+            line-height: 35px;
+            color: gray;
+            font-size: 15px;
+        }
+
+        .view-amount :last-child {
+            vertical-align: top;
+        }
+
+
+        .profile {
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+            padding: 15px;
+            padding-right: 25px;
+            box-shadow: 0 15px 30px -25px gray;
+        }
+
+
+        .profile-info {
+            padding-top: 10px;
+            margin-left: 30px;
+        }
+
+        .profile-name {
+            color: gray;
+            font-size: 17px;
+            line-height: 35px;
+        }
+
+        .profile-name::first-line {
+            color: black;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .profile-data > div {
+            padding: 0px 25px;
+        }
+
+        .profile-data {
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            background-color: #f2f5f8;
+            border-radius: 15px;
+            padding: 15px 20px;
+            margin: 10px 0px;
+        }
+
+        .profile-info-head {
+            color: gray;
+            line-height: 25px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .profile-info-main {
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn--chat, .btn--follow {
+            width: 45%;
+            border: 1px solid lightgrey;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .btn__text {
+            line-height: 50px;
+            color: gray;
+        }
+
+        .btn--follow:hover, .btn--chat:hover {
+            background-color: #5374ff;
+        }
+
+        .btn--chat:hover .btn__text {
+            color: white;
+        }
+
+        .btn--follow:hover .btn__text {
+            color: white;
+        }
+
+
+        .btn-before-after {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 25px;
+        }
+
+        .btn-before, .btn-after {
+            display: inline-block;
+            background-color: white;
+            width: 70px;
+            text-align: center;
+            border-radius: 35px;
+            box-shadow: 0 15px 30px -25px gray;
+        }
+
+        .btn-before span, .btn-after span {
+            line-height: 70px;
+            color: gray;
+        }
+
+        .baiden {
+            background-color: white;
+            padding: 20px 15px;
+            border-radius: 15px;
+            margin-top: 35px;
+            box-shadow: 0 15px 30px -25px gray;
+        }
+
+        .baiden span {
+            color: gray;
+            background-color: #f2f5f8;
+            border: 1px solid #f2f5f8;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .topics span:hover {
+            color: #5374ff;
+            border-color: #5374ff;
+        }
+    </style>
+</head>
+<body>
+<div class="page_backgraund">
+    <div class="box_1">
+        <div class="box_lamp ">
+            <div class="photo">
+                <img src="./image/Lamp.png"/>
+            </div>
+            <div class="block-content">
+                <div class="block_coffe_firsttext">
+                    <div>
+                        Green plants are going to Extinct about 500 times faster than
+                        they should, Study finds
+                    </div>
+                </div>
+                <div class="block_coffe_secondtext">
+                    <div>
+                        If you are the sort of person who just can not keep a plant alive,
+                        you are not alone according to a new study published June 10 in
+                        the journal Nature..
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-info">
+                        <div class="author-photo">
+                            <img src="./image/Alexsandr_parkenson.png"
+                                 alt=""/>
+                        </div>
+                        <div class="author-name-date">
+                            <div>
+                                Alexander Parkinson
+                                <br/>
+                                Jun 20, 2019
+                            </div>
+
+                        </div>
+                        <div class="flex_autor"></div>
+                        <span class="material-icons-outlined">
+                        reply
+                        </span>
+                    </div>
+
+                    <div class="open-publication">
+                        <i class="fa-sharp fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div>
+                <span class="material-symbols-outlined menu__icon">
+              fiber_manual_record
+                </span>
+
+                <span class="menu__name">&emsp;
+                    Global
+                </span>
+            </div>
+            <div>
+            <span class="material-symbols-outlined menu__icon">
+              grouped_bar_chart
+            </span>
+
+                <span class="menu__name">&emsp; Business</span>
+            </div>
+            <div>
+            <span class="material-symbols-outlined menu__icon">
+              play_arrow
+            </span>
+
+                <span class="menu__name">&emsp; Enthertaiment</span>
+            </div>
+            <div>
+            <span class="material-symbols-outlined menu__icon">
+              fitness_center
+            </span>
+
+                <span class="menu__name">&emsp; Sports</span>
+            </div>
+            <div>
+            <span class="material-symbols-outlined menu__icon">
+              monitor_heart
+            </span>
+
+                <span class="menu__name"> &emsp; Health</span>
+            </div>
+        </div>
+    </div>
+    <div class="box_2">
+
+        <div class="block-2">
+            <div class="photo">
+                <img src="./image/coffe.png"
+                     width=350px>
+            </div>
+            <div class="block-2__title">
+                <div>
+                    How to make the perfect morning coffee according to the
+                    Science
+                </div
+                >
+            </div>
+            <div class="author-info">
+                <div class="author-photo">
+                    <img src="./image/Tara_Gibson.png"
+                         alt=""/>
+                </div>
+                <div class="author-name-date">
+                    Tara Gibson
+                    <br/>
+                    Jul 13, 2019
+                </div>
+            </div>
+        </div>
+
+        <div class="box_3">
+            <div class="box_4">
+                <div class="search">
+                    <div class="search-content">
+                        <div class="search__field">
+                            <span>Search for articles</span>
+                        </div>
+                        <div class="search__icon">
+                            <span class="material-symbols-outlined"> search </span>
+                        </div>
+                    </div>
+                    <div class="search__tags">
+                        <div>#Politics</div>
+                        <div>#Science</div>
+                        <div>#Movies</div>
+                        <div>#Technology</div>
+                    </div>
+                </div>
+
+                <div class="player">
+                    <div class="player__image">
+                        <img src="./image/Billding.png"
+                             width="160px"
+                             alt=""/>
+                    </div>
+                    <div class="player-content">
+                        <div class="player__icon">
+                            <span class="material-symbols-outlined"> play_circle </span>
+                        </div>
+                        <div class="player__title">
+                  <span
+                  >An Inspiring <br/>
+                    Short Film</span
+                  >
+                        </div>
+                        <div class="view-amount">
+                            <span class="material-symbols-outlined"> visibility </span>
+                            <span>80,989</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_5">
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="./image/Alex_Morison.png"
+                             width="230px"
+                        >
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <div
+                            >Alex Morrison <br/>
+                                Senior Journalist
+                            </div
+                            >
+                        </div>
+                        <div class="profile-data">
+                            <div class="profile-articles">
+                                <span class="profile-info-head">Articles</span>
+                                <div class="profile-info-main">34</div>
+                            </div>
+                            <div class="profile-followers">
+                                <span class="profile-info-head">Followers</span>
+                                <div class="profile-info-main">980</div>
+                            </div>
+                            <div class="profile-raiting">
+                                <span class="profile-info-head">Rating</span>
+                                <div class="profile-info-main">8.9</div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <div class="btn--chat">
+                                <div class="btn__text"> Chat</div>
+                            </div>
+                            <div class="btn--follow">
+                                <span class="btn__text"> Follow </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="btn-before-after">
+                        <div class="btn-before">
+                  <span class="material-symbols-outlined">
+                    arrow_back_ios
+                  </span>
+                        </div>
+                        <div class="btn-after">
+                  <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                  </span>
+                        </div>
+                    </div>
+                    <div class="baiden">
+                        <span>Donald Trumph</span>
+                        <span>USA</span>
+                        <span>Politics</span>
+                        <span>2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
