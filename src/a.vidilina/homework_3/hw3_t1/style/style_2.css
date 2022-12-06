@@ -1,0 +1,8 @@
+.border {
+  border: solid #ab47bc;
+  border-radius: 25px 0 25px 0;
+  border-width: 10px;
+  width: fit-content;
+  display: flex;
+  padding: 5px;
+}

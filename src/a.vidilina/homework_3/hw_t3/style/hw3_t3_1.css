@@ -1,0 +1,63 @@
+.color_pink {
+  background-color: #ffc0cb;
+}
+.color_green {
+  background-color: #7fffd4;
+}
+.color_blue {
+  background-color: #87ceeb;
+}
+.color_purple {
+  background-color: #dda0dd;
+}
+
+.border_400px {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  margin: 5px;
+}
+
+.border_big {
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 25px;
+  width: fit-content;
+  text-align: center;
+}
+
+.border_little {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 10px;
+  padding: 2px;
+}
+
+.font_25px {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.font_15px {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.banner_left {
+  text-align: left;
+  margin: 10px;
+}
+
+.banner_right {
+  text-align: right;
+  margin: 10px;
+}
+
+.banner_center {
+  text-align: center;
+  margin: 10px;
+}

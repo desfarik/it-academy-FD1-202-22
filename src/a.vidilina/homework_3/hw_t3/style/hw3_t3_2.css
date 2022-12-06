@@ -1,0 +1,33 @@
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+th,
+td {
+  border: 2px solid;
+  padding: 10px;
+  width: 150px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.background_green {
+  background-color: #7fffd4;
+}
+.background_orange {
+  background-color: #ff7f50;
+}
+.background_gray {
+  background-color: #808080;
+}
+.background_pink {
+  background-color: #ffc0cb;
+}
+
+.none_border {
+  border: 0px solid;
+}
