@@ -1,0 +1,22 @@
+.letter {
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    border: 10px solid;
+    border-radius: 10px;
+    line-height: 135px;
+    padding: 0px 25px;   
+}
+
+tr {
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+td {
+    border: 10px solid;
+    border-radius: 10px;
+}
+.none_border {
+    border: 0px solid;
+
+}

@@ -1,0 +1,41 @@
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 96%;
+}
+
+tr {
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    height: 50px;
+}
+tr td:first-child {
+    color: #4f6497;
+}
+
+tr:nth-child(odd):not(:first-child) {
+    background-color: #f3f6ff;
+}
+
+
+.button-status {
+    margin: auto;
+    border-radius: 5 px;
+}
+
+.color_red {
+    background-color: #fec5ce;
+    color: #9e5659;
+}
+
+.color_yellow {
+    background-color: #fcedc1;
+    color: #99883e;
+}
+
+.color_green {
+    background-color: #c7e6cb;
+    color: #53885a;
+}
+
