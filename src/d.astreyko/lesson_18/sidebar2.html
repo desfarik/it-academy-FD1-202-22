@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            gap: 15px;
+            padding: 10px;
+            background: #7dc681;
+            align-items: center;
+        }
+
+        .sidebar {
+            position: absolute;
+            background: #7dc681;
+            width: 200px;
+            padding: 10px;
+            transform: translateX(-100%);
+            box-sizing: border-box;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #sidebar:checked ~ .sidebar {
+            transform: translateX(0);;
+        }
+
+        .page-content {
+            width: 100%;
+            margin-left: auto;
+            transition: width 0.5s ease-in-out;
+        }
+
+        #sidebar:checked ~ .page-content {
+            width: calc(100% - 200px);
+        }
+    </style>
+</head>
+<body>
+
+<input type="checkbox" id="sidebar" hidden>
+
+<div class="header">
+    <label for="sidebar">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </label>
+
+    <h1>Header</h1>
+</div>
+
+<div class="sidebar">
+    <ul>
+        <li class="item">item 1</li>
+        <li class="item">item 2</li>
+        <li class="item">item 3</li>
+        <li class="item">item 4</li>
+        <li class="item">item 5</li>
+        <li class="item">item 6</li>
+        <li class="item">item 7</li>
+        <li class="item">item 8</li>
+        <li class="item">item 9</li>
+        <li class="item">item 10</li>
+    </ul>
+</div>
+
+<div class="page-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at consequatur culpa dolorum enim excepturi
+        expedita, harum illo necessitatibus quam quos repellendus reprehenderit sint temporibus totam. Commodi explicabo
+        odit quidem!</p>
+    <p>Aliquam animi architecto aspernatur, culpa cumque debitis dignissimos, explicabo inventore iste maxime pariatur
+        quasi qui, reiciendis repellat reprehenderit sit ullam unde. Ab ad eius exercitationem illum recusandae?
+        Aspernatur, commodi, rem.</p>
+    <p>Accusantium assumenda delectus dignissimos iure possimus quas quia ratione sapiente tenetur, veritatis voluptate,
+        voluptatem? Doloremque perferendis rerum sapiente unde velit. Consectetur dolor eaque est impedit laborum
+        possimus quibusdam reiciendis tempora.</p>
+    <p>Accusantium atque cum dicta doloribus eaque error, et ex excepturi, hic illum ipsa iste, modi neque obcaecati
+        odit perferendis provident quaerat quam quia reiciendis repellendus sit suscipit ut veritatis voluptatem.</p>
+    <p>Accusantium asperiores aspernatur assumenda at cupiditate debitis dignissimos doloremque ducimus eaque eius est
+        eum explicabo fuga harum illo incidunt, ipsam non quae quod ratione recusandae rem repudiandae, tenetur veniam
+        vero?</p>
+    <p>Aspernatur autem, commodi corporis cumque cupiditate debitis distinctio dolor doloribus dolorum eaque
+        exercitationem explicabo illum ipsa iusto laborum necessitatibus neque nesciunt numquam optio qui quibusdam
+        recusandae tempora totam ut voluptatem?</p>
+    <p>Deserunt dolorum iusto, molestias reprehenderit suscipit voluptatum. Aliquam architecto assumenda cumque deleniti
+        ea eligendi hic inventore ipsa itaque maiores, maxime nulla, omnis pariatur possimus quisquam sunt temporibus ut
+        voluptatem. Earum.</p>
+    <p>A assumenda autem commodi dolorem dolores eligendi ex illum minima numquam perferendis porro qui quia sequi,
+        similique, ut. Asperiores dicta reiciendis tempore! Amet cumque doloremque eaque, esse ipsam officiis qui!</p>
+    <p>Animi delectus ducimus harum, id incidunt inventore itaque nemo numquam omnis perspiciatis placeat praesentium
+        recusandae voluptatem. Blanditiis dolores doloribus eveniet fugit natus nihil, odio odit rem voluptatibus!
+        Beatae, corporis iusto.</p>
+    <p>Ab adipisci dignissimos dolor dolore doloremque fugiat iusto, nisi perferendis placeat quas sed sequi soluta,
+        sunt suscipit tempore veritatis voluptate? Accusamus amet, aspernatur atque dolore eius exercitationem itaque
+        magni quisquam!</p>
+</div>
+
+</body>
+</html>
