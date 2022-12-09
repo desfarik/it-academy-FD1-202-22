@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="" media="">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            color: black;
+            background-color: orangered;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+
+        }
+
+        @media (max-width: 1000px) and (min-width: 400px) {
+            .item-first {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .item-2 {
+                opacity: 1;
+            }
+
+        }
+
+        @media (min-width: 400px) {
+            .item-3 {
+                opacity: 1;
+            }
+
+        }
+
+        @media (orientation: landscape) {
+            .item-5 {
+                opacity: 1;
+            }
+
+        }
+
+        @media (orientation: portrait) {
+            .item-4 {
+                opacity: 1;
+            }
+
+        }
+
+        @media print {
+            .item-6 {
+                opacity: 1;
+            }
+
+        }
+
+        @media {
+            .item-7:hover {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 300px) and (min-width: 100px) {
+            .item-8 {
+                opacity: 1;
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 400px) {
+            .item-9 {
+                opacity: 1;
+                font-size: 30px;
+            }
+        }
+
+        @media (min-width: 400px) {
+            .item-10 {
+                opacity: 1;
+                background-color: blue;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .item-11 {
+                opacity: 1;
+                width: 50%;
+            
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item item-first">Я виден от 100 до 200px</div>
+    <div class="item item-2">Я виден до 400px</div>
+    <div class="item item-3">Я виден после 400px</div>
+    <div class="item item-4">Я виден при портретной ориентации</div>
+    <div class="item item-5">Я виден при ленскейпной ориентации</div>
+    <div class="item item-6">Я виден при печати</div>
+    <div class="item item-7">Я виден, если навести на меня курсор</div>
+    <div class="item item-8">от 100 до 200px font-size 15px</div>
+    <div class="item item-9">>400px fontsize 30px</div>
+    <div class="item item-10">Я меняю цвет при >400px</div>
+    <div class="item item-11">При >1000px я растягиваюсь</div>
+
+</body>
+
+</html>

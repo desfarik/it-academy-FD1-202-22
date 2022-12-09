@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ebf2eb;
+        }
+
+        .toolbar {
+            width: 100vw;
+
+            background-color: black;
+            color: #ebf2eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .toolbar-website {
+            padding: 10px 0;
+        }
+
+        .toolbar-link {
+            display: flex;
+            gap: 15px;
+        }
+
+        @media (max-width: 1000px) and (min-width: 400px) {
+            .toolbar {
+                display: block;
+
+            }
+
+            .toolbar-link {
+                display: block;
+            }
+
+            a {
+                display: block;
+                background-color: black;
+                border-bottom: solid #ebf2eb 1px;
+            }
+
+            .toolbar-website {
+
+                border-bottom: solid #ebf2eb 1px;
+
+            }
+           .main{
+            display: flex;
+            flex-direction: column;
+           } 
+        }
+        .main{
+            display: flex;
+            margin: 5px;
+        }
+
+        .side {
+            width: 250px;
+            background-color: black;
+            height: 100vh;
+        }
+        .main-content{
+            flex-grow: 1;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toolbar">
+        <div class="toolbar-website">Website</div>
+        <div class="toolbar-link">
+            <a href="">link 1</a>
+            <a href="">link 2</a>
+            <a href="">link 3</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-content"></div>
+        <div class="side"></div>
+    </div>
+
+</html>
