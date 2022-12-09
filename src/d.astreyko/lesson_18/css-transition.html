@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #a749b8;
+
+            margin: 10px;
+        }
+
+        .box.background:hover {
+            width: 400px;
+            transition: width 0.5s ease-in;
+        }
+
+        .box.move {
+            transition: margin 1s ease-in;
+        }
+
+        .wrapper:hover .box.move {
+            margin-left: 300px;
+        }
+
+        .box.radius {
+            border-radius: 0;
+            transition: border-radius 1s ease-in-out;
+        }
+
+        .wrapper .box.radius:hover {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box background"></div>
+
+<div class="wrapper">
+    <div class="box move"></div>
+</div>
+
+<div class="wrapper">
+    <div class="box radius"></div>
+</div>
+
+</body>
+</html>
