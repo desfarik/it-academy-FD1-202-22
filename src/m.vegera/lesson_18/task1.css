@@ -1,0 +1,60 @@
+div:not(div .box3) {
+    margin-top: 10px;
+}
+
+.box {
+
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition: background-color 0.5s ease;
+}
+
+.box:hover {
+    background-color: blue;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(142, 76, 204);
+    transition: width 0.5s ease-in, height 0.5s ease-out;
+
+}
+
+.box2:hover {
+    width: 300px;
+    height: 150px;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(131, 27, 67);
+    
+    transition: border-radius 0.5s ease;
+}
+
+.box4:hover {
+    border-radius: 50%;
+
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(12, 202, 56);
+    transition: left 0.5s ease;
+    left: 0;
+    position: absolute;
+
+}
+.wrap{
+    position: relative;
+    height: 100px;
+}
+.wrap:hover .box3 {
+    position: absolute;
+    left: 300px;
+
+}
