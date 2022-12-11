@@ -55,7 +55,7 @@ body {
 .main {
     display: flex;
     padding-top: 50px;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
