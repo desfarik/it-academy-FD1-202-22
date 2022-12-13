@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: grid;
+
+            grid-template-columns: 1fr 200px;
+            grid-template-rows: 64px 250px 1fr 100px;
+        }
+
+        .header {
+            background: #a749b8;
+            grid-row: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .main {
+            background: #7dc681;
+            /*grid-row: 2 / span 2;*/
+            /*grid-row: span 2 / 4;*/
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .sidebar {
+            background: #f26c61;
+            grid-row: 2;
+        }
+
+        .footer {
+            background: #7d7d7d;
+            grid-row: 4;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="main">main</div>
+    <div class="footer">footer</div>
+    <div class="dialog">dialog</div>
+    <div class="header">header</div>
+    <div class="sidebar">sidebar</div>
+</div>
+
+</body>
+</html>

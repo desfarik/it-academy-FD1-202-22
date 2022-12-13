@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            column-gap: 15px;
+            row-gap: 20px;
+            grid-template-columns: 50px repeat(2, minmax(160px, 1fr)) 50px; /* 3 столбца */
+            grid-template-rows: repeat(3, 200px); /* 3 строки */
+        }
+
+        .grid-child {
+            /*min-width: 160px;*/
+            background: #a749b8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-child"></div>
+    <div class="grid-child"></div>
+    <div class="grid-child"></div>
+    <div class="grid-child"></div>
+    <div class="grid-child"></div>
+    <div class="grid-child"></div>
+    <div class="grid-child"></div>
+    <div class="grid-child"></div>
+    <div class="grid-child"></div>
+</div>
+
+</body>
+</html>

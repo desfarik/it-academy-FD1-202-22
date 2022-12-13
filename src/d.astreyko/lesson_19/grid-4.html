@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .page {
+            display: grid;
+            gap: 10px;
+
+
+            grid-template-columns: 60px 60px 60px 60px 60px;
+            grid-template-rows: 60px 60px 60px;
+        }
+
+        .box {
+            background: #f26c61;
+        }
+
+        .col-2 {
+            grid-column: span 2;
+        }
+        .row-2 {
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="box"></div>
+    <div class="box col-2"></div>
+    <div class="box"></div>
+    <div class="box row-2"></div>
+    <div class="box"></div>
+    <div class="box col-2"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+</body>
+</html>
