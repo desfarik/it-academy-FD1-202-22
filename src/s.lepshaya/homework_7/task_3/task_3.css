@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    padding: 0px 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    padding-bottom: 25px;
+    background-color: #fafafa;
+}
+.header-icon {
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0 1px 10px -5px gray;
+    border-radius: 50%;
+}
+.header .black-bold-text {
+    font-size: 20px;
+}
+.black-bold-text {
+    color: black;
+    font-weight: 600;
+}
+.calendar-wrapper {
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 1px 10px -5px gray;
+    position: relative;
+}
+.month-choice {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.day-of-week {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.day {
+    display: flex;
+    padding: 10px 0px;
+}
+.day span {
+    display: inline-block;   
+}
+
+.day-of-week span {
+    color: gray;
+}
+.dot {
+    position: relative;
+    padding: 4px 13px;
+    color: white;
+}
+.dot::after{
+    font-family: 'Material Symbols Outlined';
+    font-size: 15px;
+    font-variation-settings: 'FILL' 1;
+    content: 'fiber_manual_record';
+    position: absolute;
+    bottom: -25px;
+    left: 14px;
+    color: white;
+    
+}
+.wrapper-dot {
+    height: 48px;
+    margin-right: 5px;
+    background-color: #313131;
+    border-radius: 10px;
+    padding: 10px 5px;
+    position: absolute;
+    right: 43px;
+    bottom: 18px;
+}
+
+.day :last-child {
+    margin-right: 0px;
+}
+.margin-right-30 {
+    margin-right: 30px; 
+}
+
+.day-26 {
+    position: absolute;
+    right: 15px;
+}
+
+.some-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.gray-text {
+    color: gray;
+}
+
+.icon-text-align {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.schedule-item {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0 1px 10px -5px gray;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.schdule-item-image {
+    width: 35%;
+    height: 90px;
+    border-radius: 10px;
+}
+.schedule-item-data {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 5px 20px 25px lightgray;
+}
+.footer-icon {
+    font-size: 30px;
+    color: gray;
+}
+.footer-icon:hover {
+    font-variation-settings: 'FILL' 1;
+    color: black;
+}
+.text-decoration-none {
+    text-decoration: none;
+}

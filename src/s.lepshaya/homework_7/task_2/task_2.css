@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+.header-icon {
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0 1px 10px -5px gray;
+    border-radius: 50%;
+}
+.main {
+    padding: 15px 20px;
+    background-color: #fafafa;
+}
+
+.gray-text {
+    color: gray;
+}
+
+.black-bold-text {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.icon-text-align {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px -5px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.box-image {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.favorite-icon {
+    font-family: 'Material Symbols Outlined';
+    content: 'favorite';
+    color: gray;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 75px;
+    right: 25px;
+    box-shadow: 0px 1px 5px 0px lightgray;
+}
+.favorite-icon:hover{
+    font-variation-settings: 'FILL' 1;
+    color: #db1524;
+    cursor: pointer;  /*переделать на чекбокс*/
+}
+.location-raiting-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.raiting-icon {
+    color: #e5c869;
+    font-size: 18px;
+    font-variation-settings: 'FILL' 1;
+}
+.location-icon-gray {
+    font-size: 18px;
+}
+.raiting-traveler-wrapper {
+    background-color: white;
+    display: flex;
+    box-shadow: 0 1px 10px -5px gray;
+    border-radius: 10px;
+    margin-bottom: 15px; 
+
+}
+.raiting-box {
+    width: 25%;
+    text-align: center;
+    padding: 20px 0;
+}
+.line {
+    height: 40px;
+    align-self: center;
+    border: 1px solid lightgray;
+}
+.raiting {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.traveler-box {
+    padding: 20px 10px;
+    flex-grow: 1;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.traveler-box .black-bold-text {
+    font-size: 16px;
+}
+.map-image {
+    width: 30%;
+    padding: 5px;
+}
+.traveler-photo-wrapper {
+    position: relative;
+}
+.traveler-photo{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.traveler-photo-1 {
+    left: 0px;
+}
+.traveler-photo-2 {
+    left: 20px;
+}
+.traveler-photo-3 {
+    left: 40px;
+}
+.traveler-photo-4 {
+    display: inline-block;
+    line-height: 25px;
+    left: 60px;
+    background-color: #f2f2f2;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.line-height-23 {
+    line-height: 23px;
+}
+.description .black-bold-text {
+    font-size: 16px;
+}
+.description {
+    line-height: 23px;
+}
+.footer{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 20px 1px lightgray;
+}
+.price {
+    display: inline-block;
+    padding-top: 10px;
+}
+.btn-book-now {
+    width: 45%;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    
+}
+.btn-book-now::after {
+    font-family: 'Material Symbols Outlined';
+    content: 'arrow_forward_ios';
+    position: absolute;
+}
+.btn-book-now:hover {
+    cursor: pointer;
+    background-color: #313131;
+    color: white;
+}
+.text-decoration-none {
+    text-decoration: none;
+}
+
