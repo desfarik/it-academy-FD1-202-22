@@ -1,0 +1,204 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+* {
+  box-sizing: border-box;
+}
+.contairner {
+  display: flex;
+  gap: 10px;
+}
+
+.s-metwork-name {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+}
+.s-networks-link {
+  position: relative;
+  box-shadow: 0px 2px 4px gray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+.tooltipe {
+  border-radius: 5px;
+  top: 0px;
+  left: calc(0 - 20px);
+  padding: 10px;
+  position: absolute;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(-20px);
+}
+.tooltipe:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: inherit;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+}
+.s-networks-link:hover .tooltipe {
+  opacity: 1;
+  visibility: visible;
+  top: -38px;
+}
+.facebook:hover,
+.s-networks-link:hover .facebook {
+  background-color: #1073f3;
+  color: white;
+}
+.twitter:hover,
+.s-networks-link:hover .twitter {
+  background-color: #149ee9;
+  color: white;
+}
+
+.instagram:hover,
+.s-networks-link:hover .instagram {
+  background-color: #e13254;
+  color: white;
+}
+
+.github:hover,
+.s-networks-link:hover .github {
+  background-color: #2d3029;
+  color: white;
+}
+
+.youtube:hover,
+.s-networks-link:hover .youtube {
+  background-color: #c52119;
+  color: white;
+}
+
+.buttons-contairner {
+  display: flex;
+  max-width: 300px;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.5s ease-in-out;
+}
+.button:hover {
+  background-color: #e13254;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+}
+.one {
+  border-right: none;
+}
+.three {
+  border-left: none;
+}
+.icon-contairner {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.borders {
+  background-color: black;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+.row {
+  width: 100%;
+  height: 2px;
+}
+.column {
+  width: 2px;
+  height: 100%;
+}
+.border-top {
+  top: 0px;
+}
+.border-bottom {
+  bottom: 0px;
+}
+.border-left {
+  left: 0px;
+  top: -50px;
+}
+.border-right {
+  right: 0px;
+  bottom: -50px;
+}
+.icon-snow:hover {
+  cursor: text;
+}
+.icon-contairner:hover .border-top {
+  transform: translateX(-100%);
+}
+.icon-contairner:hover .border-bottom {
+  transform: translateX(50px);
+}
+.icon-contairner:hover .border-left {
+  transform: translateY(50px);
+}
+.icon-contairner:hover .border-right {
+  transform: translateY(-50px);
+}
+.anchor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(
+    326deg,
+    rgba(211, 161, 229, 1),
+    rgba(160, 196, 218, 0.9864320728291317)
+  );
+  position: relative;
+ }
+.up-icon{
+  text-decoration: none;
+  color: white;
+  position: absolute;
+}
+.anchor:hover {
+  cursor: pointer;
+}
+.anchor:hover .up-icon { 
+  animation: scroll;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate-reverse;
+}
+  
+ @keyframes scroll{
+  from{ bottom: 15px}
+  to{bottom: 25px;}
+  }
