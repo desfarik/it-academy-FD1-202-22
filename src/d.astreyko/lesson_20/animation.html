@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        /* The element to apply the animation to */
+        .box, .box_2 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: red;
+        }
+
+        .box {
+            animation: move_to_right_alternate;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            /*animation-timing-function: steps(10);*/
+            /*animation: change_bg_color 10s;*/
+        }
+
+        .box_2 {
+            /*animation: change_bg_color_2 10s;*/
+        }
+
+        @keyframes move_to_right {
+            0% {
+                margin-left: 0px;
+            }
+
+            50% {
+                margin-left: 200px;
+            }
+
+            100% {
+                margin-left: 0px;
+            }
+        }
+
+        @keyframes move_to_right_alternate {
+            0% {
+                margin-left: 100px;
+            }
+
+            100% {
+                margin-left: 200px;
+            }
+        }
+
+
+        /* The animation code */
+        @keyframes change_bg_color {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+            }
+        }
+
+        @keyframes change_bg_color_2 {
+            0% {
+                background-color: red;
+            }
+            50% {
+                background-color: blue;
+                color: red;
+            }
+            100% {
+                background-color: yellow;
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box">lorem</div>
+
+</body>
+</html>
