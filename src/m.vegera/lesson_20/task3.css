@@ -1,0 +1,45 @@
+.menu{
+    width: 200px;
+    background-color: black;
+    color: white;
+
+   
+    cursor: pointer;
+    
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    
+    
+}
+li{
+    position: relative;
+    overflow: hidden;
+    padding-left: 20px;
+  
+}
+
+li:before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 100%;
+    background-color: greenyellow;
+    position: absolute;
+    transform:translateX(-100%);
+    transition: transform 0.5s ease;
+    left: 0;
+}
+
+
+
+li:hover:before{
+    transform:translateX(0);
+   
+}
+li:hover{
+    color: greenyellow;
+}
+
+

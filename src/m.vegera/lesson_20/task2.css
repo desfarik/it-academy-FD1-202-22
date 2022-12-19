@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+}
+.text{
+   font-family: monospace; 
+   width: 1ch;
+   overflow: hidden;
+   white-space: nowrap;
+   animation: typing;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-timing-function:steps(21);
+   
+}
+
+@keyframes typing{
+    from {width: 1ch;}
+    to {width: 21ch;}
+}
+.line{
+    width: 1px;
+    height: 12px;
+    background-color: black;
+    animation: line;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function:linear;
+
+}
+@keyframes line{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
