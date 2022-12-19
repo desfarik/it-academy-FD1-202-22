@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <style>
+
+
+        .container {
+            width: 1000px;
+            background-color: gainsboro;
+            display: flex;
+            margin: 100px;
+        }
+
+        .box1 {
+            width: 50%;
+            background-color: white;
+
+
+        }
+
+        .box1_text {
+            width: 120px;
+            text-align: center;
+            color: grey;
+            font-size: 16px;
+            border-bottom: 1px solid grey;
+            margin: auto;
+        }
+
+        .box2 {
+            width: 50%;
+            text-align: left;
+            background-color: white;
+
+        }
+
+        .login_style {
+            width: 200px;
+            border: 0px;
+            border-bottom: 2px black solid;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .password {
+            border-bottom: 2px darkgrey solid;
+        }
+
+        .corect {
+            display: flex;
+            align-items: center;
+        }
+        button{
+            width: 100px;
+            height: 25px;
+            border-radius: 10px;
+            border: 0;
+            background-color: blue;
+            margin: 20px 0px;
+            color: white;
+        }
+        .messengers_menu{
+            margin-top: 50px;
+            display: flex;
+            text-align: right;
+            font-size: small;
+        }
+        .mess_icons{
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box1">
+        <img
+                style="margin-left: 100px"
+                src="./image/Task3.PNG">
+        <div class="box1_text">Create an account</div>
+    </div>
+    <div class="box2">
+        <h1>Sing in</h1>
+        <div class="corect">
+            <span class="material-symbols-outlined">
+        person
+        </span>
+            <input
+                    class="login_style"
+                    type="text"
+                    name="text"
+                    value="Jone Doe">
+            <br>
+        </div>
+        <div class="corect">
+        <span class="material-symbols-outlined">
+        lock
+        </span>
+            <input
+                    class="login_style password"
+                    type="password"
+                    name="password"
+                    placeholder="Password">
+        </div>
+        <input style="margin: 20px 0px"
+                id="remember"
+                name="remember me"
+                type="checkbox"
+                value="Remember Me">
+        <label for="remember">
+            <span>Remember Me</span>
+        </label>
+        <br>
+        <button>Log in</button>
+        <div class="messengers_menu">
+            <p>Or login with</p>
+            <img  class="mess_icons" src="./image/facebook.png">
+            <img class="mess_icons" src="./image/twitter.png">
+            <img class="mess_icons"  src="./image/google.png">
+        </div>
+    </div>
+</div>
+</body>
+</html>

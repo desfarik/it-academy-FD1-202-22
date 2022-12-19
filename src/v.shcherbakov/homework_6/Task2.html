@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            background-image: url("./image/Task2.png");
+            width: 1167px;
+            height: 600px;
+        }
+
+        .box {
+            margin: auto;
+            width: 200px;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .text_name_password {
+            color: black;
+            border-radius: 20px;
+            border: 0;
+            padding: 10px;
+            width: 200px;
+            margin: 20px 0px;
+            opacity: 0.5;
+
+        }
+
+        .singin {
+            color: black;
+            text-align: center;
+            opacity: initial;
+        }
+
+        .menu_singin {
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-size: 12px;
+            flex-grow: 1;
+            opacity: 0.7;
+        }
+        .or_sing{
+            display: flex;
+            color: white;
+            opacity: 0.7;
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 12px;
+            align-items: center;
+            margin-left: 60px;
+        }
+        .line{
+            height: 1px;
+            width: 15px;
+            background-color: white;
+        }
+        .mesengers_menu{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mesenger{
+            border: 0px;
+            width: 90px;
+            background-color: white;
+            border-radius: 12px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+
+    <div class="box">
+        <h1 style="color: white">Login#10</h1>
+        <h3 style="color: white">Have an account?</h3>
+        <input
+                class="text_name_password"
+                type="text"
+                name="username"
+                placeholder="Username">
+        <input
+                class="text_name_password"
+                type="password"
+                name="password"
+                placeholder="Password">
+        <input
+                class="text_name_password singin"
+                type="text"
+                name="singin"
+                value="SING IN">
+        <div class="menu_singin">
+            <input  id="remember"
+                    name="remember me"
+                    type="checkbox"
+                    value="Remember Me">
+            <label for="remember">
+                <span>Remember Me</span>
+            </label>
+            <div></div>
+            <div>Forgot Password</div>
+        </div>
+        <div class="or_sing">
+            <div class="line"></div>
+            <div>Or Sing In With</div>
+            <div class="line"></div>
+        </div>
+        <div class="mesengers_menu">
+            <button class="mesenger">Facebook</button>
+            <button class="mesenger">Twitter</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
