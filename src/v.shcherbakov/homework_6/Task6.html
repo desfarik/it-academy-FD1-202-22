@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script
+            src="https://kit.fontawesome.com/3ae0c0ee8a.js"
+            crossorigin="anonymous"
+    ></script>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #d24fc1, #8851bd)
+        }
+
+        .container {
+            width: 1100px;
+            min-width: 850px;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .left-block {
+            width: 50%;
+
+        }
+
+        .right-block {
+            width: 50%;
+            padding: 100px 80px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .entry-field-input {
+            width: 100%;
+            border: none;
+            outline: none;
+            height: 50px;
+            font-size: 17px;
+        }
+
+        .entry-field {
+            height: 56px;
+            background: linear-gradient(90deg, #8454c0, #fbc0ff);
+            margin-bottom: 5px;
+        }
+
+        .entry-field-input::placeholder {
+            font-size: 17px;
+        }
+
+        .btn-continue {
+            width: 100%;
+            height: 50px;
+            border: none;
+            outline: none;
+            background: linear-gradient(90deg, #8454c0, #da39c3);
+            color: white;
+            letter-spacing: 4px;
+            margin: 0;
+            margin-top: 35px;
+        }
+
+        .btn-continue__arrow {
+            position: relative;
+            width: 50px;
+            left: 350px;
+            top: -40px;
+            color: white
+        }
+
+        .text-connect {
+            display: block;
+            text-align: center;
+            color: gray;
+            font-size: 17px;
+            margin-bottom: 35px;
+        }
+
+        .login-with {
+            display: flex;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .icon-login-with {
+            width: 80px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .btn-login-with {
+            color: white;
+            flex-grow: 1;
+            border: none;
+            outline: none;
+        }
+
+        .facebook .icon-login-with {
+            background-color: #257fb7;
+            color: white;
+        }
+
+        .btn--facebook {
+            background: linear-gradient(90deg, #257fb7, #3698d9);
+            text-align: left;
+        }
+
+        .twitter .icon-login-with {
+            background-color: #35aad2;
+            color: white;
+        }
+
+        .btn--twitter {
+            background: linear-gradient(90deg, #35aad2, #64e1fd);
+            text-align: left;
+
+        }
+
+        .fa-facebook-f,
+        .fa-twitter {
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left-block">
+        <img src="./image/Task6.png" width="100%" height="100%" alt="" />
+    </div>
+    <div class="right-block">
+        <div class="title">
+            <span>Sign In</span>
+        </div>
+        <form action="">
+            <div class="entry-field">
+                <input
+                        type="email"
+                        class="entry-field-input"
+                        placeholder="Email Address"
+                />
+            </div>
+            <div class="entry-field">
+                <input
+                        type="password"
+                        class="entry-field-input"
+                        placeholder="Password"
+                />
+            </div>
+            <button class="btn-continue">CONTINUE</button>
+            <span class="material-symbols-outlined btn-continue__arrow">
+            arrow_forward_ios
+          </span>
+            <span class="text-connect">Or Connect With Social Media</span>
+            <div class="login-with twitter">
+                <div class="icon-login-with">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
+                <button class="btn-login-with btn--twitter">
+                    Sign In With Twitter
+                </button>
+            </div>
+
+            <div class="login-with facebook">
+                <div class="icon-login-with">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+
+                <button class="btn-login-with btn--facebook">
+                    Sign In With Facebook
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
