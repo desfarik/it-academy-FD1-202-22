@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8"/>
+     <title>Tables</title>
+
+     <style>
+         .container {
+             text-align: center;
+             width: 800px;
+         }
+
+         tr {
+             height: 50px;
+             border: 2px solid black;
+         }
+
+         td {
+             border: 2px solid black;
+
+         }
+
+         table {
+             border-collapse: collapse;
+             font-size: 23px;
+         }
+
+         .table-color td {
+             width: calc(800px / 6);
+             border: 0px solid black;
+         }
+
+         .table-color tr {
+             border: 0px solid black;
+         }
+
+         .grey {
+             background-color: #808080;
+         }
+
+         .pink {
+             background-color: #ffc0cb;
+         }
+
+         .black {
+             background-color: black;
+         }
+
+         .orange {
+             background-color: #ff7f50;
+         }
+
+         .aquamarine {
+             background-color: #7fffd4;;
+         }
+     </style>
+ </head>
+ <body>
+ <div class="container">
+
+     <h1>3.1</h1>
+
+     <table border="1">
+         <tr>
+             <td style="width: 200px"></td>
+             <td style="width: 600px"></td>
+         </tr>
+         <tr>
+             <td></td>
+             <td></td>
+         </tr>
+     </table>
+
+     <h1>3.2</h1>
+
+     <table border="1">
+         <colgroup>
+             <col style="width: 200px;">
+             <col style="width: 200px;">
+             <col style="width: 200px;">
+             <col style="width: 200px;">
+         </colgroup>
+         <tr>
+             <td colspan="2"></td>
+             <td colspan="2"></td>
+         </tr>
+         <tr>
+             <td colspan="1"></td>
+             <td colspan="2"></td>
+             <td colspan="1"></td>
+         </tr>
+     </table>
+
+     <h1>3.3</h1>
+
+     <table border="1">
+         <colgroup>
+             <col style="width: calc(800px/3);">
+             <col style="width: calc(800px/3);">
+             <col style="width: calc(800px/3);">
+         </colgroup>
+         <tr>
+             <td rowspan="2"
+                 colspan="2"></td>
+             <td colspan="1"></td>
+         </tr>
+         <tr>
+             <td colspan="1"></td>
+         </tr>
+         <tr>
+             <td colspan="1"></td>
+             <td colspan="2"></td>
+         </tr>
+     </table>
+
+     <h1>3.4</h1>
+
+     <table border="1">
+         <colgroup>
+             <col style="width: 400px;">
+             <col style="width: 400px;">
+         </colgroup>
+         <tr>
+             <td colspan="1"></td>
+             <td colspan="1"></td>
+         </tr>
+         <tr>
+             <td colspan="2"></td>
+         </tr>
+         <tr>
+             <td colspan="1"></td>
+             <td colspan="1"></td>
+         </tr>
+     </table>
+
+     <h1>3.5</h1>
+     <table border="1">
+         <colgroup>
+             <col style="width: 200px;">
+             <col style="width: 200px;">
+             <col style="width: 200px;">
+             <col style="width: 200px;">
+         </colgroup>
+         <tr>
+             <td class="aquamarine"></td>
+             <td class="aquamarine"></td>
+             <td class="aquamarine"></td>
+             <td rowspan="2"
+                 class="orange"></td>
+         </tr>
+         <tr>
+             <td class="aquamarine"></td>
+             <td rowspan="2"
+                 class="orange"></td>
+             <td class="aquamarine"></td>
+         </tr>
+         <tr>
+             <td rowspan="2"
+                 class="orange"></td>
+             <td colspan="2"
+                 class="orange"></td>
+         </tr>
+         <tr>
+             <td class="aquamarine"></td>
+             <td class="aquamarine"></td>
+             <td class="aquamarine"></td>
+         </tr>
+     </table>
+
+     <h1>3.6</h1>
+
+     <table border="1">
+         <colgroup>
+             <col style="width: calc(800px/7) ;">
+             <col style="width: calc(800px/7) ;">
+             <col style="width: calc(800px/7) ;">
+             <col style="width: calc(800px/7) ;">
+             <col style="width: calc(800px/7) ;">
+             <col style="width: calc(800px/7) ;">
+             <col style="width: calc(800px/7) ;">
+         </colgroup>
+         <tr>
+             <td colspan="3"></td>
+             <td rowspan="5"></td>
+             <td colspan="2"></td>
+             <td></td>
+         </tr>
+
+         <tr>
+             <td rowspan="2"
+                 colspan="3"></td>
+             <td></td>
+             <td></td>
+             <td></td>
+         </tr>
+
+         <tr>
+             <td colspan="3"
+                 rowspan="2"></td>
+         </tr>
+
+         <tr>
+             <td></td>
+             <td></td>
+             <td></td>
+         </tr>
+
+         <tr>
+             <td></td>
+             <td colspan="2"></td>
+             <td colspan="3"></td>
+         </tr>
+     </table>
+
+
+     <h1>3.7</h1>
+
+     <table border="1">
+         <colgroup>
+             <col style="width: calc(800px/5) ;">
+             <col style="width: calc(800px/5) ;">
+             <col style="width: calc(800px/5) ;">
+             <col style="width: calc(800px/5) ;">
+             <col style="width: calc(800px/5) ;">
+         </colgroup>
+
+         <tr>
+             <td colspan="3"></td>
+             <td>Субъект</td>
+             <td>Объект</td>
+         </tr>
+         <tr>
+             <td rowspan="5">Ед. числ.</td>
+             <td colspan="2">1 лицо</td>
+             <td>Я</td>
+             <td>Меня</td>
+         </tr>
+
+         <tr>
+             <td colspan="2">2 лицо</td>
+             <td>Я</td>
+             <td>Меня</td>
+         </tr>
+
+         <tr>
+             <td rowspan="3"> 3 лицо</td>
+             <td>&male;</td>
+             <td>Он</td>
+             <td>Его</td>
+         </tr>
+
+         <tr>
+             <td>&female;</td>
+             <td>Она</td>
+             <td>Ее</td>
+         </tr>
+         <tr>
+             <td>&compfn;</td>
+             <td>Оно</td>
+             <td>Его</td>
+         </tr>
+         <tr>
+             <td rowspan="3">Множ. числ.</td>
+             <td colspan="2">1 лицо</td>
+             <td>Мы</td>
+             <td>Нас</td>
+         </tr>
+
+         <tr>
+             <td colspan="2">2 лицо</td>
+             <td>Вы</td>
+             <td>Вас</td>
+         </tr>
+         <tr>
+
+             <td colspan="2">3 лицо</td>
+             <td>Они</td>
+             <td>Их</td>
+         </tr>
+
+     </table>
+     <h1>3.8</h1>
+
+     <table class="table-color">
+         <tr>
+             <td class="grey"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="pink"></td>
+         </tr>
+         <tr>
+             <td class="empty"></td>
+             <td class="grey"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="pink"></td>
+             <td class="empty"></td>
+         </tr>
+         <tr>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="black"></td>
+             <td class="black"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+         </tr>
+
+         <tr>
+             <td class="empty"></td>
+             <td class="aquamarine"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="orange"></td>
+             <td class="empty"></td>
+         </tr>
+         <tr>
+             <td class="aquamarine"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="empty"></td>
+             <td class="orange"></td>
+         </tr>
+     </table>
+ </div>
+ </body>
+ </html>
