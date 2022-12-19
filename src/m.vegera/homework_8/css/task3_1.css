@@ -1,0 +1,127 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border: solid 1px grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hint {
+    position: absolute;
+    transform: translateY(0);
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease-in;
+}
+
+.tooltip {
+    font-size: 10px;
+    /* background: #0c93e7;*/
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 5px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tooltip:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    /*background: #0c93e7;*/
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.facebook-tooltip {
+    background: #0c93e7;
+}
+
+.facebook-tooltip::before {
+    background: #0c93e7;
+}
+
+.twitter-tooltip {
+    background: #7ac2f3;
+}
+
+.twitter-tooltip::before {
+    background: #7ac2f3;
+}
+
+.instagram-tooltip {
+    background: #d83655;
+}
+
+.instagram-tooltip::before {
+    background: #d83655;
+}
+
+.github-tooltip {
+    background: #2b2b3a;
+}
+
+.github-tooltip::before {
+    background: #2b2b3a;
+}
+
+.youtube-tooltip {
+    background: #c10f04;
+}
+
+.youtube-tooltip::before {
+    background: #c10f04;
+}
+
+.icon:hover .hint {
+    transform: translateY(-100%);
+    opacity: 1;
+    color: white;
+}
+
+.icon:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.facebook-icon:hover {
+    background-color: #0c93e7;
+    border-color: #0c93e7;
+}
+
+.twitter-icon:hover {
+    background-color: #7ac2f3;
+    border-color: #7ac2f3;
+}
+
+.instagram-icon:hover {
+    background-color: #d83655;
+    border-color: #d83655;
+}
+
+.github-icon:hover {
+    background-color: #2b2b3a;
+    border-color: #2b2b3a;
+}
+
+.youtube-icon:hover {
+    background-color: #c10f04;
+    border-color: #c10f04;
+}

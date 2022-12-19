@@ -1,0 +1,83 @@
+body {
+    cursor: default;
+    color: #a0b09e;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+
+}
+
+.flex-grow {
+    flex-grow: 1;
+    border-bottom: solid 1px #c1c1d9;
+}
+
+.title {
+    color: #5a7773;
+    font-weight: bold;
+}
+
+label {
+    cursor: pointer;
+}
+
+.content-tab {
+    display: none;
+    border-bottom: solid 1px #c1c1d9;
+
+}
+
+.tab {
+
+    background: #e9e9ed;
+    padding: 10px;
+    border: solid 1px #c1c1d9;
+    color: black;
+
+}
+
+.header:nth-child(2) {
+    color: red;
+}
+
+#tab1:checked~.content-tab1 {
+    display: block;
+
+}
+
+#tab1~.header>.tab1 {
+    transition: background-color 0.5s ease, border-bottom 0.5s ease;
+}
+
+#tab1:checked~.header>.tab1 {
+    background-color: white;
+    border-bottom: none;
+}
+
+#tab2~.header>.tab2 {
+    transition: background-color 0.5s ease, border-bottom 0.5s ease;
+}
+
+#tab2:checked~.content-tab2 {
+    display: block;
+}
+
+#tab2:checked~.header>.tab2 {
+    background: white;
+    border-bottom: none;
+}
+
+#tab3~.header>.tab3 {
+    transition: background-color 0.5s ease, border-bottom 0.5s ease;
+}
+
+#tab3:checked~.content-tab3 {
+    display: block;
+}
+
+#tab3:checked~.header>.tab3 {
+    background: white;
+    border-bottom: none;
+}
