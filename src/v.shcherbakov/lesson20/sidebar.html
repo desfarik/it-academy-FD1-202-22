@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0
+        }
+
+        .container {
+
+            background-color: white;
+        }
+
+        .item_menu {
+            width: 30%;
+            height: 100vh;
+            background-color: darkgrey;
+            padding-top: 50px;
+        }
+
+        .menu {
+            display: flex;
+            position: relative;
+            align-items: center;
+            margin-bottom: 10px;
+
+        }
+        .box{
+            width: 10px;
+            height: 20px;
+            background-color: aqua;
+            position: absolute;
+            left: -10px;
+            transition: left 0.25s ease-in;
+        }
+        .text{
+            margin-left: 30px;
+            color: white;
+        }
+        .menu:hover .box{
+            left: 0;
+        }
+        .menu:hover .text{
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item_menu">
+        <div class="menu">
+            <div class="box"></div>
+            <div class="text">HOME</div>
+        </div>
+        <div class="menu">
+            <div class="box"></div>
+            <div class="text">ABOUT</div>
+        </div>
+        <div class="menu">
+            <div class="box"></div>
+            <div class="text">SKILLS</div>
+        </div>
+        <div class="menu">
+            <div class="box"></div>
+            <div class="text">RESUMES</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
