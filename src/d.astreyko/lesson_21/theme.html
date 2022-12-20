@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        :root {
+            --text-color: black;
+            --background-color: white;
+            --header-background-color: #7d7d7d;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+
+            background: var(--header-background-color);
+        }
+
+        .flex-grow {
+            flex-grow: 1;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .main {
+            background: var(--background-color);
+        }
+
+        .page-container {
+            color: var(--text-color);
+        }
+
+        #theme:checked + .page-container {
+            --text-color: white;
+            --background-color: black;
+            --header-background-color: #3b3a3a;
+        }
+
+        .dark-label, .light-label {
+            display: none;
+        }
+
+        #theme:not(:checked) + .page-container .light-label,
+        #theme:checked + .page-container .dark-label {
+            display: inline;
+        }
+
+        #theme:checked + .page-container {
+            --text-color: white;
+            --background-color: black;
+            --header-background-color: #3b3a3a;
+        }
+    </style>
+</head>
+<body>
+<input type="checkbox" id="theme" hidden>
+
+<div class="page-container">
+    <div class="header">
+        <span>icon</span>
+
+        <div class="flex-grow"></div>
+
+
+        <label for="theme">
+            <span class="pallete-icon">pallete-icon</span>
+            <span class="light-label">To dark</span>
+            <span class="dark-label">To light</span>
+        </label>
+    </div>
+    <div class="main">
+        <h1>Welcome</h1>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta dolorem dolorum ea eaque maxime molestiae mollitia officia optio qui quibusdam rerum similique vel vero, voluptatem. Illo illum maiores velit!</span><span>Ab nemo perspiciatis provident, reprehenderit veniam voluptatibus. Nobis odio praesentium quo rem repellendus reprehenderit suscipit voluptas. Commodi consectetur culpa cumque eius harum iste modi nam officia sit ullam unde, voluptate.</span><span>Adipisci aspernatur aut debitis deserunt, dolores doloribus eius eveniet fuga impedit iure laudantium, libero minima minus mollitia natus necessitatibus nemo nihil nobis omnis quo sed soluta vitae voluptates voluptatibus voluptatum.</span><span>Deleniti inventore itaque molestias nemo nihil nostrum omnis quaerat repellat saepe sapiente! Architecto asperiores dolore dolores fugiat hic in, incidunt necessitatibus nostrum odio quaerat quam quos sapiente sunt tenetur totam.</span><span>Autem dicta error laudantium molestiae molestias nisi obcaecati odio praesentium reprehenderit velit! Dolorum ea earum enim excepturi, explicabo id impedit minima perferendis quibusdam quod, ratione reprehenderit sed soluta unde vitae?</span><span>Accusantium alias aut cumque facere laboriosam nemo pariatur quasi totam ullam! Deleniti dolorem dolores, ea eius eum facilis fugit impedit neque praesentium qui quisquam quod rem saepe veritatis voluptatum. Minima.</span><span>Amet animi aspernatur blanditiis consectetur debitis dolorum eligendi enim error facere fugiat, illo ipsam maxime quos repudiandae velit. Aliquid consectetur, distinctio dolore dolorem labore obcaecati omnis quia quos reprehenderit ullam?</span><span>Alias aperiam eaque illum minus nam nemo reprehenderit rerum suscipit tempora! Aliquam blanditiis dicta dolorem dolorum enim fugiat illum, minus, nam necessitatibus numquam officia praesentium quaerat recusandae rem reprehenderit vel.</span><span>A aspernatur consequatur dolor esse modi molestiae, officiis praesentium quia saepe vel. Ad, beatae corporis cupiditate magni modi nemo nihil perspiciatis quisquam quos similique sunt velit voluptatem. A magnam, non!</span><span>Consectetur culpa doloribus eaque eligendi est expedita facere id, ipsum itaque non odio omnis perferendis provident quasi quidem quod quos reiciendis sed sequi tempore veniam vero vitae voluptates voluptatibus voluptatum!</span>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

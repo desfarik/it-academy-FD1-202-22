@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        :root {
+            --primary-color: #a749b8;
+
+            --secondary-color: var(--primary-color);
+        }
+
+        .block-2 {
+            --primary-color: #18ff90;
+        }
+
+        .block,.block-2 {
+            width: 300px;
+            color: var(--secondary-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            margin-left: 12px;
+            padding: 5px;
+            color: white;
+            background: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="block">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem consequuntur ea fugiat inventore ipsa
+    iste nam, nisi odio perspiciatis quos rem sed vitae. Fugiat molestias neque nisi quasi voluptatem.
+    <div class="button">submit</div>
+</div>
+
+<div class="block-2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem consequuntur ea fugiat inventore ipsa
+    iste nam, nisi odio perspiciatis quos rem sed vitae. Fugiat molestias neque nisi quasi voluptatem.
+    <div class="button">submit</div>
+</div>
+</body>
+</html>
