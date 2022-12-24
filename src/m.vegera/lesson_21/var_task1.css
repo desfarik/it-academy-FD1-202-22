@@ -1,0 +1,33 @@
+:root{
+    --header-background-color: #eeeeee;
+    --text-color: black;
+    --background-color: white;
+}
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background-color);
+    padding: 20px 10px;
+}
+.icon-dc{
+    background-color: #0e9474;
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+}
+.main{
+
+    background-color: var(--background-color);
+    margin-top: 50px;
+}
+.page-container{
+    color: var(--text-color);
+}
+.light-label, .dark-label{
+    display: none;
+}
+#checkbox:checked + .page-container {
+    
+}
