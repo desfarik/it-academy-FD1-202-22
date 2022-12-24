@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: linear-gradient(to bottom left, #d8a2f9, #91b5cb);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.container:hover .icon {
+    cursor: pointer;
+
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes moving {
+
+    from {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(20%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}

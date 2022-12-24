@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 450px;
+    height: 50px;
+    display: flex;
+}
+
+.button {
+    flex-grow: 1;
+    border: solid 1px black;
+    text-align: center;
+    line-height: 50px;
+    transition: flex-grow 0.5s ease-in;
+
+}
+
+.button:hover {
+    cursor: pointer;
+    flex-grow: 1.5;
+    background-color: #fab2aa;
+    color: white;
+}
+
+/*.button1:hover ~ .button2 {
+    flex-grow: 0.5;
+}*/
