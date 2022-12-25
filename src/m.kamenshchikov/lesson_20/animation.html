@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .menu-item {
+        position: relative;
+        width: 200px;
+        background: rgb(141, 177, 68);
+        font-size: 20px;
+        padding: 10px 30px;
+        margin: 10px 0px;
+      }
+      .menu-item::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        transform: translateX(-100%);
+        top: 0;
+        display: inline-block;
+        height: 100%;
+        width: 20px;
+        background-color: blue;
+      }
+      .menu-item:hover {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-item">home</div>
+    <div class="menu-item">about</div>
+    <div class="menu-item">skills</div>
+    <div class="menu-item">resumes</div>
+  </body>
+</html>

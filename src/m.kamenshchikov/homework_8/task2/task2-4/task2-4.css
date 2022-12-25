@@ -1,0 +1,58 @@
+.container {
+  margin: 200px auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.icon {
+  font-size: 50px;
+}
+.border {
+  background-color: black;
+  position: absolute;
+  transition: all 1s;
+}
+.horizontal {
+  height: 4px;
+  width: 100%;
+}
+.vertical {
+  height: 100%;
+  width: 4px;
+}
+.border-top {
+  top: 0px;
+}
+.border-bottom {
+  bottom: 0px;
+}
+.border-right {
+  transform: translateY(-100%);
+  right: 0px;
+  visibility: hidden;
+}
+.border-left {
+  transform: translateY(100%);
+  left: 0px;
+  visibility: hidden;
+}
+.container:hover .border-top {
+  transform: translateX(100%);
+  visibility: hidden;
+}
+.container:hover .border-bottom {
+  transform: translateX(-100%);
+  visibility: hidden;
+}
+.container:hover .border-right {
+  transform: translateY(0%);
+  visibility: visible;
+}
+.container:hover .border-left {
+  transform: translateY(0%);
+  visibility: visible;
+}

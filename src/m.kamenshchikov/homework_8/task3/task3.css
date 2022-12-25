@@ -1,0 +1,10 @@
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  aspect-ratio: 1;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.main-block {
+  border: 1px solid;
+}

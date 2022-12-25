@@ -1,0 +1,35 @@
+.anchor-icon {
+  font-size: 60px;
+  color: white;
+}
+.box {
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #ce93d8, #90caf9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover .anchor-icon {
+  animation: anchor 5s linear infinite;
+}
+@keyframes anchor {
+  from {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,21 @@
+.box {
+  margin: 0 auto;
+  display: flex;
+  width: 600px;
+  border: 2px solid #ab47bc;
+}
+.button {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 24px;
+  width: 200px;
+  transition: width 2s;
+}
+.button:hover {
+  width: 300px;
+  background-color: #e1bee7;
+}
+.button-2 {
+  border-left: 2px solid #ab47bc;
+  border-right: 2px solid #ab47bc;
+}

@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+}
+.tooltip {
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  color: white;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+}
+.soc-icon {
+  font-weight: bold;
+  box-shadow: 3px 6px 10px gray;
+  width: 50px;
+  height: 50px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hidden {
+  position: absolute;
+  transform: translateY(0);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.soc-icon:hover .hidden {
+  opacity: 1;
+  transform: translateY(-50px);
+}
+.facebook:hover {
+  background: #1565c0;
+  color: white;
+}
+.tooltip-facebook {
+  background: #1565c0;
+}
+.tooltip-facebook::before {
+  background: #1565c0;
+}
+.twitter:hover {
+  background: #42a5f5;
+  color: white;
+}
+.tooltip-twitter {
+  background: #42a5f5;
+}
+.tooltip-twitter::before {
+  background: #42a5f5;
+}
+.YouTube:hover {
+  background: #c62828;
+  color: white;
+}
+.tooltip-youtube {
+  background: #c62828;
+}
+.tooltip-youtube::before {
+  background: #c62828;
+}
+.Instagram:hover {
+  background: #ec407a;
+  color: white;
+}
+.tooltip-instagram {
+  background: #ec407a;
+}
+.tooltip-instagram::before {
+  background: #ec407a;
+}
+.Git-Hub:hover {
+  background: black;
+  color: white;
+}
+.tooltip-git {
+  background: black;
+}
+.tooltip-git::before {
+  background: black;
+}
