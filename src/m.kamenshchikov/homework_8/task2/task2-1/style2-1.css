@@ -47,9 +47,7 @@
   background: #1565c0;
   color: white;
 }
-.tooltip-facebook {
-  background: #1565c0;
-}
+.tooltip-facebook,
 .tooltip-facebook::before {
   background: #1565c0;
 }
@@ -57,9 +55,7 @@
   background: #42a5f5;
   color: white;
 }
-.tooltip-twitter {
-  background: #42a5f5;
-}
+.tooltip-twitter,
 .tooltip-twitter::before {
   background: #42a5f5;
 }
@@ -67,9 +63,7 @@
   background: #c62828;
   color: white;
 }
-.tooltip-youtube {
-  background: #c62828;
-}
+.tooltip-youtube,
 .tooltip-youtube::before {
   background: #c62828;
 }
@@ -77,9 +71,7 @@
   background: #ec407a;
   color: white;
 }
-.tooltip-instagram {
-  background: #ec407a;
-}
+.tooltip-instagram,
 .tooltip-instagram::before {
   background: #ec407a;
 }
@@ -87,9 +79,7 @@
   background: black;
   color: white;
 }
-.tooltip-git {
-  background: black;
-}
+.tooltip-git,
 .tooltip-git::before {
   background: black;
 }
