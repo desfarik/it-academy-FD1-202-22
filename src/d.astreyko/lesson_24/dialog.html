@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .dialog-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dialog-container.shown {
+            display: flex;
+            animation: background-opacity 0.3s ease-in both;
+
+        }
+
+        .dialog-container.shown .dialog {
+            animation: zoom 0.15s ease-in;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(0.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes background-opacity {
+            0% {
+                background: rgba(0, 0, 0, 0);
+            }
+            100% {
+                background: rgba(0, 0, 0, 40%);
+            }
+        }
+
+        .dialog {
+            background: white;
+            border-radius: 12px;
+            width: 300px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+<div class="div">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque delectus distinctio et expedita nemo
+        odio
+        placeat quaerat, qui quibusdam. Excepturi exercitationem ipsam molestiae veniam voluptatibus. Error inventore
+        ipsum
+        suscipit!</p>
+    <p>At culpa cum dignissimos distinctio eaque ipsam necessitatibus odio quibusdam recusandae voluptas. In iusto
+        maiores
+        obcaecati! Aperiam corporis eligendi, eum expedita facilis in inventore, ipsa natus nobis quia repellendus
+        tempore!</p>
+    <p>Aperiam assumenda beatae commodi cum deleniti fugiat illum officia quae sint voluptatibus! Ad adipisci distinctio
+        enim error id nesciunt non numquam praesentium repellendus velit? Cum iure nemo obcaecati quod sint?</p>
+    <p>Architecto aspernatur excepturi repudiandae similique? Aliquid amet commodi consequuntur earum exercitationem
+        expedita quisquam sapiente velit? Commodi culpa dolores expedita facilis rem. Debitis deleniti dolorum, error
+        minima
+        nesciunt nisi placeat sunt?</p>
+    <p>Adipisci asperiores aut cumque dolor doloremque eum excepturi fuga fugiat ipsam minus nostrum odit officiis porro
+        recusandae reprehenderit saepe sapiente soluta, ullam veritatis voluptatem. Expedita facere hic rem sed.
+        Temporibus!</p>
+    <p>A adipisci aliquid animi aspernatur deleniti dicta distinctio dolorem doloribus eius est eum itaque labore magnam
+        magni maxime molestias mollitia, natus non odit pariatur quasi quia quo rem sit tempora?</p>
+    <p>Adipisci amet asperiores atque delectus deserunt enim eum fugiat iure maiores maxime molestias necessitatibus
+        nihil
+        pariatur, praesentium provident recusandae rem sequi totam veritatis vitae? Corporis dolores eaque ex
+        temporibus.
+        Ut?</p>
+    <button onclick="openDialog()">open dialog</button>
+    <p>Adipisci architecto distinctio dolore ducimus eum eveniet neque nesciunt quasi voluptate voluptatibus! Deserunt
+        eveniet explicabo harum mollitia provident quo repudiandae! Animi facere itaque natus, nihil possimus sequi.
+        Doloribus quod, repudiandae.</p>
+    <p>Debitis maiores nemo obcaecati quod unde. Accusantium ad aliquam at consectetur cumque delectus dolorem est ex,
+        harum
+        in ipsam natus, nostrum, odio quia quisquam quo sequi sunt temporibus unde veniam?</p>
+    <p>Accusantium alias, architecto asperiores, aspernatur at consectetur dolor doloribus exercitationem facilis, fugit
+        itaque minima minus modi molestiae neque nulla numquam officia pariatur quia reiciendis sequi tempore ut vel
+        velit
+        voluptates.</p>
+    <p>Accusamus ad aspernatur atque dolore excepturi fuga in ipsa neque nihil nisi odio officiis omnis pariatur saepe
+        suscipit tempore, voluptate! Dolorem eum eveniet iure modi nulla qui sequi vero vitae!</p>
+    <p>Ad architecto, consectetur, cupiditate deserunt doloribus eveniet ex expedita facere laborum magnam minus
+        molestiae
+        mollitia necessitatibus, nobis non pariatur perspiciatis placeat tempore totam vitae. Cumque natus nobis numquam
+        sunt voluptates?</p>
+    <p>Alias aperiam delectus deserunt dicta dolores earum error eveniet, harum ipsum iure molestiae mollitia odio
+        perferendis porro, possimus quis rem tempora totam ut voluptatum. Dolore earum ex facere quo sed.</p>
+    <p>A alias aliquam assumenda aut dicta doloremque dolorum, error et explicabo maiores nostrum nulla odit omnis
+        pariatur
+        perspiciatis praesentium provident reiciendis rem repellat repudiandae veniam voluptas voluptate voluptatibus.
+        Quam,
+        quos?</p>
+    <p>Ab ad amet culpa deleniti, dolorem ea, eos est et expedita fugiat illo ipsam ipsum labore nam necessitatibus
+        numquam
+        obcaecati, odit placeat provident quasi quisquam recusandae rerum sapiente vitae voluptatibus.</p>
+    <p>Animi aspernatur autem deserunt eius laboriosam quis sint temporibus tenetur! A adipisci aliquam asperiores
+        beatae
+        cumque, deleniti dolorum eligendi explicabo harum mollitia necessitatibus, obcaecati quod recusandae saepe sit
+        suscipit temporibus!</p>
+    <p>Adipisci architecto atque beatae consequuntur cum, cumque debitis eius, et exercitationem inventore laborum
+        minima
+        odio, qui sed temporibus vel voluptatem! Doloribus molestiae odio possimus provident quam quia ratione soluta
+        sunt?</p>
+    <p>Ab aperiam deleniti eaque est facere nesciunt officiis, pariatur saepe. Accusamus aliquid, amet aperiam atque
+        cupiditate dolore doloribus ducimus laborum minima minus mollitia nobis numquam quia quo tenetur, ut,
+        voluptatum.</p>
+    <p>Accusamus aut cupiditate deleniti, dignissimos distinctio dolorum expedita facilis fuga fugiat harum iusto minima
+        mollitia nemo perspiciatis provident quam rem sint totam voluptate, voluptatibus? Asperiores debitis
+        exercitationem
+        ratione vel voluptas?</p>
+    <p>A accusantium assumenda consequuntur culpa ipsum iure modi praesentium quam rem sit? Corporis dolores, ducimus
+        eveniet fugit incidunt iste nam numquam perferendis, perspiciatis possimus, quaerat quisquam rem tempora ullam
+        vel.</p>
+</div>
+
+
+<div class="dialog-container">
+    <div class="dialog">
+        <button class="close-button" onclick="closeDialog()">close</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium consequuntur, corporis
+            doloribus et inventore mollitia nisi nostrum obcaecati quos recusandae rem saepe, velit! Ad id laudantium
+            nihil similique unde.</p>
+        <button class="submit-button" onclick="closeDialog()">submit</button>
+    </div>
+</div>
+
+<script>
+
+    function openDialog() {
+        const dialog = document.querySelector('.dialog-container')
+        dialog.classList.add('shown');
+    }
+
+    function closeDialog() {
+        const dialog = document.querySelector('.dialog-container')
+        dialog.classList.remove('shown');
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="translatePage(ru)">ru</button>
+<button onclick="translatePage(en)">en</button>
+<button onclick="translatePage(by)">by</button>
+
+<div>
+    <span language-key="home"></span>
+</div>
+
+<div language-key="hi"></div>
+
+<script src="./en_ru.js"></script>
+<script>
+
+    translatePage(ru);
+
+    function translatePage(langDictionary) {
+        const elementsToTranslate = document.querySelectorAll('[language-key]')
+        for (let i = 0; elementsToTranslate.length; i++) {
+            const element = elementsToTranslate.item(i);
+            const key = element.getAttribute('language-key');
+            const translated = langDictionary[key];
+            element.textContent = translated;
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
