@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #f26c61;
+            color: grey;
+        }
+
+        .box.hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="toggleBoxVisibility()">toggle box visibility</button>
+<button onclick="changeBoxColor()">apply box color</button>
+
+<input id="colorInput" type="color" onchange="changeBoxColor()">
+<input id="text" type="text">
+<input id="checkbox" type="checkbox">
+
+<div id="box"
+     class="box active primary"
+     onclick="onClick('div')">
+    click me div
+</div>
+
+
+<script>
+
+    function changeBoxColor() {
+        const box = document.querySelector('#box');
+        const colorInput = document.querySelector('#colorInput');
+
+        const color = colorInput.value;
+
+        box.style.backgroundColor = color;
+
+        console.log(box.style.backgroundColor);
+        console.log(getComputedStyle(box).color);
+    }
+
+
+    function toggleBoxVisibility() {
+        const box = document.querySelector('#box');
+        // box.classList.toggle('shown')
+        if (box.classList.contains('hide')) {
+            box.classList.remove('hide')
+        } else {
+            box.classList.add('hide')
+        }
+    }
+
+    function onClick(from) {
+        alert(`click from ${from}`);
+    }
+</script>
+</body>
+</html>

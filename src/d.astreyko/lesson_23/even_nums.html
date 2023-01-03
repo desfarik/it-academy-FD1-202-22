@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    const n = +prompt('enter n');
+
+
+    function isEvenNum(num) {
+        return num % 2 === 0;
+    }
+
+    function getEvenNums(n) {
+        let evenNums = ''
+        for (let i = 1; i <= n; i++) {
+            if (isEvenNum(i)) {
+                evenNums += i + ', ';
+            }
+        }
+        return evenNums;
+    }
+
+    alert(`even nums: ${getEvenNums(n)}`);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .tab-header-container {
+            display: flex;
+        }
+
+        .tab-header {
+            background: #9e9e9e;
+            padding: 5px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.shown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tab-header-container">
+    <div class="tab-header" onclick="showTab(1);">tab 1</div>
+    <div class="tab-header" onclick="showTab(2)">tab 2</div>
+    <div class="tab-header" onclick="showTab(3)">tab 3</div>
+</div>
+
+<div class="tab-contents">
+    <div class="tab-content tab-content-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias
+        animi aut,
+        commodi consectetur consequuntur doloribus hic inventore ipsum iste maiores minima nostrum numquam officiis
+        porro quibusdam rem sint ut.
+    </div>
+    <div class="tab-content tab-content-2">Aliquid at autem cumque dignissimos dolor doloremque ducimus, enim est et
+        ipsam nam
+        necessitatibus obcaecati officia pariatur porro quas quis quisquam quo quos, recusandae rem repudiandae saepe
+        sint, unde veritatis?
+    </div>
+    <div class="tab-content tab-content-3">Alias aspernatur dignissimos odio perspiciatis, quo quos sapiente ut
+        voluptate! Aliquam
+        at cum dicta dolores est id illum inventore ipsum, officia officiis quas qui repellat rerum sed soluta tenetur
+        ut.
+    </div>
+</div>
+
+<script>
+    showTab(1);
+
+    function showTab(tabNumber = 1) {
+        const previousContent = document.querySelector('.tab-content.shown');
+        if (previousContent) {
+            previousContent.classList.remove('shown');
+        }
+        const tabContent = document.querySelector(`.tab-content-${tabNumber}`);
+        tabContent.classList.add('shown')
+    }
+</script>
+
+</body>
+</html>
