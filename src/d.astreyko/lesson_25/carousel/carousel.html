@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .carousel-image {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .inner-image-container {
+            display: flex;
+            transition: transform 0.4s;
+        }
+
+        .image-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .indicator-container {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            background: #7d7d7d;
+            border-radius: 50%;
+        }
+
+        .indicator.active {
+            background: #7dc681;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="carousel">
+    <button class="carousel-nav-button"
+            disabled
+            onclick="goToNext(-1)">prev
+    </button>
+    <div class="image-wrapper">
+        <div class="image-container">
+            <div class="inner-image-container">
+                <img class="carousel-image" src="./images/image1.jpg" alt="">
+                <img class="carousel-image" src="./images/image2.jpg" alt="">
+                <img class="carousel-image" src="./images/image3.jpg" alt="">
+            </div>
+        </div>
+        <div class="indicator-container">
+            <div class="indicator active"
+                 onclick="goToElement(0)"></div>
+            <div class="indicator"
+                 onclick="goToElement(1)"></div>
+            <div class="indicator"
+                 onclick="goToElement(2)"></div>
+        </div>
+    </div>
+
+    <button class="carousel-nav-button"
+            onclick="goToNext(1)">next
+    </button>
+</div>
+
+<script>
+    let currentImageIndex = 0;
+    const IMAGE_COUNT = 3;
+    const IMAGE_WIDTH = 200;
+
+    function changeIndicators() {
+        const prev = document.querySelector('.indicator.active');
+        prev.classList.remove('active');
+
+        const selector = `.indicator:nth-child(${currentImageIndex + 1})`;
+        const indicator = document.querySelector(selector);
+        indicator.classList.add('active');
+    }
+
+/*
+    function goToNext(step) {
+        goToElement(currentImageIndex + step)
+    }
+*/
+    function goToNext(step) {
+        currentImageIndex = currentImageIndex + step;
+        const offset = IMAGE_WIDTH * currentImageIndex;
+        const imageContainer = document.querySelector('.inner-image-container');
+        imageContainer.style.transform = `translateX(-${offset}px)`
+        disableButtons();
+        changeIndicators();
+    }
+
+    function goToElement(elementIndex) {
+        currentImageIndex = elementIndex;
+        const offset = IMAGE_WIDTH * currentImageIndex;
+        const imageContainer = document.querySelector('.inner-image-container');
+        imageContainer.style.transform = `translateX(-${offset}px)`
+        disableButtons();
+        changeIndicators();
+    }
+
+    function disableButtons() {
+        const [prev, next] = document.querySelectorAll('.carousel-nav-button');
+        if (currentImageIndex === 0) {
+            prev.setAttribute('disabled', 'true')
+        } else {
+            prev.removeAttribute('disabled');
+        }
+        if ((currentImageIndex + 1) === IMAGE_COUNT) {
+            next.setAttribute('disabled', 'true')
+        } else {
+            next.removeAttribute('disabled');
+        }
+    }
+</script>
+
+
+</body>
+</html>
