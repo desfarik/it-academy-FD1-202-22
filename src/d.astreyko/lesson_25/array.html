@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const n = +prompt('Сколько будешь вводить элементов', 5);
+
+    const array = [];
+    for (let i = 0; i < n; i++) {
+        const num = +prompt('Введи число');
+        array.push(num);
+    }
+
+    let sum = 0;
+    for (let num of array) {
+        sum += num;
+    }
+
+    alert('Ваша сумма: ' + sum);
+</script>
+
+</body>
+</html>

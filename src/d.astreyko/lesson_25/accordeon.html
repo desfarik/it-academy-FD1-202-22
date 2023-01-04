@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .expansion-panel {
+            border: 1px solid;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        .content {
+            height: 0;
+            transition: height 0.3s ease-in;
+            overflow: hidden;
+        }
+
+        .expansion-panel.shown .content {
+            height: 100px;
+        }
+
+        .toggle-button {
+            transform: rotate(90deg);
+            transition: transform 0.3s linear;
+        }
+
+        .expansion-panel.shown .toggle-button {
+            transform: rotate(270deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="expansion-panel">
+    <div class="header">
+        header
+        <button class="toggle-button" onclick="togglePanel()">></button>
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto assumenda aut
+        deserunt, fuga incidunt, laboriosam molestiae non optio rem repellendus sequi sit ut! Consequatur dolorem
+        doloremque mollitia quas similique!
+    </div>
+</div>
+
+<script>
+
+    function togglePanel() {
+        const panel = document.querySelector('.expansion-panel');
+
+        panel.classList.toggle('shown');
+    }
+
+</script>
+
+</body>
+</html>

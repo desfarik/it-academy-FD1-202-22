@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .to-do-item {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<form onsubmit="submitForm(event)">
+    <label>
+        <input id="todoName" type="text" name="todo-name" required>
+    </label>
+    <button>add</button>
+    <span>
+        Всего:
+        <span id="listCount">0</span>
+    </span>
+    <button type="button" onclick="clearAllItems()">удалить все</button>
+</form>
+<ol class="to-do-list-container">
+
+</ol>
+
+<script>
+    let toDoList = [];
+
+    function setListLength() {
+        const element = document.querySelector('#listCount');
+        element.textContent = toDoList.length;
+    }
+
+    function generateList() {
+        const list = document.querySelector('.to-do-list-container');
+        let html = ''
+        for (let i = 0; i < toDoList.length; i++) {
+            const item = toDoList[i];
+            html += `<li class="to-do-item">${item}<button onclick="deleteItem(${i})">-</button></li>`
+        }
+        list.innerHTML = html;
+        setListLength()
+    }
+
+    function deleteItem(indexToDelete) {
+        // удаление элемента из массива по индкексу
+        toDoList.splice(indexToDelete, 1);
+        generateList();
+    }
+
+    function clearAllItems() {
+        toDoList = [];
+        generateList();
+    }
+
+    function submitForm(event) {
+        event.preventDefault();
+        const input = document.querySelector('#todoName');
+        toDoList.push(input.value)
+        input.value = '';
+        generateList();
+        console.log(toDoList);
+    }
+</script>
+
+</body>
+</html>
