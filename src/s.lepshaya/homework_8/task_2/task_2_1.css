@@ -1,0 +1,129 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    width: 50px;
+    height: 140px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: lightgray;
+    box-shadow: 1px 1px 6px lightgray;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.tooltip-wrapper {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    height: 45px;
+}
+
+.tooltip {
+    font-size: 10px;
+    background-color: #3b5998;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 3px;
+    position: relative;
+    top: 45px;
+    display: flex;
+    justify-content: center;
+    transition: top 0.5s cubic-bezier(.5, -0.5, .5, 1.5);
+}
+
+.tooltip::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: #3b5998 transparent transparent transparent;
+    position: absolute;
+    bottom: -5px;
+    left: 42%;
+}
+
+
+.menu-icon:hover~.tooltip-wrapper .tooltip {
+    top: 10px;
+}
+
+.icon--facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+
+.tooltip--twitter {
+    background-color: #1DA1F2;
+}
+
+.tooltip--twitter::after {
+    border-color: #1DA1F2 transparent transparent transparent;
+}
+
+.icon--twitter:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+
+.tooltip--instagram {
+    background-color: #E1306C;
+}
+
+.tooltip--instagram::after {
+    border-color: #E1306C transparent transparent transparent;
+}
+
+.icon--instagram:hover {
+    background-color: #E1306C;
+    color: white;
+}
+
+
+.tooltip--github {
+    background-color: #333;
+}
+
+.tooltip--github::after {
+    border-color: #333 transparent transparent transparent;
+}
+
+.icon--github:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+.tooltip--youtube {
+    background-color: #FF0000;
+}
+
+.tooltip--youtube::after {
+    border-color: #FF0000 transparent transparent transparent;
+}
+
+.icon--youtube:hover {
+    background-color: #FF0000;
+    color: white;
+}

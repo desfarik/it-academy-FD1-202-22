@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.label-wrapper {
+    width: 500px;
+    display: flex;
+}
+
+.custom-label {
+    padding: 25px;
+    flex-grow: 1;
+    border: 1px solid black;
+    text-align: center;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+#button-1:checked~.label-wrapper .label-1 {
+    flex-grow: 2;
+    background-color: #fca0aa;
+    color: white;
+}
+
+#button-2:checked~.label-wrapper .label-2 {
+    flex-grow: 2;
+    background-color: #fca0aa;
+    color: white;
+}
+
+#button-3:checked~.label-wrapper .label-3 {
+    flex-grow: 2;
+    background-color: #fca0aa;
+    color: white;
+}
+
+/*.custom-label:hover {
+    background-color: #fca0aa;
+    flex-grow: 2;
+    color: white;
+    cursor: pointer;
+} flex-grow ведет себя странно по наведению, не додумалась как это реализовать(*/
