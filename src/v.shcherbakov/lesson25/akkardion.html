@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<style>
+    .header{
+        border: 1px solid red;
+    }
+    .first_menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .second_menu{
+        display: none;
+    }
+    .second_menu.open{
+        display: block;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="first_menu">
+        <span>Self aware panel</span>
+        <span>Currently I am closed</span>
+        <div></div>
+        <span  class="material-symbols-outlined" onclick="show">
+        expand_more
+        </span>
+    </div>
+    <div class="second_menu">
+        Hi, I am hear
+    </div>
+
+    <script>
+        function show() {
+const expand=document.querySelector('show')
+            
+        }
+    </script>
+</div>
+</body>
+</html>

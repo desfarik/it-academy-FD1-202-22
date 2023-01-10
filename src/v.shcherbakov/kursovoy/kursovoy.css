@@ -1,0 +1,25 @@
+.container{
+    background-image: url("./image/subscribe-desktop-bg.svg");
+}
+/*@media (max-width: 992px)*/
+/*    .responsive-menu {*/
+/*        height: 55px;*/
+/*        position: fixed;*/
+/*        background: #2f3742;*/
+/*        z-index: 9999;*/
+/*        width: 100%;*/
+/*        padding: 12px 15px;*/
+/*        display: block;*/
+/*    }*/
+/*.sidebar {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    z-index: 1000;*/
+/*    display: block;*/
+/*    padding: 20px;*/
+/*    background-color: #2f3742;*/
+/*    padding-bottom: 200px;*/
+/*    height: 100%;*/
+/*}*/

@@ -1,0 +1,8 @@
+
+.portfolio-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    overflow: hidden;
+}
